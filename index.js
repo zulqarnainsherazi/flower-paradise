@@ -559,6 +559,8 @@ if(accountBtn){
 }
 
 
+
+
 /* MOBILE */
 
 if(mobileAccountBtn){
@@ -575,8 +577,6 @@ if(mobileAccountBtn){
     );
 
 }
-
-
 /* CLOSE */
 
 accountClose.addEventListener(
