@@ -23,62 +23,176 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
 ===================================================== -->
 
 <header class="navbar" id="navbar">
-    
 
     <div class="nav-container">
 
-          <a href="index.html" class="brand">
+        <a href="index.html" class="brand">
 
-    <img src="Logoinstaflora-removebg-preview.png" alt="Instaflora Logo">
+            <img src="Logoinstaflora-removebg-preview.png"
+                 alt="Instaflora Logo">
 
-    <div class="brand-text">
-        <span>INSTA</span>FLORA
-        <small>FLOWERS PARADISE</small>
-    </div>
+            <div class="brand-text">
 
-</a>
+                <span>INSTA</span>FLORA
 
+                <small>
+                    FLOWERS PARADISE
+                </small>
+
+            </div>
+
+        </a>
+
+
+        <!-- =================================================
+             NAVIGATION MENU
+        ================================================== -->
 
         <nav class="nav-menu" id="navMenu">
 
-            <a href="index.html">Home</a>
+            <a href="index.html">
+                Home
+            </a>
 
-            <a href="shop.html">Shop</a>
+            <a href="shop.html">
+                Shop
+            </a>
 
-            <a href="occasions.html" class="active">Occasions</a>
+            <a href="occasions.html" class="active">
+                Occasions
+            </a>
 
-            <a href="#bestsellers">Best Sellers</a>
+            <a href="#bestsellers">
+                Best Sellers
+            </a>
 
-            <a href="#events">Event Décor</a>
+            <a href="#events">
+                Event Décor
+            </a>
 
-            <a href="#gallery">Gallery</a>
+            <a href="#gallery">
+                Gallery
+            </a>
 
-            <a href="#about">About</a>
+            <a href="#about">
+                About
+            </a>
 
-            <a href="#contact">Contact</a>
-            <a href="#" class="mobile-account" id="mobileAccountBtn">
-    Login / Register
-</a>
-        
+            <a href="#contact">
+                Contact
+            </a>
 
-</nav>
+
+            <!-- =================================================
+                 MOBILE NAV ACTIONS
+                 Search / Wishlist / Cart
+            ================================================== -->
+
+            <div class="mobile-nav-actions">
+
+                <button
+                    class="nav-icon"
+                    id="mobileSearchBtn"
+                    title="Search">
+
+                    ⌕
+
+                </button>
+
+
+                <button
+                    class="nav-icon"
+                    id="mobileWishlistBtn"
+                    title="Wishlist">
+
+                    ♡
+
+                </button>
+
+
+                <button
+                    class="nav-icon cart-button"
+                    id="mobileCartBtn"
+                    title="Shopping Cart">
+
+                    🛒
+
+                    <span class="cart-count">
+                        0
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- =================================================
+                 MOBILE ACCOUNT
+            ================================================== -->
+
+            <a href="#"
+               class="mobile-account"
+               id="mobileAccountBtn">
+
+                Login / Register
+
+            </a>
+
+        </nav>
+
+
+        <!-- =================================================
+             NAV ACTIONS
+             Desktop Search / Wishlist / Cart
+        ================================================== -->
+
         <div class="nav-actions">
-      
 
-            <button class="nav-icon" id="searchBtn" title="Search">
-    ⌕
-</button>
 
-            <button class="nav-icon" title="Wishlist">
-                ♡
+            <button
+                class="nav-icon"
+                id="searchBtn"
+                title="Search">
+
+                ⌕
+
             </button>
 
-            <button class="nav-icon cart-button" title="Shopping Cart">
+
+            <button
+                class="nav-icon"
+                id="desktopWishlistBtn"
+                title="Wishlist">
+
+                ♡
+
+            </button>
+
+
+            <button
+                class="nav-icon cart-button"
+                id="desktopCartBtn"
+                title="Shopping Cart">
+
                 🛒
-                <span class="cart-count">0</span>
-         
-            <button class="menu-toggle" id="menuToggle">
+
+                <span class="cart-count">
+                    0
+                </span>
+
+            </button>
+
+
+            <!-- IMPORTANT:
+                 Cart button properly closed before menu button -->
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open Menu">
+
                 ☰
+
             </button>
 
         </div>
@@ -86,32 +200,50 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
     </div>
 
 </header>
-<!-- SEARCH OVERLAY -->
+
+
+
+<!-- =====================================================
+     SEARCH OVERLAY
+===================================================== -->
+
 <div class="search-overlay" id="searchOverlay">
 
     <div class="search-box">
 
-        <button class="search-close" id="searchClose">
+        <button
+            class="search-close"
+            id="searchClose">
+
             ×
+
         </button>
 
-        <span>SEARCH INSTAFORA</span>
+
+        <span>
+            SEARCH INSTAFORA
+        </span>
+
 
         <div class="search-input">
+
             <input
                 type="text"
                 id="searchInput"
-                placeholder="Search flowers, gifts, bouquets..."
-            >
+                placeholder="Search flowers, gifts, bouquets...">
+
 
             <button id="searchSubmit">
                 →
             </button>
+
         </div>
 
     </div>
 
 </div>
+
+
 
 <!-- =====================================================
      LOGIN / REGISTER POPUP
@@ -121,19 +253,27 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
 
     <div class="account-modal-box">
 
-        <button class="account-close" id="accountClose">
+        <button
+            class="account-close"
+            id="accountClose">
+
             ×
+
         </button>
 
 
         <!-- LOGO -->
 
-        <img src="Logoinstaflora-removebg-preview.png"
-             alt="Instaflora"
-             class="account-modal-logo">
+        <img
+            src="Logoinstaflora-removebg-preview.png"
+            alt="Instaflora"
+            class="account-modal-logo">
 
 
-        <h2>Welcome to Instaflora</h2>
+        <h2>
+            Welcome to Instaflora
+        </h2>
+
 
         <p class="account-modal-subtitle">
             Login or create your account
@@ -144,15 +284,18 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
 
         <div class="account-tabs">
 
-            <button class="account-tab active"
-                    id="loginTab">
+            <button
+                class="account-tab active"
+                id="loginTab">
 
                 Login
 
             </button>
 
-            <button class="account-tab"
-                    id="registerTab">
+
+            <button
+                class="account-tab"
+                id="registerTab">
 
                 Register
 
@@ -163,27 +306,32 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
 
         <!-- LOGIN FORM -->
 
-        <form class="account-form active"
-              id="loginForm">
+        <form
+            class="account-form active"
+            id="loginForm">
 
             <input
                 type="email"
                 placeholder="Email Address"
-                required
-            >
+                required>
+
 
             <input
                 type="password"
                 placeholder="Password"
-                required
-            >
+                required>
+
 
             <div class="account-options">
 
                 <label>
+
                     <input type="checkbox">
+
                     Remember me
+
                 </label>
+
 
                 <a href="#">
                     Forgot Password?
@@ -191,8 +339,10 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
 
             </div>
 
-            <button type="submit"
-                    class="account-submit">
+
+            <button
+                type="submit"
+                class="account-submit">
 
                 Login
 
@@ -203,41 +353,43 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
 
         <!-- REGISTER FORM -->
 
-        <form class="account-form"
-              id="registerForm">
+        <form
+            class="account-form"
+            id="registerForm">
 
             <input
                 type="text"
                 placeholder="Full Name"
-                required
-            >
+                required>
+
 
             <input
                 type="email"
                 placeholder="Email Address"
-                required
-            >
+                required>
+
 
             <input
                 type="tel"
                 placeholder="Phone Number"
-                required
-            >
+                required>
+
 
             <input
                 type="password"
                 placeholder="Create Password"
-                required
-            >
+                required>
+
 
             <input
                 type="password"
                 placeholder="Confirm Password"
-                required
-            >
+                required>
 
-            <button type="submit"
-                    class="account-submit">
+
+            <button
+                type="submit"
+                class="account-submit">
 
                 Create Account
 
@@ -245,10 +397,11 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
 
         </form>
 
-
     </div>
 
 </div>
+
+
 
 <!-- =====================================================
      HERO
@@ -260,16 +413,19 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
 
     <div class="hero-overlay"></div>
 
+
     <div class="hero-content">
 
         <span class="eyebrow">
             CELEBRATE EVERY MOMENT
         </span>
 
+
         <h1>
             Flowers for<br>
             <em>every occasion.</em>
         </h1>
+
 
         <p>
             From birthdays and anniversaries to weddings,
@@ -277,18 +433,25 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
             find something beautiful for every moment that matters.
         </p>
 
+
         <div class="hero-buttons">
 
-            <a href="#occasionCollection"
-               class="btn btn-primary">
+            <a
+                href="#occasionCollection"
+                class="btn btn-primary">
 
                 Explore Occasions
-                <span>→</span>
+
+                <span>
+                    →
+                </span>
 
             </a>
 
-            <a href="shop.html"
-               class="btn btn-outline">
+
+            <a
+                href="shop.html"
+                class="btn btn-outline">
 
                 Shop Flowers
 
@@ -312,10 +475,12 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
         FOR EVERY SPECIAL MOMENT
     </span>
 
+
     <h2>
         Whatever you're celebrating,<br>
         make it <em>unforgettable.</em>
     </h2>
+
 
     <p>
         Every occasion deserves something extraordinary.
@@ -332,8 +497,10 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
      OCCASION COLLECTION
 ===================================================== -->
 
-<section class="occasion-section"
-         id="occasionCollection">
+<section
+    class="occasion-section"
+    id="occasionCollection">
+
 
     <div class="section-heading">
 
@@ -343,12 +510,14 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
                 SHOP BY OCCASION
             </span>
 
+
             <h2>
                 Find the perfect<br>
                 <em>way to celebrate.</em>
             </h2>
 
         </div>
+
 
         <p>
             Choose an occasion and discover flowers,
@@ -364,15 +533,19 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
 
         <!-- BIRTHDAY -->
 
-        <a href="shop.html?occasion=birthday"
-           class="occasion-card large">
+        <a
+            href="shop.html?occasion=birthday"
+            class="occasion-card large">
 
-            <img src="Birthday.png"
-                 alt="Birthday Flowers and Gifts">
+            <img
+                src="Birthday.png"
+                alt="Birthday Flowers and Gifts">
+
 
             <div class="occasion-number">
                 01
             </div>
+
 
             <div class="occasion-info">
 
@@ -380,13 +553,16 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
                     MAKE A WISH
                 </span>
 
+
                 <h3>
                     Birthday
                 </h3>
 
+
                 <p>
                     Bright flowers & joyful gifts
                 </p>
+
 
                 <strong>
                     Explore →
@@ -400,15 +576,19 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
 
         <!-- ANNIVERSARY -->
 
-        <a href="shop.html?occasion=anniversary"
-           class="occasion-card">
+        <a
+            href="shop.html?occasion=anniversary"
+            class="occasion-card">
 
-            <img src="Anniversary.png"
-                 alt="Anniversary Flowers">
+            <img
+                src="Anniversary.png"
+                alt="Anniversary Flowers">
+
 
             <div class="occasion-number">
                 02
             </div>
+
 
             <div class="occasion-info">
 
@@ -416,13 +596,16 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
                     CELEBRATE LOVE
                 </span>
 
+
                 <h3>
                     Anniversary
                 </h3>
 
+
                 <p>
                     Romantic flowers & gifts
                 </p>
+
 
                 <strong>
                     Explore →
@@ -436,15 +619,19 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
 
         <!-- WEDDING -->
 
-        <a href="shop.html?occasion=wedding"
-           class="occasion-card">
+        <a
+            href="shop.html?occasion=wedding"
+            class="occasion-card">
 
-            <img src="wedding.png"
-                 alt="Wedding Flowers">
+            <img
+                src="wedding.png"
+                alt="Wedding Flowers">
+
 
             <div class="occasion-number">
                 03
             </div>
+
 
             <div class="occasion-info">
 
@@ -452,13 +639,16 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
                     FOREVER BEGINS
                 </span>
 
+
                 <h3>
                     Wedding
                 </h3>
 
+
                 <p>
                     Elegant flowers for forever
                 </p>
+
 
                 <strong>
                     Explore →
@@ -472,15 +662,19 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
 
         <!-- NEWBORN -->
 
-        <a href="shop.html?occasion=newborn"
-           class="occasion-card">
+        <a
+            href="shop.html?occasion=newborn"
+            class="occasion-card">
 
-            <img src="Newborn.png"
-                 alt="Newborn Gift">
+            <img
+                src="Newborn.png"
+                alt="Newborn Gift">
+
 
             <div class="occasion-number">
                 04
             </div>
+
 
             <div class="occasion-info">
 
@@ -488,13 +682,16 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
                     WELCOME LITTLE ONE
                 </span>
 
+
                 <h3>
                     Newborn
                 </h3>
 
+
                 <p>
                     Sweet gifts for new beginnings
                 </p>
+
 
                 <strong>
                     Explore →
@@ -508,15 +705,19 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
 
         <!-- GRADUATION -->
 
-        <a href="shop.html?occasion=graduation"
-           class="occasion-card">
+        <a
+            href="shop.html?occasion=graduation"
+            class="occasion-card">
 
-            <img src="gradu.png"
-                 alt="Graduation Flowers">
+            <img
+                src="gradu.png"
+                alt="Graduation Flowers">
+
 
             <div class="occasion-number">
                 05
             </div>
+
 
             <div class="occasion-info">
 
@@ -524,13 +725,16 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
                     CELEBRATE SUCCESS
                 </span>
 
+
                 <h3>
                     Graduation
                 </h3>
 
+
                 <p>
                     Celebrate a new achievement
                 </p>
+
 
                 <strong>
                     Explore →
@@ -558,6 +762,7 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
             MORE REASONS TO CELEBRATE
         </span>
 
+
         <h2>
             Beautiful moments deserve<br>
             <em>beautiful gestures.</em>
@@ -568,20 +773,24 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
 
     <div class="gift-grid">
 
+
         <div class="gift-card">
 
             <div class="gift-icon">
                 ✿
             </div>
 
+
             <h3>
                 Just Because
             </h3>
+
 
             <p>
                 Sometimes you don't need a reason.
                 Send flowers simply to make someone smile.
             </p>
+
 
             <a href="shop.html">
                 Shop Now →
@@ -590,20 +799,24 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
         </div>
 
 
+
         <div class="gift-card">
 
             <div class="gift-icon">
                 ♡
             </div>
 
+
             <h3>
                 Romantic Moments
             </h3>
+
 
             <p>
                 Express love with elegant bouquets,
                 romantic gifts and thoughtful surprises.
             </p>
+
 
             <a href="shop.html">
                 Discover Love →
@@ -612,20 +825,24 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
         </div>
 
 
+
         <div class="gift-card">
 
             <div class="gift-icon">
                 ✦
             </div>
 
+
             <h3>
                 Congratulations
             </h3>
+
 
             <p>
                 Celebrate achievements, milestones
                 and exciting new chapters.
             </p>
+
 
             <a href="shop.html">
                 Celebrate →
@@ -634,20 +851,24 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
         </div>
 
 
+
         <div class="gift-card">
 
             <div class="gift-icon">
                 ❀
             </div>
 
+
             <h3>
                 Thank You
             </h3>
+
 
             <p>
                 Say thank you with something thoughtful,
                 elegant and beautifully arranged.
             </p>
+
 
             <a href="shop.html">
                 Send Thanks →
@@ -673,10 +894,12 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
             CAN'T FIND EXACTLY WHAT YOU WANT?
         </span>
 
+
         <h2>
             Create something<br>
             <em>uniquely yours.</em>
         </h2>
+
 
         <p>
             Tell us about your special moment and our
@@ -685,8 +908,10 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
             especially for you.
         </p>
 
-        <a href="contact.html"
-           class="btn btn-primary">
+
+        <a
+            href="contact.html"
+            class="btn btn-primary">
 
             Create My Arrangement →
 
@@ -723,6 +948,7 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
             THE INSTAFLOWER PROMISE
         </span>
 
+
         <h2>
             Because every<br>
             moment <em>matters.</em>
@@ -733,15 +959,18 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
 
     <div class="promise-grid">
 
+
         <div class="promise-item">
 
             <span>
                 01
             </span>
 
+
             <h3>
                 Fresh & Beautiful
             </h3>
+
 
             <p>
                 Carefully selected flowers and
@@ -751,15 +980,18 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
         </div>
 
 
+
         <div class="promise-item">
 
             <span>
                 02
             </span>
 
+
             <h3>
                 Thoughtfully Designed
             </h3>
+
 
             <p>
                 Every arrangement is created to
@@ -769,15 +1001,18 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
         </div>
 
 
+
         <div class="promise-item">
 
             <span>
                 03
             </span>
 
+
             <h3>
                 Made With Love
             </h3>
+
 
             <p>
                 From our hands to theirs, every detail
@@ -787,15 +1022,18 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
         </div>
 
 
+
         <div class="promise-item">
 
             <span>
                 04
             </span>
 
+
             <h3>
                 Memorable Moments
             </h3>
+
 
             <p>
                 We help turn ordinary occasions into
@@ -823,15 +1061,21 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
 
         <div class="footer-brand">
 
-            <a href="index.html"
-               class="brand footer-logo">
+            <a
+                href="index.html"
+                class="brand footer-logo">
 
-                <img src="Logoinstaflora-removebg-preview.png"
-                     alt="Instaflora Logo">
+                <img
+                    src="Logoinstaflora-removebg-preview.png"
+                    alt="Instaflora Logo">
+
 
                 <div class="brand-text">
 
-                    <span>INSTA</span>FLORA
+                    <span>
+                        INSTA
+                    </span>FLORA
+
 
                     <small>
                         FLOWERS PARADISE
@@ -850,9 +1094,17 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
 
             <div class="social-links">
 
-                <a href="#">f</a>
-                <a href="#">◎</a>
-                <a href="#">p</a>
+                <a href="#">
+                    f
+                </a>
+
+                <a href="#">
+                    ◎
+                </a>
+
+                <a href="#">
+                    p
+                </a>
 
             </div>
 
@@ -865,6 +1117,7 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
             <h4>
                 Shop
             </h4>
+
 
             <a href="shop.html">
                 Flowers
@@ -900,6 +1153,7 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
                 Occasions
             </h4>
 
+
             <a href="#occasionCollection">
                 Birthday
             </a>
@@ -929,6 +1183,7 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
             <h4>
                 Company
             </h4>
+
 
             <a href="about.html">
                 About Us
@@ -960,17 +1215,21 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
                 Contact
             </h4>
 
+
             <p>
                 Islamabad, Pakistan
             </p>
+
 
             <p>
                 +92 XXX XXXXXXX
             </p>
 
+
             <p>
                 hello@instaflora.com
             </p>
+
 
             <p>
                 Mon – Sat<br>
@@ -989,11 +1248,13 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
             © 2026 Instaflora. All Rights Reserved.
         </span>
 
+
         <div>
 
             <a href="#">
                 Privacy Policy
             </a>
+
 
             <a href="#">
                 Terms & Conditions
@@ -1007,14 +1268,18 @@ content="Celebrate every special moment with beautiful flowers, gifts and arrang
 
 
 
-<!-- BACK TO TOP -->
+<!-- =====================================================
+     BACK TO TOP
+===================================================== -->
 
-<button class="back-top"
-        id="backTop">
+<button
+    class="back-top"
+    id="backTop">
 
     ↑
 
 </button>
+
 
 
 <script src="occasions.js"></script>

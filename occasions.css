@@ -51,8 +51,6 @@ input{
 }
 
 
-
-
 /* =====================================================
    NAVBAR
 ===================================================== */
@@ -113,11 +111,6 @@ input{
     text-decoration:none;
 }
 
-
-/* =====================================================
-   LOGO IMAGE
-===================================================== */
-
 .brand img{
     width:110px;
     height:85px;
@@ -143,7 +136,7 @@ input{
 .brand-text{
     color:var(--gold);
 
-    font-family:Georgia, "Times New Roman", serif;
+    font-family:Georgia,"Times New Roman",serif;
 
     font-size:32px;
 
@@ -156,15 +149,9 @@ input{
     white-space:nowrap;
 }
 
-
-/* INSTA */
-
 .brand-text span{
     color:var(--gold-light);
 }
-
-
-/* FLORA */
 
 .brand-text{
     color:var(--gold);
@@ -182,7 +169,7 @@ input{
 
     color:#f3eee5;
 
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
 
     font-size:9px;
 
@@ -211,7 +198,7 @@ input{
 }
 
 .nav-menu a{
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
 
     color:#eee9df;
 
@@ -250,6 +237,15 @@ input{
 .nav-menu a:hover::after,
 .nav-menu a.active::after{
     width:100%;
+}
+
+
+/* =====================================================
+   MOBILE NAV ACTIONS
+===================================================== */
+
+.mobile-nav-actions{
+    display:none;
 }
 
 
@@ -304,7 +300,9 @@ input{
 }
 
 
-/* CART COUNT */
+/* =====================================================
+   CART COUNT
+===================================================== */
 
 .cart-count{
     position:absolute;
@@ -321,7 +319,7 @@ input{
 
     color:var(--black);
 
-    font:10px Arial, sans-serif;
+    font:10px Arial,sans-serif;
 
     font-weight:bold;
 
@@ -330,6 +328,8 @@ input{
     align-items:center;
     justify-content:center;
 }
+
+
 /* =====================================================
    LOGIN / REGISTER NAVBAR BUTTON
 ===================================================== */
@@ -395,6 +395,8 @@ input{
 
     align-items:center;
     justify-content:center;
+
+    flex-shrink:0;
 }
 
 
@@ -497,8 +499,9 @@ input{
 }
 
 
-
-/* BUTTONS */
+/* =====================================================
+   BUTTONS
+===================================================== */
 
 .btn{
     display:inline-flex;
@@ -546,7 +549,6 @@ input{
 }
 
 
-
 /* =====================================================
    INTRO
 ===================================================== */
@@ -584,7 +586,6 @@ input{
 
     font:14px/1.9 Arial;
 }
-
 
 
 /* =====================================================
@@ -642,8 +643,9 @@ input{
 }
 
 
-
-/* GRID */
+/* =====================================================
+   GRID
+===================================================== */
 
 .occasion-grid{
     display:grid;
@@ -768,7 +770,6 @@ input{
 }
 
 
-
 /* =====================================================
    MORE OCCASIONS
 ===================================================== */
@@ -864,7 +865,6 @@ input{
 
     letter-spacing:1px;
 }
-
 
 
 /* =====================================================
@@ -984,7 +984,6 @@ input{
 }
 
 
-
 /* =====================================================
    PROMISE
 ===================================================== */
@@ -1052,7 +1051,6 @@ input{
 
     font:12px/1.8 Arial;
 }
-
 
 
 /* =====================================================
@@ -1186,7 +1184,6 @@ footer{
 }
 
 
-
 /* =====================================================
    BACK TO TOP
 ===================================================== */
@@ -1233,293 +1230,6 @@ footer{
     to{
         opacity:1;
         transform:none;
-    }
-}
-
-
-
-/* =====================================================
-   RESPONSIVE
-===================================================== */
-
-@media(max-width:1100px){
-
-    .nav-menu{
-        gap:15px;
-    }
-
-    .brand-text{
-        font-size:27px;
-    }
-
-    .brand img{
-        width:90px;
-    }
-
-    .gift-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .footer-main{
-        grid-template-columns:repeat(3,1fr);
-    }
-}
-
-
-@media(max-width:850px){
-
-    .nav-container{
-        min-height:73px;
-
-        padding:8px 5%;
-
-        gap:10px;
-    }
-
-    .brand img{
-        width:55px;
-        height:55px;
-    }
-
-    .brand-text{
-        font-size:21px;
-    }
-
-    .brand-text small{
-        font-size:7px;
-
-        letter-spacing:2px;
-    }
-
-    .nav-menu{
-        position:absolute;
-
-        top:73px;
-        left:0;
-
-        width:100%;
-
-        background:#0d0d0d;
-
-        display:none;
-
-        flex-direction:column;
-
-        align-items:flex-start;
-
-        padding:25px;
-
-        gap:5px;
-    }
-
-    .nav-menu.active{
-        display:flex;
-    }
-
-    .nav-menu a{
-        width:100%;
-
-        padding:13px;
-    }
-
-    .menu-toggle{
-        display:block;
-    }
-
-    .nav-icon{
-        display:none;
-    }
-
-    .hero-content{
-        margin-left:7%;
-
-        margin-right:7%;
-    }
-
-    .section-heading{
-        display:block;
-    }
-
-    .section-heading > p{
-        margin-top:20px;
-    }
-
-    .occasion-grid{
-        grid-template-columns:1fr 1fr;
-
-        grid-template-rows:
-        repeat(3,300px);
-    }
-
-    .occasion-card.large{
-        grid-row:span 1;
-    }
-
-    .custom-decoration{
-        right:-120px;
-
-        opacity:.35;
-    }
-
-    .promise-section{
-        grid-template-columns:1fr;
-
-        gap:50px;
-    }
-
-    .footer-main{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-}
-
-
-@media(max-width:600px){
-
-    .brand img{
-        width:48px;
-        height:48px;
-    }
-
-    .brand-text{
-        font-size:17px;
-    }
-
-    .brand-text small{
-        font-size:6px;
-
-        letter-spacing:1.5px;
-    }
-
-    .occasion-hero{
-        min-height:680px;
-    }
-
-    .hero-content h1{
-        font-size:46px;
-    }
-
-    .hero-content p{
-        font-size:13px;
-    }
-
-    .hero-buttons{
-        flex-direction:column;
-
-        align-items:flex-start;
-    }
-
-    .intro-section{
-        padding:75px 6%;
-    }
-
-    .intro-section h2{
-        font-size:37px;
-    }
-
-    .occasion-section{
-        padding:75px 5%;
-    }
-
-    .section-heading h2{
-        font-size:38px;
-    }
-
-    .occasion-grid{
-        grid-template-columns:1fr;
-
-        grid-template-rows:
-        repeat(5,350px);
-    }
-
-    .occasion-card.large{
-        grid-row:span 1;
-    }
-
-    .gift-section{
-        padding:75px 5%;
-    }
-
-    .gift-grid{
-        grid-template-columns:1fr;
-    }
-
-    .custom-occasion{
-        padding:80px 7%;
-    }
-
-    .custom-content h2{
-        font-size:43px;
-    }
-
-    .custom-decoration{
-        right:-200px;
-    }
-
-    .promise-section{
-        padding:75px 6%;
-    }
-
-    .promise-heading h2{
-        font-size:38px;
-    }
-
-    .promise-grid{
-        grid-template-columns:1fr;
-
-        gap:35px;
-    }
-
-    .footer-main{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .footer-brand{
-        grid-column:span 2;
-    }
-
-    .footer-bottom{
-        flex-direction:column;
-    }
-
-    .search-box,
-    .auth-box{
-        padding:35px 25px;
-    }
-
-    .search-box h2{
-        font-size:34px;
-    }
-
-}
-
-
-@media(max-width:400px){
-
-    .brand-text{
-        font-size:15px;
-    }
-
-    .hero-content h1{
-        font-size:39px;
-    }
-
-    .gift-grid{
-        grid-template-columns:1fr;
-    }
-
-    .footer-main{
-        grid-template-columns:1fr;
-    }
-
-    .footer-brand{
-        grid-column:auto;
-    }
-
-    .footer-bottom div{
-        flex-direction:column;
-
-        gap:8px;
     }
 }
 
@@ -1579,22 +1289,25 @@ footer{
 @media(max-width:850px){
 
     .nav-container{
-        min-height:76px;
+        min-height:70px;
 
-        padding:8px 18px;
+        padding:6px 18px;
 
         gap:10px;
 
         justify-content:space-between;
     }
 
-.account-btn{
-    display:none;
-}
-    /* Logo + text stays together on LEFT */
+
+    .account-btn{
+        display:none;
+    }
+
+
+    /* LOGO + TEXT LEFT */
 
     .brand{
-        gap:10px;
+        gap:9px;
 
         min-width:0;
 
@@ -1602,26 +1315,30 @@ footer{
     }
 
     .brand img{
-        width:65px;
-        height:58px;
+        width:58px;
+        height:54px;
     }
 
     .brand-text{
-        font-size:21px;
+        font-size:19px;
 
         letter-spacing:.5px;
     }
 
     .brand-text small{
-        font-size:7px;
+        font-size:6.5px;
 
-        letter-spacing:2.3px;
+        letter-spacing:2px;
 
-        margin-top:6px;
+        margin-top:5px;
     }
 
 
-    /* NAV MENU */
+    /* =================================================
+       MOBILE NAV MENU
+    ================================================= */
+
+    @media(max-width:850px){
 
     .nav-menu{
         position:absolute;
@@ -1644,8 +1361,16 @@ footer{
         border-top:1px solid rgba(198,161,91,.20);
 
         box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+        /* MOBILE MENU SCROLL */
+        max-height:calc(100vh - 76px);
+        overflow-y:auto;
+        overflow-x:hidden;
     }
 
+    .nav-menu.active{
+        display:flex;
+    }
     .nav-menu.active{
         display:flex;
     }
@@ -1665,7 +1390,39 @@ footer{
     }
 
 
-    /* RIGHT SIDE MENU BUTTON */
+    /* =================================================
+       MOBILE SEARCH / WISHLIST / CART
+    ================================================= */
+
+    .mobile-nav-actions{
+        width:100%;
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:flex-start;
+
+        gap:12px;
+
+        padding:16px 5px;
+
+        border-bottom:1px solid rgba(255,255,255,.08);
+    }
+
+    .mobile-nav-actions .nav-icon{
+        display:flex;
+
+        width:42px;
+        height:42px;
+
+        flex-shrink:0;
+    }
+
+
+    /* =================================================
+       DESKTOP ACTIONS HIDDEN ON MOBILE
+    ================================================= */
 
     .nav-actions{
         margin-left:auto;
@@ -1675,18 +1432,30 @@ footer{
         flex-shrink:0;
     }
 
-    .nav-icon{
+    .nav-actions > .nav-icon{
         display:none;
     }
+
+
+    /* =================================================
+       HAMBURGER RIGHT
+    ================================================= */
 
     .menu-toggle{
         display:flex;
 
-        margin-left:auto;
+        margin-left:0;
+
+        width:40px;
+        height:40px;
+
+        flex-shrink:0;
     }
 
-
-    /* HERO */
+    }
+    /* =================================================
+       HERO
+    ================================================= */
 
     .hero-content{
         left:7%;
@@ -1695,7 +1464,9 @@ footer{
     }
 
 
-    /* TRUST */
+    /* =================================================
+       TRUST
+    ================================================= */
 
     .trust-bar{
         grid-template-columns:repeat(2,1fr);
@@ -1708,7 +1479,9 @@ footer{
     }
 
 
-    /* CATEGORIES */
+    /* =================================================
+       CATEGORIES
+    ================================================= */
 
     .category-grid{
         grid-template-columns:repeat(2,1fr);
@@ -1721,21 +1494,27 @@ footer{
     }
 
 
-    /* OCCASIONS */
+    /* =================================================
+       OCCASIONS
+    ================================================= */
 
     .occasion-grid{
         grid-template-columns:repeat(2,1fr);
     }
 
 
-    /* EVENTS */
+    /* =================================================
+       EVENTS
+    ================================================= */
 
     .event-grid{
         grid-template-columns:1fr;
     }
 
 
-    /* STORY */
+    /* =================================================
+       STORY
+    ================================================= */
 
     .story-section{
         grid-template-columns:1fr;
@@ -1748,7 +1527,9 @@ footer{
     }
 
 
-    /* CUSTOM */
+    /* =================================================
+       CUSTOM
+    ================================================= */
 
     .custom-decoration{
         opacity:.3;
@@ -1757,7 +1538,9 @@ footer{
     }
 
 
-    /* NEWSLETTER */
+    /* =================================================
+       NEWSLETTER
+    ================================================= */
 
     .newsletter{
         flex-direction:column;
@@ -1768,6 +1551,25 @@ footer{
     .newsletter form{
         width:100%;
     }
+
+
+    /* =================================================
+       GIFT
+    ================================================= */
+
+    .gift-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+
+    /* =================================================
+       FOOTER
+    ================================================= */
+
+    .footer-main{
+        grid-template-columns:repeat(2,1fr);
+    }
+
 }
 
 
@@ -1778,9 +1580,9 @@ footer{
 @media(max-width:600px){
 
     .nav-container{
-        min-height:70px;
+        min-height:68px;
 
-        padding:7px 15px;
+        padding:5px 15px;
     }
 
     .brand{
@@ -1788,25 +1590,42 @@ footer{
     }
 
     .brand img{
-        width:58px;
-        height:52px;
+        width:54px;
+        height:50px;
     }
 
     .brand-text{
-        font-size:18px;
+        font-size:17px;
     }
 
     .brand-text small{
-        font-size:6px;
+        font-size:5.8px;
 
-        letter-spacing:1.8px;
+        letter-spacing:1.7px;
 
         margin-top:5px;
     }
 
-    .menu-toggle{
+
+    .nav-menu{
+        top:68px;
+    }
+
+
+    .mobile-nav-actions{
+        padding:15px 5px;
+    }
+
+
+    .mobile-nav-actions .nav-icon{
         width:40px;
         height:40px;
+    }
+
+
+    .menu-toggle{
+        width:39px;
+        height:39px;
 
         font-size:21px;
     }
@@ -1979,6 +1798,7 @@ footer{
     .footer-bottom{
         flex-direction:column;
     }
+
 }
 
 
@@ -1994,18 +1814,18 @@ footer{
     }
 
     .brand img{
-        width:52px;
-        height:48px;
+        width:50px;
+        height:46px;
     }
 
     .brand-text{
-        font-size:16px;
+        font-size:15px;
     }
 
     .brand-text small{
-        font-size:5.5px;
+        font-size:5.2px;
 
-        letter-spacing:1.4px;
+        letter-spacing:1.3px;
     }
 
     .menu-toggle{
@@ -2032,7 +1852,16 @@ footer{
     .footer-brand{
         grid-column:auto;
     }
+
+    .footer-bottom div{
+        flex-direction:column;
+
+        gap:8px;
+    }
+
 }
+
+
 /* =====================================================
    LOGIN / REGISTER MODAL
 ===================================================== */
@@ -2059,11 +1888,8 @@ footer{
     backdrop-filter:blur(8px);
 }
 
-
 .account-modal.show{
-
     display:flex;
-
 }
 
 
@@ -2142,11 +1968,8 @@ footer{
     transition:.3s;
 }
 
-
 .account-close:hover{
-
     color:var(--gold);
-
 }
 
 
@@ -2185,7 +2008,6 @@ footer{
     margin-bottom:7px;
 }
 
-
 .account-modal-subtitle{
 
     text-align:center;
@@ -2215,7 +2037,6 @@ footer{
     margin-bottom:25px;
 }
 
-
 .account-tab{
 
     padding:12px;
@@ -2239,13 +2060,9 @@ footer{
     position:relative;
 }
 
-
 .account-tab.active{
-
     color:var(--gold);
-
 }
-
 
 .account-tab.active::after{
 
@@ -2277,13 +2094,9 @@ footer{
     gap:14px;
 }
 
-
 .account-form.active{
-
     display:flex;
-
 }
-
 
 .account-form input{
 
@@ -2302,14 +2115,10 @@ footer{
     outline:none;
 
     font:13px Arial,sans-serif;
-
 }
 
-
 .account-form input:focus{
-
     border-color:var(--gold);
-
 }
 
 
@@ -2328,9 +2137,7 @@ footer{
     font:10px Arial,sans-serif;
 
     color:#999;
-
 }
-
 
 .account-options label{
 
@@ -2341,18 +2148,12 @@ footer{
     gap:5px;
 }
 
-
 .account-options input{
-
     width:auto;
-
 }
 
-
 .account-options a{
-
     color:var(--gold);
-
 }
 
 
@@ -2385,57 +2186,44 @@ footer{
     transition:.3s;
 }
 
-
 .account-submit:hover{
 
     background:var(--gold-light);
 
     transform:translateY(-2px);
-
 }
 
 
 /* =====================================================
-   MOBILE
+   MODAL MOBILE
 ===================================================== */
 
 @media(max-width:600px){
 
     .account-modal{
-
         padding:15px;
-
     }
-
 
     .account-modal-box{
-
         padding:30px 22px;
-
     }
-
 
     .account-modal-box h2{
-
         font-size:25px;
-
     }
 
-
     .account-modal-logo{
-
         width:75px;
-
         height:70px;
-
     }
 
 }
+
+
 /* =====================================================
    PROFESSIONAL IMAGE ANIMATIONS
 ===================================================== */
 
-/* General image smoothness */
 .category-card img,
 .occasion-card img,
 .product-image img,
@@ -2443,100 +2231,125 @@ footer{
 .story-image-main img,
 .gallery-item img,
 .social-grid img {
+
     transition:
         transform 0.8s cubic-bezier(.2,.65,.3,1),
         filter 0.8s ease;
 }
 
 
-/* ================= CATEGORY IMAGES ================= */
+/* CATEGORY */
 
 .category-card:hover img {
-    transform: scale(1.08);
-    filter: brightness(0.88);
+
+    transform:scale(1.08);
+
+    filter:brightness(0.88);
 }
 
 
-/* ================= OCCASION IMAGES ================= */
+/* OCCASION */
 
 .occasion-card:hover img {
-    transform: scale(1.07);
-    filter: brightness(0.90);
+
+    transform:scale(1.07);
+
+    filter:brightness(0.90);
 }
 
 
-/* ================= PRODUCT IMAGES ================= */
+/* PRODUCT */
 
 .product-card:hover .product-image img {
-    transform: scale(1.07);
-    filter: brightness(0.94);
+
+    transform:scale(1.07);
+
+    filter:brightness(0.94);
 }
 
 
-/* ================= EVENT IMAGES ================= */
+/* EVENT */
+
 .event-card{
+
     background:white;
+
     overflow:hidden;
+
     position:relative;
 }
+
 .event-card:hover img {
-    transform: scale(1.06);
-    filter: brightness(0.92);
+
+    transform:scale(1.06);
+
+    filter:brightness(0.92);
 }
 
 
-/* ================= STORY IMAGE ================= */
+/* STORY */
 
 .story-image-main {
-    overflow: hidden;
+    overflow:hidden;
 }
 
 .story-image-main img {
+
     transition:
         transform 1s cubic-bezier(.2,.65,.3,1),
         filter 0.8s ease;
 }
 
 .story-image:hover img {
-    transform: scale(1.05);
+    transform:scale(1.05);
 }
 
 
-/* ================= GALLERY ================= */
+/* GALLERY */
 
 .gallery-item {
-    overflow: hidden;
+
+    overflow:hidden;
+
     position:relative;
 }
 
 .gallery-item img {
+
     transition:
         transform 0.9s cubic-bezier(.2,.65,.3,1),
         filter 0.8s ease;
 }
 
 .gallery-item:hover img {
-    transform: scale(1.08);
-    filter: brightness(0.90);
+
+    transform:scale(1.08);
+
+    filter:brightness(0.90);
 }
 
 
-/* ================= SOCIAL IMAGES ================= */
+/* SOCIAL */
 
 .social-grid div {
-    overflow: hidden;
+    overflow:hidden;
 }
 
 .social-grid img {
+
     transition:
         transform 0.8s cubic-bezier(.2,.65,.3,1),
         filter 0.8s ease;
 }
 
 .social-grid div:hover img {
-    transform: scale(1.08);
-    filter: brightness(0.90);
+
+    transform:scale(1.08);
+
+    filter:brightness(0.90);
 }
+
+
 /* =====================================================
    IMAGE REVEAL ANIMATION
 ===================================================== */
@@ -2547,22 +2360,32 @@ footer{
 .event-card,
 .gallery-item,
 .social-grid div {
-    animation: imageReveal 0.9s ease both;
+
+    animation:
+        imageReveal 0.9s ease both;
 }
 
 @keyframes imageReveal {
 
     from {
-        opacity: 0;
-        transform: translateY(25px);
+
+        opacity:0;
+
+        transform:translateY(25px);
+
     }
 
     to {
-        opacity: 1;
-        transform: translateY(0);
+
+        opacity:1;
+
+        transform:translateY(0);
+
     }
 
 }
+
+
 /* =====================================================
    PREMIUM IMAGE SHINE
 ===================================================== */
@@ -2571,69 +2394,83 @@ footer{
 .occasion-card::before,
 .event-card::before,
 .gallery-item::before {
-    content: "";
 
-    position: absolute;
+    content:"";
 
-    top: 0;
-    left: -120%;
+    position:absolute;
 
-    width: 60%;
-    height: 100%;
+    top:0;
+    left:-120%;
 
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255,255,255,0.20),
-        transparent
-    );
+    width:60%;
+    height:100%;
 
-    transform: skewX(-20deg);
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,0.20),
+            transparent
+        );
 
-    transition: 0.8s;
+    transform:skewX(-20deg);
 
-    z-index: 3;
+    transition:0.8s;
 
-    pointer-events: none;
+    z-index:3;
+
+    pointer-events:none;
 }
 
 .category-card:hover::before,
 .occasion-card:hover::before,
 .event-card:hover::before,
 .gallery-item:hover::before {
-    left: 130%;
+
+    left:130%;
 }
+
+
 /* =====================================================
    SEARCH OVERLAY
 ===================================================== */
 
 .search-overlay{
+
     position:fixed;
+
     inset:0;
 
     background:rgba(10,10,10,.88);
+
     backdrop-filter:blur(10px);
 
     z-index:2000;
 
     display:flex;
+
     align-items:flex-start;
+
     justify-content:center;
 
     padding-top:150px;
 
     opacity:0;
+
     visibility:hidden;
 
     transition:.35s ease;
 }
 
 .search-overlay.active{
+
     opacity:1;
+
     visibility:visible;
 }
 
 .search-box{
+
     width:min(700px,90%);
 
     position:relative;
@@ -2644,10 +2481,12 @@ footer{
 }
 
 .search-overlay.active .search-box{
+
     transform:translateY(0);
 }
 
 .search-box > span{
+
     display:block;
 
     color:#d6b66b;
@@ -2662,6 +2501,7 @@ footer{
 }
 
 .search-input{
+
     display:flex;
 
     align-items:center;
@@ -2670,11 +2510,13 @@ footer{
 }
 
 .search-input input{
+
     width:100%;
 
     background:transparent;
 
     border:0;
+
     outline:0;
 
     color:#fff;
@@ -2687,10 +2529,12 @@ footer{
 }
 
 .search-input input::placeholder{
+
     color:rgba(255,255,255,.45);
 }
 
 .search-input button{
+
     width:50px;
     height:50px;
 
@@ -2710,12 +2554,14 @@ footer{
 }
 
 .search-input button:hover{
+
     background:#d6b66b;
 
     color:#111;
 }
 
 .search-close{
+
     position:absolute;
 
     top:-60px;
@@ -2740,25 +2586,31 @@ footer{
 }
 
 .search-close:hover{
+
     background:#d6b66b;
 
     color:#111;
 }
 
 
-/* MOBILE */
+/* =====================================================
+   SEARCH MOBILE
+===================================================== */
 
 @media(max-width:600px){
 
     .search-overlay{
+
         padding-top:120px;
     }
 
     .search-input input{
+
         font-size:22px;
     }
 
     .search-box{
+
         width:88%;
     }
 
