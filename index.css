@@ -2128,26 +2128,23 @@ footer{
     /* NAV MENU */
 
     .nav-menu{
-        position:absolute;
-
+       position:absolute;
         top:76px;
         left:0;
-
         width:100%;
+        max-height:calc(100vh - 76px);
+        overflow-y:auto;
 
         background:rgba(13,13,13,.99);
-
         display:none;
-
         flex-direction:column;
-
         padding:18px 22px 25px;
-
         gap:2px;
 
         border-top:1px solid rgba(198,161,91,.20);
-
         box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+        -webkit-overflow-scrolling:touch;
     }
 
     .nav-menu.active{
@@ -2179,9 +2176,7 @@ footer{
         flex-shrink:0;
     }
 
-    .nav-icon{
-        display:none;
-    }
+   
 
     .menu-toggle{
         display:flex;
@@ -3264,6 +3259,48 @@ footer{
 
     .search-box{
         width:88%;
+    }
+
+}
+/* =====================================================
+   MOBILE MENU - SEARCH / WISHLIST / CART
+===================================================== */
+
+.mobile-nav-actions{
+    display:none;
+}
+
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+    .mobile-nav-actions{
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:flex-start;
+
+        gap:12px;
+
+        padding:18px 5px;
+
+        border-bottom:1px solid rgba(255,255,255,.08);
+
+    }
+
+    .mobile-nav-actions .nav-icon{
+
+        display:flex;
+
+        width:42px;
+
+        height:42px;
+
+        flex-shrink:0;
+
     }
 
 }

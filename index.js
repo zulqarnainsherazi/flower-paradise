@@ -207,39 +207,20 @@ filterButtons.forEach(function(button){
    SHOPPING CART COUNTER
 ===================================================== */
 
-const cartButtons =
-document.querySelectorAll(".add-cart");
+const mobileCartBtn =
+document.getElementById("mobileCartBtn");
 
-const cartCount =
-document.querySelector(".cart-count");
+if(mobileCartBtn){
 
-let cartItems = 0;
+    mobileCartBtn.addEventListener("click", function(){
 
+        navMenu.classList.remove("active");
 
-cartButtons.forEach(function(button){
-
-    button.addEventListener("click", function(){
-
-        cartItems++;
-
-        cartCount.textContent = cartItems;
-
-
-        const originalText =
-        this.textContent;
-
-        this.textContent = "Added ✓";
-
-
-        setTimeout(() => {
-
-            this.textContent = originalText;
-
-        }, 1200);
+        alert("Your Shopping Cart");
 
     });
 
-});
+}
 
 
 
@@ -247,31 +228,20 @@ cartButtons.forEach(function(button){
    WISHLIST BUTTON
 ===================================================== */
 
-const wishlistButtons =
-document.querySelectorAll(".wishlist");
+const mobileWishlistBtn =
+document.getElementById("mobileWishlistBtn");
 
+if(mobileWishlistBtn){
 
-wishlistButtons.forEach(function(button){
+    mobileWishlistBtn.addEventListener("click", function(){
 
-    button.addEventListener("click", function(){
+        navMenu.classList.remove("active");
 
-        if(this.textContent === "♡"){
-
-            this.textContent = "♥";
-
-            this.style.color = "#b97973";
-
-        }else{
-
-            this.textContent = "♡";
-
-            this.style.color = "";
-
-        }
+        alert("Your Wishlist");
 
     });
 
-});
+}
 
 
 
@@ -640,24 +610,51 @@ registerTab.addEventListener(
 ===================================================== */
 
 const searchBtn = document.getElementById("searchBtn");
+const mobileSearchBtn = document.getElementById("mobileSearchBtn");
+
 const searchOverlay = document.getElementById("searchOverlay");
 const searchClose = document.getElementById("searchClose");
 const searchInput = document.getElementById("searchInput");
 
+
+function openSearch(){
+
+    searchOverlay.classList.add("active");
+
+    setTimeout(() => {
+
+        searchInput.focus();
+
+    }, 300);
+
+}
+
+
+/* DESKTOP SEARCH */
+
 if(searchBtn){
 
-    searchBtn.addEventListener("click", () => {
+    searchBtn.addEventListener("click", openSearch);
 
-        searchOverlay.classList.add("active");
+}
 
-        setTimeout(() => {
-            searchInput.focus();
-        }, 300);
+
+/* MOBILE SEARCH */
+
+if(mobileSearchBtn){
+
+    mobileSearchBtn.addEventListener("click", function(){
+
+        navMenu.classList.remove("active");
+
+        openSearch();
 
     });
 
 }
 
+
+/* CLOSE SEARCH */
 
 if(searchClose){
 
@@ -670,20 +667,24 @@ if(searchClose){
 }
 
 
-/* Close when clicking outside */
+/* CLICK OUTSIDE */
 
-searchOverlay.addEventListener("click", (e) => {
+if(searchOverlay){
 
-    if(e.target === searchOverlay){
+    searchOverlay.addEventListener("click", (e) => {
 
-        searchOverlay.classList.remove("active");
+        if(e.target === searchOverlay){
 
-    }
+            searchOverlay.classList.remove("active");
 
-});
+        }
+
+    });
+
+}
 
 
-/* Close with ESC */
+/* ESC */
 
 document.addEventListener("keydown", (e) => {
 
