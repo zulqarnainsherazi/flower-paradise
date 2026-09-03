@@ -19,6 +19,8 @@ body{
     background:#f7f0e4;
     color:#181818;
     overflow-x:hidden;
+     width: 100%;
+    max-width: 100%;
 }
 
 :root{
@@ -2614,4 +2616,151 @@ footer{
         width:88%;
     }
 
+}
+/* =========================
+   MOBILE NAVBAR FIX
+========================= */
+
+@media (max-width: 850px) {
+
+    .nav-container {
+        width: 100%;
+        min-height: 70px;
+        height: 70px;
+        padding: 6px 15px;
+        box-sizing: border-box;
+        gap: 10px;
+    }
+
+    .brand {
+        min-width: 0;
+        margin-right: auto;
+        gap: 8px;
+    }
+
+    .brand img {
+        width: 58px;
+        height: 52px;
+        object-fit: contain;
+    }
+
+    .brand-text {
+        font-size: 20px;
+        letter-spacing: .5px;
+        white-space: nowrap;
+    }
+
+    .brand-text small {
+        font-size: 6px;
+        letter-spacing: 2px;
+        margin-top: 4px;
+    }
+
+    /* Hamburger */
+    .menu-toggle {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+        margin-left: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Desktop icons hide */
+    .nav-actions > .nav-icon {
+        display: none;
+    }
+
+    /* Mobile menu */
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        max-height: calc(100vh - 70px);
+
+        box-sizing: border-box;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        display: none;
+        flex-direction: column;
+
+        padding: 15px 20px 25px;
+        gap: 0;
+
+        background: rgba(13, 13, 13, .99);
+
+        border-top: 1px solid rgba(198, 161, 91, .20);
+
+        box-shadow: 0 15px 30px rgba(0,0,0,.25);
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 13px 5px;
+        font-size: 14px;
+    }
+
+}
+/* =========================
+   OCCASIONS HERO MOBILE FIX
+========================= */
+
+@media (max-width: 850px) {
+
+    .hero,
+    .occasion-hero {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .hero-container,
+    .occasion-hero-container,
+    .hero-inner {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content,
+    .occasion-hero-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .hero-image,
+    .occasion-hero-image {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .hero-image img,
+    .occasion-hero-image img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
 }
