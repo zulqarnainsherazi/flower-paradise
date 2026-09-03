@@ -74,24 +74,88 @@
                 Contact
             </a>
 
-                      <a href="#" class="mobile-account" id="mobileAccountBtn">
-    Login / Register
-</a>
+
+            <!-- MOBILE NAV ACTIONS -->
+
+            <div class="mobile-nav-actions">
+
+                <button
+                    class="nav-icon"
+                    id="mobileSearchBtn"
+                    title="Search">
+
+                    ⌕
+
+                </button>
+
+
+                <button
+                    class="nav-icon"
+                    id="mobileWishlistBtn"
+                    title="Wishlist">
+
+                    ♡
+
+                </button>
+
+
+                <button
+                    class="nav-icon cart-btn"
+                    id="mobileCartBtn"
+                    title="Shopping Cart">
+
+                    🛒
+
+                    <span class="cart-count">
+                        0
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- MOBILE ACCOUNT -->
+
+            <a href="#"
+               class="mobile-account"
+               id="mobileAccountBtn">
+
+                Login / Register
+
+            </a>
 
         </nav>
 
 
+        <!-- DESKTOP NAV ACTIONS -->
+
         <div class="nav-actions">
 
-            <button class="nav-icon search-btn" id="searchBtn">
+            <button
+                class="nav-icon search-btn"
+                id="searchBtn"
+                title="Search">
+
                 ⌕
+
             </button>
 
-            <button class="nav-icon">
+
+            <button
+                class="nav-icon"
+                id="desktopWishlistBtn"
+                title="Wishlist">
+
                 ♡
+
             </button>
 
-            <button class="nav-icon cart-btn">
+
+            <button
+                class="nav-icon cart-btn"
+                id="desktopCartBtn"
+                title="Shopping Cart">
 
                 🛒
 
@@ -101,8 +165,14 @@
 
             </button>
 
-            <button class="menu-toggle" id="menuToggle">
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open Menu">
+
                 ☰
+
             </button>
 
         </div>
@@ -121,28 +191,38 @@
 
     <div class="search-box">
 
-        <button class="search-close" id="searchClose">
+        <button
+            class="search-close"
+            id="searchClose">
+
             ×
+
         </button>
 
         <span>
             SEARCH INSTaflora
         </span>
-<div class="search-input">
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="Search flowers, gifts, bouquets..."
-        >
 
-        <button id="searchSubmit">
-             →
-        </button>
+        <div class="search-input">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search flowers, gifts, bouquets..."
+            >
+
+            <button id="searchSubmit">
+                →
+            </button>
+
+        </div>
 
     </div>
 
 </div>
-</div>
+
+
+
 <!-- =====================================================
      LOGIN / REGISTER POPUP
 ===================================================== -->
@@ -151,19 +231,24 @@
 
     <div class="account-modal-box">
 
-        <button class="account-close" id="accountClose">
+        <button
+            class="account-close"
+            id="accountClose">
+
             ×
+
         </button>
 
 
-        <!-- LOGO -->
+        <img
+            src="Logoinstaflora-removebg-preview.png"
+            alt="Instaflora"
+            class="account-modal-logo">
 
-        <img src="Logoinstaflora-removebg-preview.png"
-             alt="Instaflora"
-             class="account-modal-logo">
 
-
-        <h2>Welcome to Instaflora</h2>
+        <h2>
+            Welcome to Instaflora
+        </h2>
 
         <p class="account-modal-subtitle">
             Login or create your account
@@ -174,15 +259,17 @@
 
         <div class="account-tabs">
 
-            <button class="account-tab active"
-                    id="loginTab">
+            <button
+                class="account-tab active"
+                id="loginTab">
 
                 Login
 
             </button>
 
-            <button class="account-tab"
-                    id="registerTab">
+            <button
+                class="account-tab"
+                id="registerTab">
 
                 Register
 
@@ -193,8 +280,9 @@
 
         <!-- LOGIN FORM -->
 
-        <form class="account-form active"
-              id="loginForm">
+        <form
+            class="account-form active"
+            id="loginForm">
 
             <input
                 type="email"
@@ -211,8 +299,11 @@
             <div class="account-options">
 
                 <label>
+
                     <input type="checkbox">
+
                     Remember me
+
                 </label>
 
                 <a href="#">
@@ -221,8 +312,9 @@
 
             </div>
 
-            <button type="submit"
-                    class="account-submit">
+            <button
+                type="submit"
+                class="account-submit">
 
                 Login
 
@@ -233,8 +325,9 @@
 
         <!-- REGISTER FORM -->
 
-        <form class="account-form"
-              id="registerForm">
+        <form
+            class="account-form"
+            id="registerForm">
 
             <input
                 type="text"
@@ -266,8 +359,9 @@
                 required
             >
 
-            <button type="submit"
-                    class="account-submit">
+            <button
+                type="submit"
+                class="account-submit">
 
                 Create Account
 
@@ -275,10 +369,10 @@
 
         </form>
 
-
     </div>
 
 </div>
+
 
 
 <!-- =====================================================
@@ -331,50 +425,57 @@
 
     <div class="category-scroll">
 
-        <button class="category-tab active"
-                data-category="all">
+        <button
+            class="category-tab active"
+            data-category="all">
 
             All Collection
 
         </button>
 
-        <button class="category-tab"
-                data-category="flowers">
+        <button
+            class="category-tab"
+            data-category="flowers">
 
             🌸 Flowers
 
         </button>
 
-        <button class="category-tab"
-                data-category="bouquets">
+        <button
+            class="category-tab"
+            data-category="bouquets">
 
             💐 Bouquets
 
         </button>
 
-        <button class="category-tab"
-                data-category="gifts">
+        <button
+            class="category-tab"
+            data-category="gifts">
 
             🎁 Gifts
 
         </button>
 
-        <button class="category-tab"
-                data-category="hampers">
+        <button
+            class="category-tab"
+            data-category="hampers">
 
             🎀 Hampers
 
         </button>
 
-        <button class="category-tab"
-                data-category="cakes">
+        <button
+            class="category-tab"
+            data-category="cakes">
 
             🎂 Cakes
 
         </button>
 
-        <button class="category-tab"
-                data-category="chocolates">
+        <button
+            class="category-tab"
+            data-category="chocolates">
 
             🍫 Chocolates
 
@@ -391,9 +492,6 @@
 ===================================================== -->
 
 <main class="shop-container">
-
-
-    <!-- ================= SHOP TOP ================= -->
 
     <div class="shop-top">
 
@@ -412,12 +510,22 @@
 
         <div class="shop-tools">
 
-            <button class="filter-toggle" id="filterToggle">
+            <button
+                class="filter-toggle"
+                id="filterToggle">
+
                 ☰ Filters
+
             </button>
 
             <div class="result-count">
-                Showing <strong id="resultCount">8</strong> products
+
+                Showing
+                <strong id="resultCount">
+                    8
+                </strong>
+                products
+
             </div>
 
             <select id="sortProducts">
@@ -453,9 +561,11 @@
     <div class="shop-layout">
 
 
-        <!-- ================= FILTER SIDEBAR ================= -->
+        <!-- FILTER SIDEBAR -->
 
-        <aside class="filter-sidebar" id="filterSidebar">
+        <aside
+            class="filter-sidebar"
+            id="filterSidebar">
 
             <div class="filter-heading">
 
@@ -470,8 +580,6 @@
             </div>
 
 
-            <!-- CATEGORY -->
-
             <div class="filter-group">
 
                 <h4>
@@ -479,52 +587,56 @@
                 </h4>
 
                 <label>
-                    <input type="checkbox"
-                           value="flowers"
-                           class="category-filter">
+                    <input
+                        type="checkbox"
+                        value="flowers"
+                        class="category-filter">
                     Flowers
                 </label>
 
                 <label>
-                    <input type="checkbox"
-                           value="bouquets"
-                           class="category-filter">
+                    <input
+                        type="checkbox"
+                        value="bouquets"
+                        class="category-filter">
                     Bouquets
                 </label>
 
                 <label>
-                    <input type="checkbox"
-                           value="gifts"
-                           class="category-filter">
+                    <input
+                        type="checkbox"
+                        value="gifts"
+                        class="category-filter">
                     Gifts
                 </label>
 
                 <label>
-                    <input type="checkbox"
-                           value="hampers"
-                           class="category-filter">
+                    <input
+                        type="checkbox"
+                        value="hampers"
+                        class="category-filter">
                     Hampers
                 </label>
 
                 <label>
-                    <input type="checkbox"
-                           value="cakes"
-                           class="category-filter">
+                    <input
+                        type="checkbox"
+                        value="cakes"
+                        class="category-filter">
                     Cakes
                 </label>
 
                 <label>
-                    <input type="checkbox"
-                           value="chocolates"
-                           class="category-filter">
+                    <input
+                        type="checkbox"
+                        value="chocolates"
+                        class="category-filter">
                     Chocolates
                 </label>
 
             </div>
 
 
-
-            <!-- PRICE -->
 
             <div class="filter-group">
 
@@ -539,7 +651,10 @@
                     </span>
 
                     <span>
-                        Rs. <strong id="priceValue">10,000</strong>
+                        Rs.
+                        <strong id="priceValue">
+                            10,000
+                        </strong>
                     </span>
 
                 </div>
@@ -556,8 +671,6 @@
             </div>
 
 
-
-            <!-- OCCASION -->
 
             <div class="filter-group">
 
@@ -588,9 +701,9 @@
             </div>
 
 
-
-            <button class="clear-filters"
-                    id="clearFilters">
+            <button
+                class="clear-filters"
+                id="clearFilters">
 
                 Clear All Filters
 
@@ -600,19 +713,22 @@
 
 
 
-        <!-- ================= PRODUCTS ================= -->
+        <!-- PRODUCTS -->
 
         <section class="products-area">
 
-            <div class="product-grid" id="productGrid">
+            <div
+                class="product-grid"
+                id="productGrid">
 
 
                 <!-- PRODUCT 1 -->
 
-                <article class="shop-product"
-                         data-category="flowers"
-                         data-price="4500"
-                         data-name="Timeless Rose Bouquet">
+                <article
+                    class="shop-product"
+                    data-category="flowers"
+                    data-price="4500"
+                    data-name="Timeless Rose Bouquet">
 
                     <div class="product-image">
 
@@ -624,8 +740,9 @@
                             ♡
                         </button>
 
-                        <img src="bouq.png"
-                             alt="Timeless Rose Bouquet">
+                        <img
+                            src="bouq.png"
+                            alt="Timeless Rose Bouquet">
 
                         <button class="quick-view">
                             Quick View
@@ -656,8 +773,9 @@
                                 Rs. 4,500
                             </strong>
 
-                            <button class="add-cart"
-                                    data-product="Timeless Rose Bouquet">
+                            <button
+                                class="add-cart"
+                                data-product="Timeless Rose Bouquet">
 
                                 Add +
 
@@ -673,10 +791,11 @@
 
                 <!-- PRODUCT 2 -->
 
-                <article class="shop-product"
-                         data-category="gifts"
-                         data-price="6500"
-                         data-name="Luxury Celebration Box">
+                <article
+                    class="shop-product"
+                    data-category="gifts"
+                    data-price="6500"
+                    data-name="Luxury Celebration Box">
 
                     <div class="product-image">
 
@@ -688,8 +807,9 @@
                             ♡
                         </button>
 
-                        <img src="gift.png"
-                             alt="Luxury Celebration Box">
+                        <img
+                            src="gift.png"
+                            alt="Luxury Celebration Box">
 
                         <button class="quick-view">
                             Quick View
@@ -720,8 +840,9 @@
                                 Rs. 6,500
                             </strong>
 
-                            <button class="add-cart"
-                                    data-product="Luxury Celebration Box">
+                            <button
+                                class="add-cart"
+                                data-product="Luxury Celebration Box">
 
                                 Add +
 
@@ -737,10 +858,11 @@
 
                 <!-- PRODUCT 3 -->
 
-                <article class="shop-product"
-                         data-category="chocolates"
-                         data-price="3200"
-                         data-name="Artisan Chocolate Collection">
+                <article
+                    class="shop-product"
+                    data-category="chocolates"
+                    data-price="3200"
+                    data-name="Artisan Chocolate Collection">
 
                     <div class="product-image">
 
@@ -752,8 +874,9 @@
                             ♡
                         </button>
 
-                        <img src="chocolate.png"
-                             alt="Artisan Chocolate Collection">
+                        <img
+                            src="chocolate.png"
+                            alt="Artisan Chocolate Collection">
 
                         <button class="quick-view">
                             Quick View
@@ -784,8 +907,9 @@
                                 Rs. 3,200
                             </strong>
 
-                            <button class="add-cart"
-                                    data-product="Artisan Chocolate Collection">
+                            <button
+                                class="add-cart"
+                                data-product="Artisan Chocolate Collection">
 
                                 Add +
 
@@ -801,10 +925,11 @@
 
                 <!-- PRODUCT 4 -->
 
-                <article class="shop-product"
-                         data-category="bouquets"
-                         data-price="5800"
-                         data-name="Signature Flower Box">
+                <article
+                    class="shop-product"
+                    data-category="bouquets"
+                    data-price="5800"
+                    data-name="Signature Flower Box">
 
                     <div class="product-image">
 
@@ -816,8 +941,9 @@
                             ♡
                         </button>
 
-                        <img src="flowers.png"
-                             alt="Signature Flower Box">
+                        <img
+                            src="flowers.png"
+                            alt="Signature Flower Box">
 
                         <button class="quick-view">
                             Quick View
@@ -848,8 +974,9 @@
                                 Rs. 5,800
                             </strong>
 
-                            <button class="add-cart"
-                                    data-product="Signature Flower Box">
+                            <button
+                                class="add-cart"
+                                data-product="Signature Flower Box">
 
                                 Add +
 
@@ -865,10 +992,11 @@
 
                 <!-- PRODUCT 5 -->
 
-                <article class="shop-product"
-                         data-category="cakes"
-                         data-price="4200"
-                         data-name="Elegant Celebration Cake">
+                <article
+                    class="shop-product"
+                    data-category="cakes"
+                    data-price="4200"
+                    data-name="Elegant Celebration Cake">
 
                     <div class="product-image">
 
@@ -880,8 +1008,9 @@
                             ♡
                         </button>
 
-                        <img src="cake.png"
-                             alt="Elegant Celebration Cake">
+                        <img
+                            src="cake.png"
+                            alt="Elegant Celebration Cake">
 
                         <button class="quick-view">
                             Quick View
@@ -912,8 +1041,9 @@
                                 Rs. 4,200
                             </strong>
 
-                            <button class="add-cart"
-                                    data-product="Elegant Celebration Cake">
+                            <button
+                                class="add-cart"
+                                data-product="Elegant Celebration Cake">
 
                                 Add +
 
@@ -929,10 +1059,11 @@
 
                 <!-- PRODUCT 6 -->
 
-                <article class="shop-product"
-                         data-category="hampers"
-                         data-price="7200"
-                         data-name="Luxury Gift Hamper">
+                <article
+                    class="shop-product"
+                    data-category="hampers"
+                    data-price="7200"
+                    data-name="Luxury Gift Hamper">
 
                     <div class="product-image">
 
@@ -944,8 +1075,9 @@
                             ♡
                         </button>
 
-                        <img src="hamper.jpg"
-                             alt="Luxury Gift Hamper">
+                        <img
+                            src="hamper.jpg"
+                            alt="Luxury Gift Hamper">
 
                         <button class="quick-view">
                             Quick View
@@ -976,8 +1108,9 @@
                                 Rs. 7,200
                             </strong>
 
-                            <button class="add-cart"
-                                    data-product="Luxury Gift Hamper">
+                            <button
+                                class="add-cart"
+                                data-product="Luxury Gift Hamper">
 
                                 Add +
 
@@ -993,10 +1126,11 @@
 
                 <!-- PRODUCT 7 -->
 
-                <article class="shop-product"
-                         data-category="flowers"
-                         data-price="3800"
-                         data-name="Golden Garden Bouquet">
+                <article
+                    class="shop-product"
+                    data-category="flowers"
+                    data-price="3800"
+                    data-name="Golden Garden Bouquet">
 
                     <div class="product-image">
 
@@ -1004,8 +1138,9 @@
                             ♡
                         </button>
 
-                        <img src="flowersgardan.jpg"
-                             alt="Golden Garden Bouquet">
+                        <img
+                            src="flowersgardan.jpg"
+                            alt="Golden Garden Bouquet">
 
                         <button class="quick-view">
                             Quick View
@@ -1036,8 +1171,9 @@
                                 Rs. 3,800
                             </strong>
 
-                            <button class="add-cart"
-                                    data-product="Golden Garden Bouquet">
+                            <button
+                                class="add-cart"
+                                data-product="Golden Garden Bouquet">
 
                                 Add +
 
@@ -1053,10 +1189,11 @@
 
                 <!-- PRODUCT 8 -->
 
-                <article class="shop-product"
-                         data-category="gifts"
-                         data-price="5500"
-                         data-name="Forever Love Gift Box">
+                <article
+                    class="shop-product"
+                    data-category="gifts"
+                    data-price="5500"
+                    data-name="Forever Love Gift Box">
 
                     <div class="product-image">
 
@@ -1068,8 +1205,9 @@
                             ♡
                         </button>
 
-                        <img src="gifts.png"
-                             alt="Forever Love Gift Box">
+                        <img
+                            src="gifts.png"
+                            alt="Forever Love Gift Box">
 
                         <button class="quick-view">
                             Quick View
@@ -1100,8 +1238,9 @@
                                 Rs. 5,500
                             </strong>
 
-                            <button class="add-cart"
-                                    data-product="Forever Love Gift Box">
+                            <button
+                                class="add-cart"
+                                data-product="Forever Love Gift Box">
 
                                 Add +
 
@@ -1119,7 +1258,9 @@
 
             <!-- NO PRODUCTS -->
 
-            <div class="no-products" id="noProducts">
+            <div
+                class="no-products"
+                id="noProducts">
 
                 <span>✿</span>
 
@@ -1168,19 +1309,26 @@
      QUICK VIEW MODAL
 ===================================================== -->
 
-<div class="quick-modal" id="quickModal">
+<div
+    class="quick-modal"
+    id="quickModal">
 
     <div class="quick-modal-content">
 
-        <button class="modal-close" id="modalClose">
+        <button
+            class="modal-close"
+            id="modalClose">
+
             ×
+
         </button>
 
         <div class="quick-image">
 
-            <img id="modalImage"
-                 src=""
-                 alt="Product">
+            <img
+                id="modalImage"
+                src=""
+                alt="Product">
 
         </div>
 
@@ -1224,8 +1372,9 @@
 
             </div>
 
-            <button class="modal-cart"
-                    id="modalCart">
+            <button
+                class="modal-cart"
+                id="modalCart">
 
                 Add to Cart →
 
@@ -1288,18 +1437,20 @@
 
         <div class="footer-brand">
 
-            <a href="index.html"
-               class="footer-logo">
+            <a
+                href="index.html"
+                class="footer-logo">
 
-                <img src="Logoinstaflora-removebg-preview.png"
-                     alt="Instaflora">
+                <img
+                    src="Logoinstaflora-removebg-preview.png"
+                    alt="Instaflora">
 
                 <div class="brand-text">
 
                     <span>INSTA</span>FLORA
 
                     <small>
-                       FLOWERS PARADISE
+                        FLOWERS PARADISE
                     </small>
 
                 </div>
@@ -1467,8 +1618,12 @@
 
 <!-- BACK TO TOP -->
 
-<button class="back-top" id="backTop">
+<button
+    class="back-top"
+    id="backTop">
+
     ↑
+
 </button>
 
 
