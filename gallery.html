@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Instaflora - Flowers Paradise</title>
+
+    <meta name="description"
+          content="Explore the Instaflora gallery featuring beautiful flowers, bouquets, wedding décor, event arrangements, gifts and memorable celebrations.">
+
+    <link rel="stylesheet"
+          href="gallery.css">
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar" id="navbar">
+
+    <div class="nav-container">
+
+
+        <!-- BRAND -->
+
+        <a href="index.html"
+           class="brand">
+
+            <img
+                src="Logoinstaflora-removebg-preview.png"
+                alt="Instaflora Logo">
+
+            <div class="brand-text">
+
+                <span>INSTA</span>FLORA
+
+                <small>
+                    FLOWERS PARADISE
+                </small>
+
+            </div>
+
+        </a>
+
+
+        <!-- =================================================
+             NAVIGATION MENU
+        ================================================== -->
+
+        <nav class="nav-menu"
+             id="navMenu">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="shop.html">
+                Shop
+            </a>
+
+            <a href="occasions.html">
+                Occasions
+            </a>
+
+            <a href="index.html#bestsellers">
+                Best Sellers
+            </a>
+
+            <a href="events.html">
+                Event Décor
+            </a>
+
+            <a href="gallery.html"
+               class="active">
+                Gallery
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+
+            <!-- MOBILE ACTIONS -->
+
+            <div class="mobile-nav-actions">
+
+                <button
+                    class="nav-icon"
+                    id="mobileSearchBtn"
+                    title="Search">
+
+                    ⌕
+
+                </button>
+
+
+                <button
+                    class="nav-icon"
+                    id="mobileWishlistBtn"
+                    title="Wishlist">
+
+                    ♡
+
+                </button>
+
+
+                <button
+                    class="nav-icon cart-button"
+                    id="mobileCartBtn"
+                    title="Shopping Cart">
+
+                    🛒
+
+                    <span class="cart-count">
+                        0
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- MOBILE ACCOUNT -->
+
+            <a href="#"
+               class="mobile-account"
+               id="mobileAccountBtn">
+
+                Login / Register
+
+            </a>
+
+        </nav>
+
+
+        <!-- =================================================
+             DESKTOP NAV ACTIONS
+        ================================================== -->
+
+        <div class="nav-actions">
+
+            <button
+                class="nav-icon"
+                id="searchBtn"
+                title="Search">
+
+                ⌕
+
+            </button>
+
+
+            <button
+                class="nav-icon"
+                id="desktopWishlistBtn"
+                title="Wishlist">
+
+                ♡
+
+            </button>
+
+
+            <button
+                class="nav-icon cart-button"
+                id="desktopCartBtn"
+                title="Shopping Cart">
+
+                🛒
+
+                <span class="cart-count">
+                    0
+                </span>
+
+            </button>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open Menu">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     SEARCH OVERLAY
+===================================================== -->
+
+<div class="search-overlay"
+     id="searchOverlay">
+
+    <div class="search-box">
+
+        <button
+            class="search-close"
+            id="searchClose">
+
+            ×
+
+        </button>
+
+
+        <span>
+            SEARCH INSTAFORA
+        </span>
+
+
+        <div class="search-input">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search flowers, gifts, bouquets...">
+
+            <button id="searchSubmit">
+                →
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     ACCOUNT MODAL
+===================================================== -->
+
+<div class="account-modal"
+     id="accountModal">
+
+    <div class="account-modal-box">
+
+
+        <button
+            class="account-close"
+            id="accountClose">
+
+            ×
+
+        </button>
+
+
+        <img
+            src="Logoinstaflora-removebg-preview.png"
+            alt="Instaflora"
+            class="account-modal-logo">
+
+
+        <h2>
+            Welcome to Instaflora
+        </h2>
+
+
+        <p class="account-modal-subtitle">
+            Login or create your account
+        </p>
+
+
+        <!-- TABS -->
+
+        <div class="account-tabs">
+
+            <button
+                class="account-tab active"
+                id="loginTab">
+
+                Login
+
+            </button>
+
+
+            <button
+                class="account-tab"
+                id="registerTab">
+
+                Register
+
+            </button>
+
+        </div>
+
+
+        <!-- LOGIN -->
+
+        <form
+            class="account-form active"
+            id="loginForm">
+
+            <input
+                type="email"
+                placeholder="Email Address"
+                required>
+
+
+            <input
+                type="password"
+                placeholder="Password"
+                required>
+
+
+            <div class="account-options">
+
+                <label>
+
+                    <input type="checkbox">
+
+                    Remember me
+
+                </label>
+
+
+                <a href="#">
+                    Forgot Password?
+                </a>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="account-submit">
+
+                Login
+
+            </button>
+
+        </form>
+
+
+        <!-- REGISTER -->
+
+        <form
+            class="account-form"
+            id="registerForm">
+
+            <input
+                type="text"
+                placeholder="Full Name"
+                required>
+
+
+            <input
+                type="email"
+                placeholder="Email Address"
+                required>
+
+
+            <input
+                type="tel"
+                placeholder="Phone Number"
+                required>
+
+
+            <input
+                type="password"
+                placeholder="Create Password"
+                required>
+
+
+            <input
+                type="password"
+                placeholder="Confirm Password"
+                required>
+
+
+            <button
+                type="submit"
+                class="account-submit">
+
+                Create Account
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<main>
+
+<section class="gallery-hero">
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="hero-content">
+
+        <span class="eyebrow">
+            A COLLECTION OF BEAUTIFUL MOMENTS
+        </span>
+
+
+        <h1>
+            Moments worth<br>
+            <em>remembering.</em>
+        </h1>
+
+
+        <p>
+            Explore our collection of flowers, celebrations,
+            weddings, gifts and beautifully designed
+            arrangements created to make every moment special.
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#galleryCollection"
+                class="btn btn-primary">
+
+                Explore Gallery
+
+                <span>→</span>
+
+            </a>
+
+
+            <a
+                href="shop.html"
+                class="btn btn-outline">
+
+                Shop Flowers
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section class="gallery-intro">
+
+    <span class="section-label">
+        THE INSTAFLOWER COLLECTION
+    </span>
+
+
+    <h2>
+        Beauty captured in<br>
+        <em>every detail.</em>
+    </h2>
+
+
+    <p>
+        From delicate bouquets to grand celebrations,
+        every arrangement tells a story. Discover the
+        Instaflora world through our collection of
+        beautiful moments and unforgettable designs.
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     GALLERY FILTER
+===================================================== -->
+
+<section class="gallery-section"
+         id="galleryCollection">
+
+
+    <div class="gallery-heading">
+
+        <div>
+
+            <span class="section-label">
+                OUR GALLERY
+            </span>
+
+
+            <h2>
+                Explore our<br>
+                <em>beautiful work.</em>
+            </h2>
+
+        </div>
+
+
+        <p>
+            Browse flowers, weddings, celebrations,
+            gifts and event décor from the Instaflora
+            collection.
+        </p>
+
+    </div>
+
+
+    <!-- FILTER BUTTONS -->
+
+    <div class="gallery-filters">
+
+        <button
+            class="gallery-filter active"
+            data-filter="all">
+
+            All
+
+        </button>
+
+
+        <button
+            class="gallery-filter"
+            data-filter="flowers">
+
+            Flowers
+
+        </button>
+
+
+        <button
+            class="gallery-filter"
+            data-filter="weddings">
+
+            Weddings
+
+        </button>
+
+
+        <button
+            class="gallery-filter"
+            data-filter="events">
+
+            Events
+
+        </button>
+
+
+        <button
+            class="gallery-filter"
+            data-filter="gifts">
+
+            Gifts
+
+        </button>
+
+
+        <button
+            class="gallery-filter"
+            data-filter="celebrations">
+
+            Celebrations
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =================================================
+         GALLERY GRID
+    ================================================== -->
+
+    <div class="gallery-grid"
+         id="galleryGrid">
+
+
+        <!-- IMAGE 01 -->
+
+        <article
+            class="gallery-item gallery-large"
+            data-category="flowers">
+
+            <img
+                src="flower1.png"
+                alt="Beautiful flower arrangement"
+                loading="lazy">
+
+
+            <div class="gallery-overlay">
+
+                <span>
+                    FLOWERS
+                </span>
+
+                <h3>
+                    Timeless Blooms
+                </h3>
+
+                <button
+                    class="view-image"
+                    aria-label="View image">
+
+                    +
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- IMAGE 02 -->
+
+        <article
+            class="gallery-item"
+            data-category="weddings">
+
+            <img
+                src="wedding.png"
+                alt="Elegant wedding flowers"
+                loading="lazy">
+
+
+            <div class="gallery-overlay">
+
+                <span>
+                    WEDDINGS
+                </span>
+
+                <h3>
+                    Forever Begins
+                </h3>
+
+                <button
+                    class="view-image"
+                    aria-label="View image">
+
+                    +
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- IMAGE 03 -->
+
+        <article
+            class="gallery-item"
+            data-category="events">
+
+            <img
+                src="event.png"
+                alt="Event floral decoration"
+                loading="lazy">
+
+
+            <div class="gallery-overlay">
+
+                <span>
+                    EVENTS
+                </span>
+
+                <h3>
+                    Grand Celebrations
+                </h3>
+
+                <button
+                    class="view-image"
+                    aria-label="View image">
+
+                    +
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- IMAGE 04 -->
+
+        <article
+            class="gallery-item gallery-tall"
+            data-category="celebrations">
+
+            <img
+                src="Birthday.png"
+                alt="Birthday flower arrangement"
+                loading="lazy">
+
+
+            <div class="gallery-overlay">
+
+                <span>
+                    CELEBRATIONS
+                </span>
+
+                <h3>
+                    Birthday Joy
+                </h3>
+
+                <button
+                    class="view-image"
+                    aria-label="View image">
+
+                    +
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- IMAGE 05 -->
+
+        <article
+            class="gallery-item"
+            data-category="gifts">
+
+            <img
+                src="gift.png"
+                alt="Luxury flower gift"
+                loading="lazy">
+
+
+            <div class="gallery-overlay">
+
+                <span>
+                    GIFTS
+                </span>
+
+                <h3>
+                    Thoughtful Gifts
+                </h3>
+
+                <button
+                    class="view-image"
+                    aria-label="View image">
+
+                    +
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- IMAGE 06 -->
+
+        <article
+            class="gallery-item gallery-wide"
+            data-category="flowers">
+
+            <img
+                src="rose.png"
+                alt="Beautiful rose arrangement"
+                loading="lazy">
+
+
+            <div class="gallery-overlay">
+
+                <span>
+                    FLOWERS
+                </span>
+
+                <h3>
+                    Romantic Roses
+                </h3>
+
+                <button
+                    class="view-image"
+                    aria-label="View image">
+
+                    +
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- IMAGE 07 -->
+
+        <article
+            class="gallery-item"
+            data-category="weddings">
+
+            <img
+                src="wedding2.png"
+                alt="Wedding floral decoration"
+                loading="lazy">
+
+
+            <div class="gallery-overlay">
+
+                <span>
+                    WEDDINGS
+                </span>
+
+                <h3>
+                    Elegant Details
+                </h3>
+
+                <button
+                    class="view-image"
+                    aria-label="View image">
+
+                    +
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- IMAGE 08 -->
+
+        <article
+            class="gallery-item"
+            data-category="events">
+
+            <img
+                src="event2.png"
+                alt="Event décor flowers"
+                loading="lazy">
+
+
+            <div class="gallery-overlay">
+
+                <span>
+                    EVENT DÉCOR
+                </span>
+
+                <h3>
+                    Floral Elegance
+                </h3>
+
+                <button
+                    class="view-image"
+                    aria-label="View image">
+
+                    +
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- IMAGE 09 -->
+
+        <article
+            class="gallery-item gallery-tall"
+            data-category="gifts">
+
+            <img
+                src="hamper.png"
+                alt="Luxury gift hamper"
+                loading="lazy">
+
+
+            <div class="gallery-overlay">
+
+                <span>
+                    GIFTS
+                </span>
+
+                <h3>
+                    Luxury Hampers
+                </h3>
+
+                <button
+                    class="view-image"
+                    aria-label="View image">
+
+                    +
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- IMAGE 10 -->
+
+        <article
+            class="gallery-item"
+            data-category="celebrations">
+
+            <img
+                src="gradu.png"
+                alt="Graduation flowers"
+                loading="lazy">
+
+
+            <div class="gallery-overlay">
+
+                <span>
+                    CELEBRATIONS
+                </span>
+
+                <h3>
+                    Celebrate Success
+                </h3>
+
+                <button
+                    class="view-image"
+                    aria-label="View image">
+
+                    +
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- IMAGE 11 -->
+
+        <article
+            class="gallery-item gallery-wide"
+            data-category="flowers">
+
+            <img
+                src="bouquet.png"
+                alt="Premium flower bouquet"
+                loading="lazy">
+
+
+            <div class="gallery-overlay">
+
+                <span>
+                    FLOWERS
+                </span>
+
+                <h3>
+                    Signature Bouquet
+                </h3>
+
+                <button
+                    class="view-image"
+                    aria-label="View image">
+
+                    +
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- IMAGE 12 -->
+
+        <article
+            class="gallery-item"
+            data-category="celebrations">
+
+            <img
+                src="Anniversary.png"
+                alt="Anniversary flowers"
+                loading="lazy">
+
+
+            <div class="gallery-overlay">
+
+                <span>
+                    CELEBRATIONS
+                </span>
+
+                <h3>
+                    Celebrate Love
+                </h3>
+
+                <button
+                    class="view-image"
+                    aria-label="View image">
+
+                    +
+
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <div class="gallery-empty"
+         id="galleryEmpty">
+
+        <span>
+            ✿
+        </span>
+
+        <h3>
+            Nothing here yet
+        </h3>
+
+        <p>
+            We are preparing more beautiful moments
+            for this collection.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FEATURED MOMENT
+===================================================== -->
+
+<section class="featured-gallery">
+
+    <div class="featured-image">
+
+        <img
+            src="wedding.png"
+            alt="Beautiful wedding floral decoration"
+            loading="lazy">
+
+    </div>
+
+
+    <div class="featured-content">
+
+        <span class="section-label">
+            A MOMENT TO REMEMBER
+        </span>
+
+
+        <h2>
+            Every celebration<br>
+            deserves a touch of <em>magic.</em>
+        </h2>
+
+
+        <p>
+            Whether it is an intimate gathering or
+            a grand celebration, our floral designs
+            are created to transform spaces and create
+            memories that last forever.
+        </p>
+
+
+        <a
+            href="events.html"
+            class="btn btn-primary">
+
+            Explore Event Décor →
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     GALLERY SERVICES
+===================================================== -->
+
+<section class="gallery-services">
+
+    <div class="section-heading centered">
+
+        <span class="section-label">
+            WHAT WE CREATE
+        </span>
+
+
+        <h2>
+            More than flowers.<br>
+            <em>We create moments.</em>
+        </h2>
+
+    </div>
+
+
+    <div class="service-grid">
+
+
+        <div class="service-card">
+
+            <span class="service-number">
+                01
+            </span>
+
+            <div class="service-icon">
+                ✿
+            </div>
+
+            <h3>
+                Floral Arrangements
+            </h3>
+
+            <p>
+                Beautifully designed bouquets and
+                arrangements made with carefully
+                selected flowers.
+            </p>
+
+            <a href="shop.html">
+                Explore Flowers →
+            </a>
+
+        </div>
+
+
+
+        <div class="service-card">
+
+            <span class="service-number">
+                02
+            </span>
+
+            <div class="service-icon">
+                ♡
+            </div>
+
+            <h3>
+                Wedding Décor
+            </h3>
+
+            <p>
+                Elegant floral styling for weddings,
+                ceremonies, receptions and intimate
+                celebrations.
+            </p>
+
+            <a href="events.html">
+                View Weddings →
+            </a>
+
+        </div>
+
+
+
+        <div class="service-card">
+
+            <span class="service-number">
+                03
+            </span>
+
+            <div class="service-icon">
+                ✦
+            </div>
+
+            <h3>
+                Event Styling
+            </h3>
+
+            <p>
+                Transform your venue with premium
+                floral décor and thoughtful details.
+            </p>
+
+            <a href="events.html">
+                Explore Events →
+            </a>
+
+        </div>
+
+
+
+        <div class="service-card">
+
+            <span class="service-number">
+                04
+            </span>
+
+            <div class="service-icon">
+                ❀
+            </div>
+
+            <h3>
+                Gift Experiences
+            </h3>
+
+            <p>
+                Premium gifts, hampers and floral
+                surprises designed for every occasion.
+            </p>
+
+            <a href="shop.html">
+                Discover Gifts →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="gallery-cta">
+
+    <div class="cta-content">
+
+        <span class="section-label">
+            HAVE SOMETHING SPECIAL IN MIND?
+        </span>
+
+
+        <h2>
+            Let's create something<br>
+            <em>beautiful together.</em>
+        </h2>
+
+
+        <p>
+            Tell us about your occasion, your vision
+            and the feeling you want to create.
+            Our team will help bring it to life.
+        </p>
+
+
+        <div class="cta-buttons">
+
+            <a
+                href="contact.html"
+                class="btn btn-primary">
+
+                Start a Conversation →
+
+            </a>
+
+
+            <a
+                href="events.html"
+                class="btn btn-outline-dark">
+
+                Explore Event Décor
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer id="contact">
+
+    <div class="footer-main">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+            <a
+                href="index.html"
+                class="brand footer-logo">
+
+                <img
+                    src="Logoinstaflora-removebg-preview.png"
+                    alt="Instaflora Logo">
+
+
+                <div class="brand-text">
+
+                    <span>
+                        INSTA
+                    </span>FLORA
+
+
+                    <small>
+                        FLOWERS PARADISE
+                    </small>
+
+                </div>
+
+            </a>
+
+
+            <p>
+                Thoughtfully designed flowers, gifts and
+                celebrations for life's most beautiful moments.
+            </p>
+
+
+            <div class="social-links">
+
+                <a href="#">
+                    f
+                </a>
+
+                <a href="#">
+                    ◎
+                </a>
+
+                <a href="#">
+                    p
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SHOP -->
+
+        <div class="footer-column">
+
+            <h4>
+                Shop
+            </h4>
+
+
+            <a href="shop.html">
+                Flowers
+            </a>
+
+            <a href="shop.html">
+                Bouquets
+            </a>
+
+            <a href="shop.html">
+                Gifts
+            </a>
+
+            <a href="shop.html">
+                Hampers
+            </a>
+
+            <a href="shop.html">
+                Cakes
+            </a>
+
+            <a href="shop.html">
+                Chocolates
+            </a>
+
+        </div>
+
+
+
+        <!-- OCCASIONS -->
+
+        <div class="footer-column">
+
+            <h4>
+                Occasions
+            </h4>
+
+
+            <a href="occasions.html">
+                Birthday
+            </a>
+
+            <a href="occasions.html">
+                Anniversary
+            </a>
+
+            <a href="occasions.html">
+                Wedding
+            </a>
+
+            <a href="occasions.html">
+                Newborn
+            </a>
+
+            <a href="occasions.html">
+                Graduation
+            </a>
+
+        </div>
+
+
+
+        <!-- COMPANY -->
+
+        <div class="footer-column">
+
+            <h4>
+                Company
+            </h4>
+
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="events.html">
+                Event Décor
+            </a>
+
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="#">
+                FAQs
+            </a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column">
+
+            <h4>
+                Contact
+            </h4>
+
+
+            <p>
+                Islamabad, Pakistan
+            </p>
+
+
+            <p>
+                +92 XXX XXXXXXX
+            </p>
+
+
+            <p>
+                hello@instaflora.com
+            </p>
+
+
+            <p>
+                Mon – Sat<br>
+                10:00 AM – 8:00 PM
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 Instaflora. All Rights Reserved.
+        </span>
+
+
+        <div>
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+
+            <a href="#">
+                Terms & Conditions
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     LIGHTBOX
+===================================================== -->
+
+<div class="lightbox"
+     id="lightbox">
+
+    <button
+        class="lightbox-close"
+        id="lightboxClose">
+
+        ×
+
+    </button>
+
+
+    <button
+        class="lightbox-prev"
+        id="lightboxPrev"
+        aria-label="Previous image">
+
+        ‹
+
+    </button>
+
+
+    <div class="lightbox-content">
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt="Gallery Preview">
+
+
+        <div class="lightbox-caption">
+
+            <span id="lightboxCategory">
+                FLOWERS
+            </span>
+
+            <h3 id="lightboxTitle">
+                Gallery Image
+            </h3>
+
+        </div>
+
+    </div>
+
+
+    <button
+        class="lightbox-next"
+        id="lightboxNext"
+        aria-label="Next image">
+
+        ›
+
+    </button>
+
+</div>
+
+
+
+<!-- =====================================================
+     BACK TO TOP
+===================================================== -->
+
+<button
+    class="back-top"
+    id="backTop">
+
+    ↑
+
+</button>
+
+
+
+<script src="gallery.js"></script>
+
+</body>
+</html>
