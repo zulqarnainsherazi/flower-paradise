@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Instaflora</title>
+
+    <meta
+        name="description"
+        content="Discover the story, vision and passion behind Instaflora. We create beautiful flowers, gifts and unforgettable celebrations."
+    >
+
+    <link rel="stylesheet" href="about.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar" id="navbar">
+
+    <div class="nav-container">
+
+
+        <!-- BRAND -->
+
+        <a href="index.html" class="brand">
+
+            <img
+                src="Logoinstaflora-removebg-preview.png"
+                alt="Instaflora Logo"
+            >
+
+            <div class="brand-text">
+
+                <span>INSTA</span>FLORA
+
+                <small>
+                    FLOWERS PARADISE
+                </small>
+
+            </div>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="shop.html">
+                Shop
+            </a>
+
+            <a href="occasions.html">
+                Occasions
+            </a>
+
+            <a href="bestsellers.html">
+                Best Sellers
+            </a>
+
+            <a href="events.html">
+                Event Décor
+            </a>
+
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+            <a href="about.html" class="active">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+             <a href="#" id="accountBtn">
+    Login/Register
+</a>
+            <!-- MOBILE ACCOUNT -->
+
+            <a
+                href="#"
+                class="mobile-account"
+                id="mobileAccountBtn"
+            >
+                Login / Register
+            </a>
+
+
+            <!-- MOBILE ACTIONS -->
+
+            <div class="mobile-nav-actions">
+
+                <button
+                    class="nav-icon"
+                    id="mobileSearchBtn"
+                    title="Search"
+                >
+                    ⌕
+                </button>
+
+                <button
+                    class="nav-icon"
+                    id="mobileWishlistBtn"
+                    title="Wishlist"
+                >
+                    ♡
+                </button>
+
+                <button
+                    class="nav-icon"
+                    id="mobileCartBtn"
+                    title="Shopping Cart"
+                >
+                    🛒
+
+                    <span class="cart-count">
+                        0
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- NAV ACTIONS -->
+
+            <div class="nav-actions">
+
+                <button
+                    class="nav-icon"
+                    id="searchBtn"
+                    title="Search"
+                >
+                    ⌕
+                </button>
+
+                <button
+                    class="nav-icon"
+                    id="wishlistBtn"
+                    title="Wishlist"
+                >
+                    ♡
+                </button>
+
+                <button
+                    class="nav-icon cart-button"
+                    id="cartBtn"
+                    title="Shopping Cart"
+                >
+
+                    🛒
+
+                    <span class="cart-count">
+                        0
+                    </span>
+
+                </button>
+
+                
+
+            </div>
+
+        </nav>
+
+
+        <!-- MOBILE MENU -->
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open Menu"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     SEARCH OVERLAY
+===================================================== -->
+
+<div
+    class="search-overlay"
+    id="searchOverlay"
+>
+
+    <div class="search-box">
+
+        <button
+            class="search-close"
+            id="searchClose"
+        >
+            ×
+        </button>
+
+        <span>
+            SEARCH INSTAFLORA
+        </span>
+
+        <div class="search-input">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search flowers, gifts, bouquets..."
+            >
+
+            <button id="searchSubmit">
+                →
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     LOGIN / REGISTER MODAL
+===================================================== -->
+
+<div
+    class="account-modal"
+    id="accountModal"
+>
+
+    <div class="account-modal-box">
+
+
+        <button
+            class="account-close"
+            id="accountClose"
+        >
+            ×
+        </button>
+
+
+        <img
+            src="Logoinstaflora-removebg-preview.png"
+            alt="Instaflora"
+            class="account-modal-logo"
+        >
+
+
+        <h2>
+            Welcome to Instaflora
+        </h2>
+
+        <p class="account-modal-subtitle">
+            Login or create your account
+        </p>
+
+
+        <!-- TABS -->
+
+        <div class="account-tabs">
+
+            <button
+                class="account-tab active"
+                id="loginTab"
+            >
+                Login
+            </button>
+
+            <button
+                class="account-tab"
+                id="registerTab"
+            >
+                Register
+            </button>
+
+        </div>
+
+
+        <!-- LOGIN -->
+
+        <form
+            class="account-form active"
+            id="loginForm"
+        >
+
+            <input
+                type="email"
+                placeholder="Email Address"
+                required
+            >
+
+            <input
+                type="password"
+                placeholder="Password"
+                required
+            >
+
+            <div class="account-options">
+
+                <label>
+
+                    <input type="checkbox">
+
+                    Remember me
+
+                </label>
+
+                <a href="#">
+                    Forgot Password?
+                </a>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="account-submit"
+            >
+                Login
+            </button>
+
+        </form>
+
+
+        <!-- REGISTER -->
+
+        <form
+            class="account-form"
+            id="registerForm"
+        >
+
+            <input
+                type="text"
+                placeholder="Full Name"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Email Address"
+                required
+            >
+
+            <input
+                type="tel"
+                placeholder="Phone Number"
+                required
+            >
+
+            <input
+                type="password"
+                placeholder="Create Password"
+                required
+            >
+
+            <input
+                type="password"
+                placeholder="Confirm Password"
+                required
+            >
+
+            <button
+                type="submit"
+                class="account-submit"
+            >
+                Create Account
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     ABOUT HERO
+===================================================== -->
+
+<main>
+
+
+<section class="about-hero">
+
+    <div class="about-hero-overlay"></div>
+
+    <div class="about-hero-content">
+
+        <span class="eyebrow">
+            WELCOME TO INSTAFLORA
+        </span>
+
+        <h1>
+            More than flowers.
+            <span>
+                We create feelings.
+            </span>
+        </h1>
+
+        <p>
+            Thoughtfully designed flowers, gifts and celebrations
+            created to turn life's special moments into beautiful
+            memories.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a
+                href="#story"
+                class="btn btn-primary"
+            >
+                Discover Our Story
+                <span>→</span>
+            </a>
+
+            <a
+                href="shop.html"
+                class="btn btn-outline"
+            >
+                Explore Collection
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-scroll">
+
+        <span>
+            SCROLL TO EXPLORE
+        </span>
+
+        <div></div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section class="intro-section">
+
+    <div class="intro-heading">
+
+        <span class="section-label">
+            WHO WE ARE
+        </span>
+
+        <h2>
+            Beauty begins with
+            <em>
+                intention.
+            </em>
+        </h2>
+
+    </div>
+
+
+    <div class="intro-content">
+
+        <p>
+            Instaflora is a floral and gifting brand built around
+            one simple idea: every meaningful moment deserves
+            beautiful details.
+        </p>
+
+        <p>
+            From a single bouquet sent with love to an entire
+            wedding transformed with flowers, we carefully design
+            every experience with creativity, elegance and care.
+        </p>
+
+        <p>
+            Our collection brings together fresh flowers,
+            luxurious bouquets, thoughtful gifts, hampers,
+            chocolates, cakes and event décor — all created to
+            help you express what words sometimes cannot.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     STORY
+===================================================== -->
+
+<section
+    class="story-section"
+    id="story"
+>
+
+    <div class="story-image">
+
+        <div class="story-image-main">
+
+            <img
+                src="flowersgardan.jpg"
+                alt="Beautiful Instaflora flowers"
+            >
+
+        </div>
+
+
+        <div class="story-badge">
+
+            <strong>
+                10+
+            </strong>
+
+            <span>
+                Years of<br>
+                beautiful moments
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="story-content">
+
+        <span class="section-label">
+            OUR STORY
+        </span>
+
+        <h2>
+            Born from a love
+            for <em>beautiful moments.</em>
+        </h2>
+
+        <p>
+            Instaflora began with a passion for flowers and a
+            desire to make celebrations feel more personal,
+            meaningful and unforgettable.
+        </p>
+
+        <p>
+            What started as a love for carefully arranged flowers
+            grew into a complete gifting and event styling
+            experience.
+        </p>
+
+        <p>
+            Today, we continue to create every arrangement with
+            the same attention to detail that inspired us from
+            the beginning.
+        </p>
+
+
+        <div class="story-signature">
+
+            <span>
+                With love,
+            </span>
+
+            <strong>
+                Instaflora
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     STATISTICS
+===================================================== -->
+
+<section class="stats-section">
+
+    <div class="stats-container">
+
+
+        <div class="stat-box">
+
+            <strong
+                class="counter"
+                data-target="2500"
+            >
+                0
+            </strong>
+
+            <span>
+                Happy Customers
+            </span>
+
+        </div>
+
+
+        <div class="stat-box">
+
+            <strong
+                class="counter"
+                data-target="150"
+            >
+                0
+            </strong>
+
+            <span>
+                Events Styled
+            </span>
+
+        </div>
+
+
+        <div class="stat-box">
+
+            <strong
+                class="counter"
+                data-target="5000"
+            >
+                0
+            </strong>
+
+            <span>
+                Flowers Delivered
+            </span>
+
+        </div>
+
+
+        <div class="stat-box">
+
+            <strong
+                class="counter"
+                data-target="98"
+            >
+                0
+            </strong>
+
+            <span>
+                % Satisfaction
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MISSION / VISION
+===================================================== -->
+
+<section class="mission-section">
+
+    <div class="mission-image">
+
+        <img
+            src="bouq.png"
+            alt="Instaflora bouquet"
+        >
+
+    </div>
+
+
+    <div class="mission-content">
+
+        <span class="section-label">
+            WHAT DRIVES US
+        </span>
+
+        <h2>
+            Creating beauty with
+            <em>purpose.</em>
+        </h2>
+
+        <p>
+            We believe flowers are more than decoration.
+            They are a language of love, appreciation,
+            celebration and connection.
+        </p>
+
+
+        <div class="mission-cards">
+
+
+            <div class="mission-card">
+
+                <div class="mission-number">
+                    01
+                </div>
+
+                <div>
+
+                    <h3>
+                        Our Mission
+                    </h3>
+
+                    <p>
+                        To create beautiful floral and gifting
+                        experiences that make people feel valued,
+                        loved and remembered.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="mission-card">
+
+                <div class="mission-number">
+                    02
+                </div>
+
+                <div>
+
+                    <h3>
+                        Our Vision
+                    </h3>
+
+                    <p>
+                        To become a trusted destination for
+                        flowers, gifting and elegant celebrations,
+                        known for creativity and exceptional care.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     VALUES
+===================================================== -->
+
+<section class="values-section">
+
+    <div class="section-heading centered">
+
+        <span class="section-label">
+            OUR VALUES
+        </span>
+
+        <h2>
+            What makes
+            <em>
+                Instaflora.
+            </em>
+        </h2>
+
+        <p>
+            Every decision we make is guided by the values
+            that define who we are.
+        </p>
+
+    </div>
+
+
+    <div class="values-grid">
+
+
+        <div class="value-card">
+
+            <span class="value-number">
+                01
+            </span>
+
+            <div class="value-icon">
+                ✿
+            </div>
+
+            <h3>
+                Quality
+            </h3>
+
+            <p>
+                We carefully select flowers, gifts and
+                materials to ensure every creation feels
+                premium and special.
+            </p>
+
+        </div>
+
+
+        <div class="value-card">
+
+            <span class="value-number">
+                02
+            </span>
+
+            <div class="value-icon">
+                ♡
+            </div>
+
+            <h3>
+                Heart
+            </h3>
+
+            <p>
+                Everything we create is made with genuine
+                care, because the emotion behind a gift matters.
+            </p>
+
+        </div>
+
+
+        <div class="value-card">
+
+            <span class="value-number">
+                03
+            </span>
+
+            <div class="value-icon">
+                ✦
+            </div>
+
+            <h3>
+                Creativity
+            </h3>
+
+            <p>
+                We love turning simple ideas into unique
+                arrangements and memorable experiences.
+            </p>
+
+        </div>
+
+
+        <div class="value-card">
+
+            <span class="value-number">
+                04
+            </span>
+
+            <div class="value-icon">
+                ◇
+            </div>
+
+            <h3>
+                Reliability
+            </h3>
+
+            <p>
+                From ordering to delivery, we aim to provide
+                an experience you can trust every time.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     HOW WE WORK
+===================================================== -->
+
+<section class="process-section">
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="section-label">
+                OUR PROCESS
+            </span>
+
+            <h2>
+                From your idea to
+                <em>
+                    something beautiful.
+                </em>
+            </h2>
+
+        </div>
+
+        <p>
+            We keep the process simple while paying attention
+            to every little detail.
+        </p>
+
+    </div>
+
+
+    <div class="process-grid">
+
+
+        <div class="process-card">
+
+            <span>
+                01
+            </span>
+
+            <div class="process-line"></div>
+
+            <h3>
+                Tell Us Your Idea
+            </h3>
+
+            <p>
+                Share the occasion, your preferences and
+                the feeling you want to create.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <span>
+                02
+            </span>
+
+            <div class="process-line"></div>
+
+            <h3>
+                We Design
+            </h3>
+
+            <p>
+                Our creative team develops a beautiful concept
+                around your requirements.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <span>
+                03
+            </span>
+
+            <div class="process-line"></div>
+
+            <h3>
+                We Create
+            </h3>
+
+            <p>
+                Every flower, gift and detail is carefully
+                prepared by our team.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <span>
+                04
+            </span>
+
+            <div class="process-line"></div>
+
+            <h3>
+                You Celebrate
+            </h3>
+
+            <p>
+                Your beautiful creation arrives ready to make
+                the moment unforgettable.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     EVENT EXPERIENCE
+===================================================== -->
+
+<section class="experience-section">
+
+    <div class="experience-image">
+
+        <img
+            src="eventdec.png"
+            alt="Instaflora Event Décor"
+        >
+
+    </div>
+
+
+    <div class="experience-content">
+
+        <span class="section-label">
+            BEYOND FLOWERS
+        </span>
+
+        <h2>
+            We turn spaces into
+            <em>
+                experiences.
+            </em>
+        </h2>
+
+        <p>
+            Our passion doesn't stop at bouquets. We also create
+            elegant floral installations and event décor for
+            weddings, birthdays, engagements, corporate events
+            and intimate celebrations.
+        </p>
+
+        <p>
+            Every event is designed around your story, your
+            venue and your personal style.
+        </p>
+
+        <a
+            href="events.html"
+            class="btn btn-dark"
+        >
+            Explore Event Décor
+            <span>→</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FEATURED CATEGORIES
+===================================================== -->
+
+<section class="collection-section">
+
+    <div class="section-heading centered">
+
+        <span class="section-label">
+            WHAT WE CREATE
+        </span>
+
+        <h2>
+            Something beautiful
+            for <em>every occasion.</em>
+        </h2>
+
+    </div>
+
+
+    <div class="collection-grid">
+
+
+        <a
+            href="shop.html"
+            class="collection-card"
+        >
+
+            <img
+                src="bouq.png"
+                alt="Bouquets"
+            >
+
+            <div>
+
+                <span>
+                    01
+                </span>
+
+                <h3>
+                    Bouquets
+                </h3>
+
+                <p>
+                    Explore collection →
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <a
+            href="shop.html"
+            class="collection-card"
+        >
+
+            <img
+                src="gift.png"
+                alt="Gifts"
+            >
+
+            <div>
+
+                <span>
+                    02
+                </span>
+
+                <h3>
+                    Gifts
+                </h3>
+
+                <p>
+                    Explore collection →
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <a
+            href="shop.html"
+            class="collection-card"
+        >
+
+            <img
+                src="hamper.jpg"
+                alt="Gift Hampers"
+            >
+
+            <div>
+
+                <span>
+                    03
+                </span>
+
+                <h3>
+                    Hampers
+                </h3>
+
+                <p>
+                    Explore collection →
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <a
+            href="events.html"
+            class="collection-card"
+        >
+
+            <img
+                src="wedding.png"
+                alt="Event Décor"
+            >
+
+            <div>
+
+                <span>
+                    04
+                </span>
+
+                <h3>
+                    Event Décor
+                </h3>
+
+                <p>
+                    Discover more →
+                </p>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="about-cta">
+
+    <div class="cta-decoration">
+
+        <span>✿</span>
+
+    </div>
+
+
+    <div class="cta-content">
+
+        <span class="section-label">
+            LET'S CREATE SOMETHING BEAUTIFUL
+        </span>
+
+        <h2>
+            Your moment deserves
+            <em>
+                something special.
+            </em>
+        </h2>
+
+        <p>
+            Whether you're looking for a thoughtful gift,
+            a beautiful bouquet or complete event décor,
+            we're here to bring your idea to life.
+        </p>
+
+
+        <div class="cta-buttons">
+
+            <a
+                href="shop.html"
+                class="btn btn-light"
+            >
+                Shop Collection
+                <span>→</span>
+            </a>
+
+            <a
+                href="contact.html"
+                class="btn btn-outline"
+            >
+                Talk to Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer id="contact">
+
+    <div class="footer-main">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+            <a
+                href="index.html"
+                class="brand footer-logo"
+            >
+
+                <img
+                    src="Logoinstaflora-removebg-preview.png"
+                    alt="Instaflora Logo"
+                    class="brand-logo"
+                >
+
+                <div class="brand-text">
+
+                    <span>INSTA</span>FLORA
+
+                    <small>
+                        FLOWERS PARADISE
+                    </small>
+
+                </div>
+
+            </a>
+
+
+            <p>
+                Thoughtfully designed flowers, gifts and
+                celebrations for life's most beautiful moments.
+            </p>
+
+
+            <div class="social-links">
+
+                <a href="#">
+                    f
+                </a>
+
+                <a href="#">
+                    ◎
+                </a>
+
+                <a href="#">
+                    p
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- SHOP -->
+
+        <div class="footer-column">
+
+            <h4>
+                Shop
+            </h4>
+
+            <a href="shop.html">
+                Flowers
+            </a>
+
+            <a href="shop.html">
+                Bouquets
+            </a>
+
+            <a href="shop.html">
+                Gifts
+            </a>
+
+            <a href="shop.html">
+                Hampers
+            </a>
+
+            <a href="shop.html">
+                Cakes
+            </a>
+
+            <a href="shop.html">
+                Chocolates
+            </a>
+
+        </div>
+
+
+        <!-- OCCASIONS -->
+
+        <div class="footer-column">
+
+            <h4>
+                Occasions
+            </h4>
+
+            <a href="occasions.html">
+                Birthday
+            </a>
+
+            <a href="occasions.html">
+                Anniversary
+            </a>
+
+            <a href="occasions.html">
+                Wedding
+            </a>
+
+            <a href="occasions.html">
+                Newborn
+            </a>
+
+            <a href="occasions.html">
+                Graduation
+            </a>
+
+        </div>
+
+
+        <!-- COMPANY -->
+
+        <div class="footer-column">
+
+            <h4>
+                Company
+            </h4>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="events.html">
+                Event Décor
+            </a>
+
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="#">
+                FAQs
+            </a>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column">
+
+            <h4>
+                Contact
+            </h4>
+
+            <p>
+                Wah Cantt | New City Phase 2
+            </p>
+
+            <p>
+                +92 XXX XXXXXXX
+            </p>
+
+            <p>
+                @instaflora2022.com
+            </p>
+
+            <p>
+                Mon – Sat<br>
+                10:00 AM – 8:00 PM
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 Instaflora. All Rights Reserved.
+        </span>
+
+        <div>
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <a href="#">
+                Terms & Conditions
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     BACK TO TOP
+===================================================== -->
+
+<button
+    class="back-top"
+    id="backTop"
+>
+    ↑
+</button>
+
+
+
+<script src="about.js"></script>
+
+</body>
+
+</html>
