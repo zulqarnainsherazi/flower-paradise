@@ -1,0 +1,1927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Best Sellers | Instaflora - Flower Paradise</title>
+
+    <meta name="description"
+          content="Discover Instaflora's most loved flowers, bouquets, gifts and beautiful arrangements.">
+
+    <link rel="stylesheet" href="bestsellers.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar" id="navbar">
+
+    <div class="nav-container">
+
+
+        <!-- BRAND -->
+
+        <a href="index.html" class="brand">
+
+            <img
+                src="Logoinstaflora-removebg-preview.png"
+                alt="Instaflora Logo">
+
+            <div class="brand-text">
+
+                <span>INSTA</span>FLORA
+
+                <small>
+                    FLOWERS PARADISE
+                </small>
+
+            </div>
+
+        </a>
+
+
+        <!-- =================================================
+             NAVIGATION MENU
+        ================================================== -->
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="shop.html">
+                Shop
+            </a>
+
+            <a href="occasions.html">
+                Occasions
+            </a>
+
+            <a href="bestsellers.html" class="active">
+                Best Sellers
+            </a>
+
+            <a href="events.html">
+                Event Décor
+            </a>
+
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+
+            <!-- MOBILE ACTIONS -->
+
+            <div class="mobile-nav-actions">
+
+                <button
+                    class="nav-icon"
+                    id="mobileSearchBtn"
+                    title="Search">
+
+                    ⌕
+
+                </button>
+
+
+                <button
+                    class="nav-icon"
+                    id="mobileWishlistBtn"
+                    title="Wishlist">
+
+                    ♡
+
+                </button>
+
+
+                <button
+                    class="nav-icon cart-button"
+                    id="mobileCartBtn"
+                    title="Shopping Cart">
+
+                    🛒
+
+                    <span class="cart-count">
+                        0
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- MOBILE ACCOUNT -->
+
+            <a
+                href="#"
+                class="mobile-account"
+                id="mobileAccountBtn">
+
+                Login / Register
+
+            </a>
+
+        </nav>
+
+
+        <!-- =================================================
+             DESKTOP NAV ACTIONS
+        ================================================== -->
+
+        <div class="nav-actions">
+
+
+            <button
+                class="nav-icon"
+                id="searchBtn"
+                title="Search">
+
+                ⌕
+
+            </button>
+
+
+            <button
+                class="nav-icon"
+                id="wishlistButton"
+                title="Wishlist">
+
+                ♡
+
+            </button>
+
+
+            <button
+                class="nav-icon cart-button"
+                id="cartButton"
+                title="Shopping Cart">
+
+                🛒
+
+                <span class="cart-count">
+                    0
+                </span>
+
+            </button>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open Menu">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     SEARCH OVERLAY
+===================================================== -->
+
+<div
+    class="search-overlay"
+    id="searchOverlay">
+
+    <div class="search-box">
+
+
+        <button
+            class="search-close"
+            id="searchClose">
+
+            ×
+
+        </button>
+
+
+        <span>
+            SEARCH INSTAFORA
+        </span>
+
+
+        <div class="search-input">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search flowers, gifts, bouquets...">
+
+
+            <button id="searchSubmit">
+                →
+            </button>
+
+        </div>
+
+
+        <div
+            class="search-message"
+            id="searchMessage">
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     ACCOUNT MODAL
+===================================================== -->
+
+<div
+    class="account-modal"
+    id="accountModal">
+
+
+    <div class="account-modal-box">
+
+
+        <button
+            class="account-close"
+            id="accountClose">
+
+            ×
+
+        </button>
+
+
+        <img
+            src="Logoinstaflora-removebg-preview.png"
+            alt="Instaflora"
+            class="account-modal-logo">
+
+
+        <h2>
+            Welcome to Instaflora
+        </h2>
+
+
+        <p class="account-modal-subtitle">
+            Login or create your account
+        </p>
+
+
+        <!-- TABS -->
+
+        <div class="account-tabs">
+
+            <button
+                class="account-tab active"
+                id="loginTab">
+
+                Login
+
+            </button>
+
+
+            <button
+                class="account-tab"
+                id="registerTab">
+
+                Register
+
+            </button>
+
+        </div>
+
+
+        <!-- LOGIN -->
+
+        <form
+            class="account-form active"
+            id="loginForm">
+
+            <input
+                type="email"
+                placeholder="Email Address"
+                required>
+
+
+            <input
+                type="password"
+                placeholder="Password"
+                required>
+
+
+            <div class="account-options">
+
+                <label>
+
+                    <input type="checkbox">
+
+                    Remember me
+
+                </label>
+
+
+                <a href="#">
+                    Forgot Password?
+                </a>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="account-submit">
+
+                Login
+
+            </button>
+
+        </form>
+
+
+        <!-- REGISTER -->
+
+        <form
+            class="account-form"
+            id="registerForm">
+
+            <input
+                type="text"
+                placeholder="Full Name"
+                required>
+
+
+            <input
+                type="email"
+                placeholder="Email Address"
+                required>
+
+
+            <input
+                type="tel"
+                placeholder="Phone Number"
+                required>
+
+
+            <input
+                type="password"
+                placeholder="Create Password"
+                required>
+
+
+            <input
+                type="password"
+                placeholder="Confirm Password"
+                required>
+
+
+            <button
+                type="submit"
+                class="account-submit">
+
+                Create Account
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<main>
+
+
+<section class="best-hero">
+
+
+    <div class="best-hero-overlay"></div>
+
+
+    <div class="best-hero-content">
+
+
+        <span class="eyebrow">
+            OUR MOST LOVED COLLECTION
+        </span>
+
+
+        <h1>
+
+            Best Sellers<br>
+
+            <em>made to be remembered.</em>
+
+        </h1>
+
+
+        <p>
+
+            Discover the flowers, gifts and beautiful
+            arrangements our customers love the most.
+            Thoughtfully selected for life's special moments.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+
+            <a
+                href="#bestCollection"
+                class="btn btn-primary">
+
+                Shop Best Sellers
+
+                <span>→</span>
+
+            </a>
+
+
+            <a
+                href="shop.html"
+                class="btn btn-outline">
+
+                Explore All
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section class="intro-section">
+
+
+    <span class="section-label">
+        CUSTOMER FAVOURITES
+    </span>
+
+
+    <h2>
+
+        Loved by many,<br>
+
+        <em>chosen with heart.</em>
+
+    </h2>
+
+
+    <p>
+
+        From elegant roses and dreamy bouquets to
+        thoughtful gifts and celebration hampers,
+        these are the Instaflora favourites that
+        continue to make moments unforgettable.
+
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     BEST SELLER COLLECTION
+===================================================== -->
+
+<section
+    class="best-section"
+    id="bestCollection">
+
+
+    <div class="section-heading">
+
+
+        <div>
+
+            <span class="section-label">
+                SHOP OUR FAVOURITES
+            </span>
+
+
+            <h2>
+
+                The best of<br>
+
+                <em>Instaflora.</em>
+
+            </h2>
+
+        </div>
+
+
+        <p>
+
+            Explore our most popular products,
+            carefully selected for beauty,
+            freshness and unforgettable gifting.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- =================================================
+         FILTER BAR
+    ================================================== -->
+
+    <div class="filter-bar">
+
+
+        <div class="category-filters">
+
+
+            <button
+                class="category-btn active"
+                data-category="all">
+
+                All
+
+            </button>
+
+
+            <button
+                class="category-btn"
+                data-category="flowers">
+
+                Flowers
+
+            </button>
+
+
+            <button
+                class="category-btn"
+                data-category="bouquets">
+
+                Bouquets
+
+            </button>
+
+
+            <button
+                class="category-btn"
+                data-category="gifts">
+
+                Gifts
+
+            </button>
+
+
+            <button
+                class="category-btn"
+                data-category="hampers">
+
+                Hampers
+
+            </button>
+
+
+            <button
+                class="category-btn"
+                data-category="cakes">
+
+                Cakes
+
+            </button>
+
+        </div>
+
+
+        <div class="sort-box">
+
+            <label for="sortProducts">
+                Sort:
+            </label>
+
+
+            <select id="sortProducts">
+
+                <option value="popular">
+                    Most Popular
+                </option>
+
+                <option value="low">
+                    Price: Low to High
+                </option>
+
+                <option value="high">
+                    Price: High to Low
+                </option>
+
+                <option value="name">
+                    Name A-Z
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================================
+         PRODUCT GRID
+    ================================================== -->
+
+    <div
+        class="product-grid"
+        id="productGrid">
+
+
+        <!-- PRODUCT 1 -->
+
+        <article
+            class="product-card"
+            data-category="bouquets"
+            data-price="6500"
+            data-name="Royal Rose Bouquet"
+            data-popular="10">
+
+
+            <div class="product-image">
+
+
+                <img
+                    src="gift.png"
+                    alt="Royal Rose Bouquet">
+
+
+                <span class="product-badge">
+                    BEST SELLER
+                </span>
+
+
+                <button
+                    class="wishlist"
+                    title="Add to Wishlist">
+
+                    ♡
+
+                </button>
+
+
+                <button
+                    class="quick-view"
+                    data-name="Royal Rose Bouquet"
+                    data-price="Rs. 6,500"
+                    data-image="gift.png"
+                    data-description="A luxurious arrangement of premium roses designed to make every celebration unforgettable.">
+
+                    Quick View
+
+                </button>
+
+            </div>
+
+
+            <div class="product-details">
+
+
+                <span class="product-category">
+                    Bouquets
+                </span>
+
+
+                <h3>
+                    Royal Rose Bouquet
+                </h3>
+
+
+                <div class="rating">
+                    ★★★★★
+                    <span>
+                        (128)
+                    </span>
+                </div>
+
+
+                <div class="price-row">
+
+                    <strong>
+                        Rs. 6,500
+                    </strong>
+
+
+                    <button
+                        class="add-cart">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PRODUCT 2 -->
+
+        <article
+            class="product-card"
+            data-category="flowers"
+            data-price="4800"
+            data-name="Blush Pink Roses"
+            data-popular="9">
+
+
+            <div class="product-image">
+
+
+                <img
+                    src="Birthday.png"
+                    alt="Blush Pink Roses">
+
+
+                <span class="product-badge">
+                    TOP PICK
+                </span>
+
+
+                <button
+                    class="wishlist"
+                    title="Add to Wishlist">
+
+                    ♡
+
+                </button>
+
+
+                <button
+                    class="quick-view"
+                    data-name="Blush Pink Roses"
+                    data-price="Rs. 4,800"
+                    data-image="Birthday.png"
+                    data-description="Soft pink roses arranged beautifully for birthdays, romantic moments and thoughtful surprises.">
+
+                    Quick View
+
+                </button>
+
+            </div>
+
+
+            <div class="product-details">
+
+
+                <span class="product-category">
+                    Flowers
+                </span>
+
+
+                <h3>
+                    Blush Pink Roses
+                </h3>
+
+
+                <div class="rating">
+                    ★★★★★
+                    <span>
+                        (96)
+                    </span>
+                </div>
+
+
+                <div class="price-row">
+
+                    <strong>
+                        Rs. 4,800
+                    </strong>
+
+
+                    <button
+                        class="add-cart">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PRODUCT 3 -->
+
+        <article
+            class="product-card"
+            data-category="gifts"
+            data-price="5500"
+            data-name="Luxury Love Gift Box"
+            data-popular="8">
+
+
+            <div class="product-image">
+
+
+                <img
+                    src="Anniversary.png"
+                    alt="Luxury Love Gift Box">
+
+
+                <span class="product-badge popular">
+                    CUSTOMER LOVE
+                </span>
+
+
+                <button
+                    class="wishlist"
+                    title="Add to Wishlist">
+
+                    ♡
+
+                </button>
+
+
+                <button
+                    class="quick-view"
+                    data-name="Luxury Love Gift Box"
+                    data-price="Rs. 5,500"
+                    data-image="Anniversary.png"
+                    data-description="A sophisticated gift box curated with beautiful details for someone truly special.">
+
+                    Quick View
+
+                </button>
+
+            </div>
+
+
+            <div class="product-details">
+
+
+                <span class="product-category">
+                    Gifts
+                </span>
+
+
+                <h3>
+                    Luxury Love Gift Box
+                </h3>
+
+
+                <div class="rating">
+                    ★★★★★
+                    <span>
+                        (114)
+                    </span>
+                </div>
+
+
+                <div class="price-row">
+
+                    <strong>
+                        Rs. 5,500
+                    </strong>
+
+
+                    <button
+                        class="add-cart">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PRODUCT 4 -->
+
+        <article
+            class="product-card"
+            data-category="hampers"
+            data-price="7200"
+            data-name="Celebration Hamper"
+            data-popular="7">
+
+
+            <div class="product-image">
+
+
+                <img
+                    src="Newborn.png"
+                    alt="Celebration Hamper">
+
+
+                <span class="product-badge">
+                    BEST SELLER
+                </span>
+
+
+                <button
+                    class="wishlist"
+                    title="Add to Wishlist">
+
+                    ♡
+
+                </button>
+
+
+                <button
+                    class="quick-view"
+                    data-name="Celebration Hamper"
+                    data-price="Rs. 7,200"
+                    data-image="Newborn.png"
+                    data-description="A premium celebration hamper filled with thoughtful surprises and elegant presentation.">
+
+                    Quick View
+
+                </button>
+
+            </div>
+
+
+            <div class="product-details">
+
+
+                <span class="product-category">
+                    Hampers
+                </span>
+
+
+                <h3>
+                    Celebration Hamper
+                </h3>
+
+
+                <div class="rating">
+                    ★★★★★
+                    <span>
+                        (82)
+                    </span>
+                </div>
+
+
+                <div class="price-row">
+
+                    <strong>
+                        Rs. 7,200
+                    </strong>
+
+
+                    <button
+                        class="add-cart">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PRODUCT 5 -->
+
+        <article
+            class="product-card"
+            data-category="flowers"
+            data-price="5900"
+            data-name="White Elegance Bouquet"
+            data-popular="6">
+
+
+            <div class="product-image">
+
+
+                <img
+                    src="wedding.png"
+                    alt="White Elegance Bouquet">
+
+
+                <span class="product-badge new">
+                    SIGNATURE
+                </span>
+
+
+                <button
+                    class="wishlist"
+                    title="Add to Wishlist">
+
+                    ♡
+
+                </button>
+
+
+                <button
+                    class="quick-view"
+                    data-name="White Elegance Bouquet"
+                    data-price="Rs. 5,900"
+                    data-image="wedding.png"
+                    data-description="Elegant white flowers arranged with a timeless luxury aesthetic. Perfect for weddings and refined celebrations.">
+
+                    Quick View
+
+                </button>
+
+            </div>
+
+
+            <div class="product-details">
+
+
+                <span class="product-category">
+                    Flowers
+                </span>
+
+
+                <h3>
+                    White Elegance Bouquet
+                </h3>
+
+
+                <div class="rating">
+                    ★★★★★
+                    <span>
+                        (75)
+                    </span>
+                </div>
+
+
+                <div class="price-row">
+
+                    <strong>
+                        Rs. 5,900
+                    </strong>
+
+
+                    <button
+                        class="add-cart">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PRODUCT 6 -->
+
+        <article
+            class="product-card"
+            data-category="cakes"
+            data-price="4200"
+            data-name="Elegant Celebration Cake"
+            data-popular="5">
+
+
+            <div class="product-image">
+
+
+                <img
+                    src="gradu.png"
+                    alt="Elegant Celebration Cake">
+
+
+                <span class="product-badge popular">
+                    FAVOURITE
+                </span>
+
+
+                <button
+                    class="wishlist"
+                    title="Add to Wishlist">
+
+                    ♡
+
+                </button>
+
+
+                <button
+                    class="quick-view"
+                    data-name="Elegant Celebration Cake"
+                    data-price="Rs. 4,200"
+                    data-image="gradu.png"
+                    data-description="A beautifully presented celebration cake that pairs perfectly with flowers and gifts.">
+
+                    Quick View
+
+                </button>
+
+            </div>
+
+
+            <div class="product-details">
+
+
+                <span class="product-category">
+                    Cakes
+                </span>
+
+
+                <h3>
+                    Elegant Celebration Cake
+                </h3>
+
+
+                <div class="rating">
+                    ★★★★★
+                    <span>
+                        (64)
+                    </span>
+                </div>
+
+
+                <div class="price-row">
+
+                    <strong>
+                        Rs. 4,200
+                    </strong>
+
+
+                    <button
+                        class="add-cart">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PRODUCT 7 -->
+
+        <article
+            class="product-card"
+            data-category="bouquets"
+            data-price="7800"
+            data-name="Premium Red Rose Collection"
+            data-popular="4">
+
+
+            <div class="product-image">
+
+
+                <img
+                    src="Anniversary.png"
+                    alt="Premium Red Rose Collection">
+
+
+                <span class="product-badge">
+                    MOST LOVED
+                </span>
+
+
+                <button
+                    class="wishlist"
+                    title="Add to Wishlist">
+
+                    ♡
+
+                </button>
+
+
+                <button
+                    class="quick-view"
+                    data-name="Premium Red Rose Collection"
+                    data-price="Rs. 7,800"
+                    data-image="Anniversary.png"
+                    data-description="A premium collection of romantic roses designed for unforgettable expressions of love.">
+
+                    Quick View
+
+                </button>
+
+            </div>
+
+
+            <div class="product-details">
+
+
+                <span class="product-category">
+                    Bouquets
+                </span>
+
+
+                <h3>
+                    Premium Red Rose Collection
+                </h3>
+
+
+                <div class="rating">
+                    ★★★★★
+                    <span>
+                        (143)
+                    </span>
+                </div>
+
+
+                <div class="price-row">
+
+                    <strong>
+                        Rs. 7,800
+                    </strong>
+
+
+                    <button
+                        class="add-cart">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- PRODUCT 8 -->
+
+        <article
+            class="product-card"
+            data-category="gifts"
+            data-price="6200"
+            data-name="Golden Surprise Box"
+            data-popular="3">
+
+
+            <div class="product-image">
+
+
+                <img
+                    src="Birthday.png"
+                    alt="Golden Surprise Box">
+
+
+                <span class="product-badge popular">
+                    TRENDING
+                </span>
+
+
+                <button
+                    class="wishlist"
+                    title="Add to Wishlist">
+
+                    ♡
+
+                </button>
+
+
+                <button
+                    class="quick-view"
+                    data-name="Golden Surprise Box"
+                    data-price="Rs. 6,200"
+                    data-image="Birthday.png"
+                    data-description="A premium surprise box with a sophisticated presentation for birthdays and special celebrations.">
+
+                    Quick View
+
+                </button>
+
+            </div>
+
+
+            <div class="product-details">
+
+
+                <span class="product-category">
+                    Gifts
+                </span>
+
+
+                <h3>
+                    Golden Surprise Box
+                </h3>
+
+
+                <div class="rating">
+                    ★★★★★
+                    <span>
+                        (58)
+                    </span>
+                </div>
+
+
+                <div class="price-row">
+
+                    <strong>
+                        Rs. 6,200
+                    </strong>
+
+
+                    <button
+                        class="add-cart">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+    <!-- NO PRODUCTS -->
+
+    <div
+        class="no-products"
+        id="noProducts">
+
+        <span>
+            ✿
+        </span>
+
+        <h3>
+            No products found
+        </h3>
+
+        <p>
+            Try another category or search term.
+        </p>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     WHY CUSTOMERS LOVE US
+===================================================== -->
+
+<section class="love-section">
+
+
+    <div class="love-heading">
+
+        <span class="section-label">
+            WHY THEY CHOOSE US
+        </span>
+
+
+        <h2>
+
+            More than flowers.<br>
+
+            <em>A feeling.</em>
+
+        </h2>
+
+    </div>
+
+
+    <div class="love-grid">
+
+
+        <div class="love-card">
+
+            <span>
+                01
+            </span>
+
+            <div class="love-icon">
+                ✿
+            </div>
+
+            <h3>
+                Fresh Every Day
+            </h3>
+
+            <p>
+                Carefully selected flowers prepared
+                fresh for every order.
+            </p>
+
+        </div>
+
+
+        <div class="love-card">
+
+            <span>
+                02
+            </span>
+
+            <div class="love-icon">
+                ♡
+            </div>
+
+            <h3>
+                Beautifully Designed
+            </h3>
+
+            <p>
+                Every arrangement is created with
+                attention to beauty and detail.
+            </p>
+
+        </div>
+
+
+        <div class="love-card">
+
+            <span>
+                03
+            </span>
+
+            <div class="love-icon">
+                ✦
+            </div>
+
+            <h3>
+                Thoughtful Gifting
+            </h3>
+
+            <p>
+                Products selected to help you express
+                exactly what you feel.
+            </p>
+
+        </div>
+
+
+        <div class="love-card">
+
+            <span>
+                04
+            </span>
+
+            <div class="love-icon">
+                ❀
+            </div>
+
+            <h3>
+                Made With Love
+            </h3>
+
+            <p>
+                From our hands to theirs, every order
+                receives genuine care.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="best-cta">
+
+
+    <div class="cta-content">
+
+        <span class="section-label">
+            SOMETHING SPECIAL AWAITS
+        </span>
+
+
+        <h2>
+
+            Didn't find<br>
+
+            <em>your perfect gift?</em>
+
+        </h2>
+
+
+        <p>
+
+            Explore our complete collection of flowers,
+            gifts and beautiful arrangements.
+
+        </p>
+
+
+        <a
+            href="shop.html"
+            class="btn btn-primary">
+
+            Explore Full Collection →
+
+        </a>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer id="contact">
+
+
+    <div class="footer-main">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+
+            <a
+                href="index.html"
+                class="brand footer-logo">
+
+
+                <img
+                    src="Logoinstaflora-removebg-preview.png"
+                    alt="Instaflora Logo">
+
+
+                <div class="brand-text">
+
+                    <span>
+                        INSTA
+                    </span>FLORA
+
+
+                    <small>
+                        FLOWERS PARADISE
+                    </small>
+
+                </div>
+
+            </a>
+
+
+            <p>
+
+                Thoughtfully designed flowers, gifts
+                and celebrations for life's most
+                beautiful moments.
+
+            </p>
+
+
+            <div class="social-links">
+
+                <a href="#">
+                    f
+                </a>
+
+                <a href="#">
+                    ◎
+                </a>
+
+                <a href="#">
+                    p
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SHOP -->
+
+        <div class="footer-column">
+
+            <h4>
+                Shop
+            </h4>
+
+
+            <a href="shop.html">
+                Flowers
+            </a>
+
+            <a href="shop.html">
+                Bouquets
+            </a>
+
+            <a href="shop.html">
+                Gifts
+            </a>
+
+            <a href="shop.html">
+                Hampers
+            </a>
+
+            <a href="shop.html">
+                Cakes
+            </a>
+
+            <a href="shop.html">
+                Chocolates
+            </a>
+
+        </div>
+
+
+
+        <!-- OCCASIONS -->
+
+        <div class="footer-column">
+
+            <h4>
+                Occasions
+            </h4>
+
+
+            <a href="occasions.html">
+                Birthday
+            </a>
+
+            <a href="occasions.html">
+                Anniversary
+            </a>
+
+            <a href="occasions.html">
+                Wedding
+            </a>
+
+            <a href="occasions.html">
+                Newborn
+            </a>
+
+            <a href="occasions.html">
+                Graduation
+            </a>
+
+        </div>
+
+
+
+        <!-- COMPANY -->
+
+        <div class="footer-column">
+
+            <h4>
+                Company
+            </h4>
+
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="events.html">
+                Event Décor
+            </a>
+
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="#">
+                FAQs
+            </a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column">
+
+            <h4>
+                Contact
+            </h4>
+
+
+            <p>
+                Islamabad, Pakistan
+            </p>
+
+
+            <p>
+                +92 XXX XXXXXXX
+            </p>
+
+
+            <p>
+                hello@instaflora.com
+            </p>
+
+
+            <p>
+                Mon – Sat<br>
+                10:00 AM – 8:00 PM
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+
+        <span>
+            © 2026 Instaflora. All Rights Reserved.
+        </span>
+
+
+        <div>
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+
+            <a href="#">
+                Terms & Conditions
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     BACK TO TOP
+===================================================== -->
+
+<button
+    class="back-top"
+    id="backTop">
+
+    ↑
+
+</button>
+
+
+
+<!-- =====================================================
+     QUICK VIEW MODAL
+===================================================== -->
+
+<div
+    class="quick-modal"
+    id="quickModal">
+
+
+    <div class="quick-modal-content">
+
+
+        <button
+            class="modal-close"
+            id="modalClose">
+
+            ×
+
+        </button>
+
+
+        <div class="quick-image">
+
+            <img
+                id="quickImage"
+                src=""
+                alt="Product">
+
+        </div>
+
+
+        <div class="quick-info">
+
+
+            <span id="quickCategory">
+                BEST SELLER
+            </span>
+
+
+            <h2 id="quickName">
+                Product Name
+            </h2>
+
+
+            <div class="modal-stars">
+                ★★★★★
+            </div>
+
+
+            <strong id="quickPrice">
+                Rs. 0
+            </strong>
+
+
+            <p id="quickDescription">
+
+                Beautifully designed product
+                created for special moments.
+
+            </p>
+
+
+            <div class="quantity">
+
+
+                <button id="minusQty">
+                    −
+                </button>
+
+
+                <span id="quantityValue">
+                    1
+                </span>
+
+
+                <button id="plusQty">
+                    +
+                </button>
+
+            </div>
+
+
+            <button
+                class="modal-cart"
+                id="modalCart">
+
+                Add To Cart
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script src="bestsellers.js"></script>
+
+</body>
+</html>
