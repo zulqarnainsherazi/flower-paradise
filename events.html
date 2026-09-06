@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Event Décor | Instaflora - Flower Paradise</title>
+
+    <meta name="description"
+          content="Elegant wedding, birthday, corporate and special event décor by Instaflora Flower Paradise.">
+
+    <link rel="stylesheet"
+          href="events.css">
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar" id="navbar">
+
+    <div class="nav-container">
+
+
+        <!-- BRAND -->
+
+        <a href="index.html"
+           class="brand">
+
+            <img src="Logoinstaflora-removebg-preview.png"
+                 alt="Instaflora Logo">
+
+            <div class="brand-text">
+
+                <span>INSTA</span>FLORA
+
+                <small>
+                    FLOWERS PARADISE
+                </small>
+
+            </div>
+
+        </a>
+
+
+        <!-- =================================================
+             NAVIGATION MENU
+        ================================================== -->
+
+        <nav class="nav-menu"
+             id="navMenu">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="shop.html">
+                Shop
+            </a>
+
+            <a href="occasions.html">
+                Occasions
+            </a>
+
+            <a href="bestsellers.html">
+                Best Sellers
+            </a>
+
+            <a href="events.html"
+               class="active">
+                Event Décor
+            </a>
+
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+
+            <!-- MOBILE ACTIONS -->
+
+            <div class="mobile-nav-actions">
+
+                <button class="nav-icon"
+                        id="mobileSearchBtn"
+                        title="Search">
+
+                    ⌕
+
+                </button>
+
+
+                <button class="nav-icon"
+                        id="mobileWishlistBtn"
+                        title="Wishlist">
+
+                    ♡
+
+                </button>
+
+
+                <button class="nav-icon cart-button"
+                        id="mobileCartBtn"
+                        title="Shopping Cart">
+
+                    🛒
+
+                    <span class="cart-count">
+                        0
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- MOBILE ACCOUNT -->
+
+            <a href="#"
+               class="mobile-account"
+               id="mobileAccountBtn">
+
+                Login / Register
+
+            </a>
+
+        </nav>
+
+
+        <!-- =================================================
+             DESKTOP NAV ACTIONS
+        ================================================== -->
+
+        <div class="nav-actions">
+
+
+            <button class="nav-icon"
+                    id="searchBtn"
+                    title="Search">
+
+                ⌕
+
+            </button>
+
+
+            <button class="nav-icon"
+                    id="desktopWishlistBtn"
+                    title="Wishlist">
+
+                ♡
+
+            </button>
+
+
+            <button class="nav-icon cart-button"
+                    id="desktopCartBtn"
+                    title="Shopping Cart">
+
+                🛒
+
+                <span class="cart-count">
+                    0
+                </span>
+
+            </button>
+
+
+            <!-- HAMBURGER -->
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open Menu">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     SEARCH OVERLAY
+===================================================== -->
+
+<div class="search-overlay"
+     id="searchOverlay">
+
+    <div class="search-box">
+
+        <button class="search-close"
+                id="searchClose">
+
+            ×
+
+        </button>
+
+
+        <span>
+            SEARCH INSTALORA
+        </span>
+
+
+        <div class="search-input">
+
+            <input type="text"
+                   id="searchInput"
+                   placeholder="Search flowers, gifts, events...">
+
+
+            <button id="searchSubmit">
+                →
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     ACCOUNT MODAL
+===================================================== -->
+
+<div class="account-modal"
+     id="accountModal">
+
+    <div class="account-modal-box">
+
+
+        <button class="account-close"
+                id="accountClose">
+
+            ×
+
+        </button>
+
+
+        <img src="Logoinstaflora-removebg-preview.png"
+             alt="Instaflora"
+             class="account-modal-logo">
+
+
+        <h2>
+            Welcome to Instaflora
+        </h2>
+
+
+        <p class="account-modal-subtitle">
+            Login or create your account
+        </p>
+
+
+        <!-- TABS -->
+
+        <div class="account-tabs">
+
+            <button class="account-tab active"
+                    id="loginTab">
+
+                Login
+
+            </button>
+
+
+            <button class="account-tab"
+                    id="registerTab">
+
+                Register
+
+            </button>
+
+        </div>
+
+
+        <!-- LOGIN -->
+
+        <form class="account-form active"
+              id="loginForm">
+
+            <input type="email"
+                   placeholder="Email Address"
+                   required>
+
+
+            <input type="password"
+                   placeholder="Password"
+                   required>
+
+
+            <div class="account-options">
+
+                <label>
+
+                    <input type="checkbox">
+
+                    Remember me
+
+                </label>
+
+
+                <a href="#">
+                    Forgot Password?
+                </a>
+
+            </div>
+
+
+            <button type="submit"
+                    class="account-submit">
+
+                Login
+
+            </button>
+
+        </form>
+
+
+        <!-- REGISTER -->
+
+        <form class="account-form"
+              id="registerForm">
+
+            <input type="text"
+                   placeholder="Full Name"
+                   required>
+
+
+            <input type="email"
+                   placeholder="Email Address"
+                   required>
+
+
+            <input type="tel"
+                   placeholder="Phone Number"
+                   required>
+
+
+            <input type="password"
+                   placeholder="Create Password"
+                   required>
+
+
+            <input type="password"
+                   placeholder="Confirm Password"
+                   required>
+
+
+            <button type="submit"
+                    class="account-submit">
+
+                Create Account
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="event-hero">
+
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="hero-content">
+
+
+        <span class="eyebrow">
+            ELEGANT EVENTS • BEAUTIFUL MEMORIES
+        </span>
+
+
+        <h1>
+            We decorate<br>
+            <em>your moments.</em>
+        </h1>
+
+
+        <p>
+            From intimate celebrations to grand weddings,
+            Instaflora creates elegant floral décor and
+            unforgettable event experiences designed
+            especially for you.
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="#eventServices"
+               class="btn btn-primary">
+
+                Explore Our Services
+
+                <span>→</span>
+
+            </a>
+
+
+            <a href="contact.html"
+               class="btn btn-outline">
+
+                Plan Your Event
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section class="intro-section">
+
+
+    <span class="section-label">
+        EVENT DÉCOR BY INSTAFORA
+    </span>
+
+
+    <h2>
+        Your celebration deserves<br>
+        something <em>extraordinary.</em>
+    </h2>
+
+
+    <p>
+        We transform spaces into beautiful experiences
+        using fresh flowers, elegant styling, thoughtful
+        details and creative décor. Every event is designed
+        around your story, your style and your special moment.
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     EVENT SERVICES
+===================================================== -->
+
+<section class="services-section"
+         id="eventServices">
+
+
+    <div class="section-heading">
+
+
+        <div>
+
+            <span class="section-label">
+                WHAT WE DECORATE
+            </span>
+
+
+            <h2>
+                Beautiful décor for<br>
+                <em>every celebration.</em>
+            </h2>
+
+        </div>
+
+
+        <p>
+            From romantic weddings to joyful birthdays
+            and sophisticated corporate events, our
+            creative team brings every vision to life.
+        </p>
+
+    </div>
+
+
+
+    <div class="services-grid">
+
+
+        <!-- WEDDING -->
+
+        <article class="service-card featured">
+
+
+            <div class="service-image">
+
+                <img src="wedding.png"
+                     alt="Wedding Event Décor">
+
+                <span class="service-number">
+                    01
+                </span>
+
+            </div>
+
+
+            <div class="service-content">
+
+                <span>
+                    FOREVER BEGINS
+                </span>
+
+
+                <h3>
+                    Wedding Décor
+                </h3>
+
+
+                <p>
+                    Romantic floral arches, elegant
+                    centerpieces, bridal arrangements,
+                    aisle décor and beautifully styled
+                    wedding spaces.
+                </p>
+
+
+                <a href="contact.html">
+                    Plan Wedding →
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- BIRTHDAY -->
+
+        <article class="service-card">
+
+
+            <div class="service-image">
+
+                <img src="Birthday.png"
+                     alt="Birthday Event Décor">
+
+                <span class="service-number">
+                    02
+                </span>
+
+            </div>
+
+
+            <div class="service-content">
+
+                <span>
+                    MAKE A WISH
+                </span>
+
+
+                <h3>
+                    Birthday Décor
+                </h3>
+
+
+                <p>
+                    Stylish birthday backdrops, floral
+                    arrangements, table décor and
+                    beautiful celebration details.
+                </p>
+
+
+                <a href="contact.html">
+                    Plan Birthday →
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ANNIVERSARY -->
+
+        <article class="service-card">
+
+
+            <div class="service-image">
+
+                <img src="Anniversary.png"
+                     alt="Anniversary Event Décor">
+
+                <span class="service-number">
+                    03
+                </span>
+
+            </div>
+
+
+            <div class="service-content">
+
+                <span>
+                    CELEBRATE LOVE
+                </span>
+
+
+                <h3>
+                    Anniversary Décor
+                </h3>
+
+
+                <p>
+                    Romantic floral styling, candlelight
+                    arrangements and elegant details
+                    for unforgettable anniversaries.
+                </p>
+
+
+                <a href="contact.html">
+                    Plan Anniversary →
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- CORPORATE -->
+
+        <article class="service-card">
+
+
+            <div class="service-image">
+
+                <img src="gift.png"
+                     alt="Corporate Event Décor">
+
+                <span class="service-number">
+                    04
+                </span>
+
+            </div>
+
+
+            <div class="service-content">
+
+                <span>
+                    PROFESSIONAL MOMENTS
+                </span>
+
+
+                <h3>
+                    Corporate Events
+                </h3>
+
+
+                <p>
+                    Sophisticated floral arrangements,
+                    reception styling, stage décor and
+                    professional event presentation.
+                </p>
+
+
+                <a href="contact.html">
+                    Plan Corporate Event →
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- BABY EVENTS -->
+
+        <article class="service-card">
+
+
+            <div class="service-image">
+
+                <img src="Newborn.png"
+                     alt="Baby Shower Event Décor">
+
+                <span class="service-number">
+                    05
+                </span>
+
+            </div>
+
+
+            <div class="service-content">
+
+                <span>
+                    WELCOME LITTLE ONE
+                </span>
+
+
+                <h3>
+                    Baby Showers
+                </h3>
+
+
+                <p>
+                    Soft floral styling, welcome signs,
+                    beautiful table arrangements and
+                    charming décor for baby celebrations.
+                </p>
+
+
+                <a href="contact.html">
+                    Plan Baby Shower →
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- GRADUATION -->
+
+        <article class="service-card">
+
+
+            <div class="service-image">
+
+                <img src="gradu.png"
+                     alt="Graduation Event Décor">
+
+                <span class="service-number">
+                    06
+                </span>
+
+            </div>
+
+
+            <div class="service-content">
+
+                <span>
+                    CELEBRATE SUCCESS
+                </span>
+
+
+                <h3>
+                    Graduation Events
+                </h3>
+
+
+                <p>
+                    Elegant graduation backdrops,
+                    floral details, photo areas and
+                    celebration styling.
+                </p>
+
+
+                <a href="contact.html">
+                    Plan Graduation →
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FEATURED EXPERIENCE
+===================================================== -->
+
+<section class="experience-section">
+
+
+    <div class="experience-image">
+
+        <img src="wedding.png"
+             alt="Luxury Floral Event">
+
+
+        <div class="experience-badge">
+
+            <strong>
+                100%
+            </strong>
+
+            <span>
+                MADE WITH<br>
+                CARE
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="experience-content">
+
+
+        <span class="section-label">
+            THE INSTAFLOWER EXPERIENCE
+        </span>
+
+
+        <h2>
+            More than décor.<br>
+            It's a <em>feeling.</em>
+        </h2>
+
+
+        <p>
+            We believe beautiful events are created through
+            details. From the first flower selection to the
+            final table setting, our team carefully considers
+            every element to create an atmosphere your guests
+            will remember.
+        </p>
+
+
+        <div class="experience-list">
+
+
+            <div>
+
+                <span>
+                    01
+                </span>
+
+                <p>
+                    Fresh premium flowers
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    02
+                </span>
+
+                <p>
+                    Personalized event styling
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    03
+                </span>
+
+                <p>
+                    Elegant floral arrangements
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    04
+                </span>
+
+                <p>
+                    Professional setup & styling
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <a href="contact.html"
+           class="text-link">
+
+            Let's Create Your Event →
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROCESS
+===================================================== -->
+
+<section class="process-section">
+
+
+    <div class="section-heading centered">
+
+
+        <span class="section-label">
+            HOW IT WORKS
+        </span>
+
+
+        <h2>
+            From your idea to<br>
+            <em>your perfect event.</em>
+        </h2>
+
+    </div>
+
+
+    <div class="process-grid">
+
+
+        <div class="process-item">
+
+            <span class="process-number">
+                01
+            </span>
+
+
+            <div class="process-icon">
+                ♡
+            </div>
+
+
+            <h3>
+                Tell Us Your Vision
+            </h3>
+
+
+            <p>
+                Share your event type, date, venue,
+                theme and the look you have in mind.
+            </p>
+
+        </div>
+
+
+
+        <div class="process-item">
+
+            <span class="process-number">
+                02
+            </span>
+
+
+            <div class="process-icon">
+                ✦
+            </div>
+
+
+            <h3>
+                We Design
+            </h3>
+
+
+            <p>
+                Our creative team develops a beautiful
+                décor concept tailored to your celebration.
+            </p>
+
+        </div>
+
+
+
+        <div class="process-item">
+
+            <span class="process-number">
+                03
+            </span>
+
+
+            <div class="process-icon">
+                ✿
+            </div>
+
+
+            <h3>
+                We Prepare
+            </h3>
+
+
+            <p>
+                Flowers, arrangements and every décor
+                detail are carefully prepared.
+            </p>
+
+        </div>
+
+
+
+        <div class="process-item">
+
+            <span class="process-number">
+                04
+            </span>
+
+
+            <div class="process-icon">
+                ✓
+            </div>
+
+
+            <h3>
+                You Celebrate
+            </h3>
+
+
+            <p>
+                We style your venue beautifully so you
+                can simply enjoy your special moment.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     DECOR DETAILS
+===================================================== -->
+
+<section class="details-section">
+
+
+    <div class="details-heading">
+
+        <span class="section-label">
+            OUR SPECIALTIES
+        </span>
+
+
+        <h2>
+            Every detail,<br>
+            <em>beautifully arranged.</em>
+        </h2>
+
+    </div>
+
+
+    <div class="details-grid">
+
+
+        <div class="detail-card">
+
+            <span>✿</span>
+
+            <h3>
+                Floral Arches
+            </h3>
+
+            <p>
+                Statement floral installations
+                designed to become the centerpiece
+                of your celebration.
+            </p>
+
+        </div>
+
+
+        <div class="detail-card">
+
+            <span>✦</span>
+
+            <h3>
+                Table Styling
+            </h3>
+
+            <p>
+                Elegant centerpieces, candles,
+                flowers and refined table details.
+            </p>
+
+        </div>
+
+
+        <div class="detail-card">
+
+            <span>❀</span>
+
+            <h3>
+                Welcome Décor
+            </h3>
+
+            <p>
+                Beautiful entrance arrangements
+                that create the perfect first impression.
+            </p>
+
+        </div>
+
+
+        <div class="detail-card">
+
+            <span>♡</span>
+
+            <h3>
+                Photo Corners
+            </h3>
+
+            <p>
+                Stylish floral backdrops and
+                memorable spaces for beautiful photos.
+            </p>
+
+        </div>
+
+
+        <div class="detail-card">
+
+            <span>✧</span>
+
+            <h3>
+                Stage Décor
+            </h3>
+
+            <p>
+                Elegant stage arrangements created
+                around your event's theme.
+            </p>
+
+        </div>
+
+
+        <div class="detail-card">
+
+            <span>✽</span>
+
+            <h3>
+                Custom Styling
+            </h3>
+
+            <p>
+                Tell us your idea and we'll create
+                something uniquely yours.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="event-cta">
+
+
+    <div class="cta-overlay"></div>
+
+
+    <div class="cta-content">
+
+
+        <span class="section-label">
+            READY TO CELEBRATE?
+        </span>
+
+
+        <h2>
+            Let's make your event<br>
+            <em>unforgettable.</em>
+        </h2>
+
+
+        <p>
+            Tell us about your event and our team
+            will help you create the perfect floral
+            experience.
+        </p>
+
+
+        <div class="cta-buttons">
+
+            <a href="contact.html"
+               class="btn btn-primary">
+
+                Start Planning →
+
+            </a>
+
+
+            <a href="gallery.html"
+               class="btn btn-outline">
+
+                View Our Gallery
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer id="contact">
+
+
+    <div class="footer-main">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+
+            <a href="index.html"
+               class="brand footer-logo">
+
+
+                <img src="Logoinstaflora-removebg-preview.png"
+                     alt="Instaflora Logo">
+
+
+                <div class="brand-text">
+
+                    <span>
+                        INSTA
+                    </span>FLORA
+
+
+                    <small>
+                        FLOWERS PARADISE
+                    </small>
+
+                </div>
+
+            </a>
+
+
+            <p>
+                Thoughtfully designed flowers, gifts and
+                celebrations for life's most beautiful moments.
+            </p>
+
+
+            <div class="social-links">
+
+                <a href="#">
+                    f
+                </a>
+
+                <a href="#">
+                    ◎
+                </a>
+
+                <a href="#">
+                    p
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SHOP -->
+
+        <div class="footer-column">
+
+            <h4>
+                Shop
+            </h4>
+
+
+            <a href="shop.html">
+                Flowers
+            </a>
+
+            <a href="shop.html">
+                Bouquets
+            </a>
+
+            <a href="shop.html">
+                Gifts
+            </a>
+
+            <a href="shop.html">
+                Hampers
+            </a>
+
+            <a href="shop.html">
+                Cakes
+            </a>
+
+            <a href="shop.html">
+                Chocolates
+            </a>
+
+        </div>
+
+
+
+        <!-- OCCASIONS -->
+
+        <div class="footer-column">
+
+            <h4>
+                Occasions
+            </h4>
+
+
+            <a href="occasions.html">
+                Birthday
+            </a>
+
+            <a href="occasions.html">
+                Anniversary
+            </a>
+
+            <a href="occasions.html">
+                Wedding
+            </a>
+
+            <a href="occasions.html">
+                Newborn
+            </a>
+
+            <a href="occasions.html">
+                Graduation
+            </a>
+
+        </div>
+
+
+
+        <!-- COMPANY -->
+
+        <div class="footer-column">
+
+            <h4>
+                Company
+            </h4>
+
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="events.html">
+                Event Décor
+            </a>
+
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            <a href="#">
+                FAQs
+            </a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column">
+
+            <h4>
+                Contact
+            </h4>
+
+
+            <p>
+                Islamabad, Pakistan
+            </p>
+
+
+            <p>
+                +92 XXX XXXXXXX
+            </p>
+
+
+            <p>
+                hello@instaflora.com
+            </p>
+
+
+            <p>
+                Mon – Sat<br>
+                10:00 AM – 8:00 PM
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+
+        <span>
+            © 2026 Instaflora. All Rights Reserved.
+        </span>
+
+
+        <div>
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+
+            <a href="#">
+                Terms & Conditions
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     BACK TO TOP
+===================================================== -->
+
+<button class="back-top"
+        id="backTop">
+
+    ↑
+
+</button>
+
+
+
+<script src="events.js"></script>
+
+</body>
+</html>
