@@ -1,7 +1,6 @@
 /* =====================================================
-   INSTAFLOWER
-   OCCASIONS PAGE
-   PREMIUM BLACK + GOLD + CREAM THEME
+   INSTaflora OCCASIONS
+   LUXURY BLACK • GOLD • CREAM THEME
 ===================================================== */
 
 *{
@@ -14,27 +13,49 @@ html{
     scroll-behavior:smooth;
 }
 
-body{
-    font-family:Georgia,"Times New Roman",serif;
-    background:#f7f0e4;
-    color:#181818;
-    overflow-x:hidden;
-     width: 100%;
-    max-width: 100%;
+:root{
+
+    --black:#0d0d0d;
+    --black-soft:#151515;
+    --black-light:#202020;
+
+    --gold:#d4af37;
+    --gold-light:#e8cc82;
+    --gold-dark:#b8902d;
+
+    --cream:#f7f0df;
+    --ivory:#fffdf8;
+
+    --text:#242424;
+    --muted:#77736b;
+
+    --border:#ded8ca;
 }
 
-:root{
-    --black:#0e0e0e;
-    --black-soft:#151515;
-    --gold:#d4af37;
-    --gold-light:#e4c66d;
-    --gold-dark:#a98527;
-    --cream:#f7f0e4;
-    --cream-light:#fffaf0;
-    --beige:#e8dcc9;
-    --text:#222;
-    --muted:#756f65;
-    --white:#fff;
+body{
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    background:var(--ivory);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+    width:100%;
+}
+
+button,
+input,
+select{
+    font:inherit;
+}
+
+button{
+    cursor:pointer;
 }
 
 a{
@@ -47,21 +68,20 @@ img{
     display:block;
 }
 
-button,
-input{
-    font:inherit;
-}
-
 
 /* =====================================================
    NAVBAR
 ===================================================== */
 
 .navbar{
+
     position:fixed;
+
     top:0;
     left:0;
+
     width:100%;
+
     z-index:1000;
 
     background:rgba(13,13,13,.97);
@@ -69,20 +89,26 @@ input{
     backdrop-filter:blur(14px);
     -webkit-backdrop-filter:blur(14px);
 
-    border-bottom:1px solid rgba(198,161,91,.18);
+    border-bottom:
+        1px solid
+        rgba(198,161,91,.18);
 
     transition:.4s ease;
 }
 
 .navbar.scrolled{
+
     background:rgba(13,13,13,.99);
 
     box-shadow:
-        0 10px 35px rgba(0,0,0,.30);
+        0 10px 35px
+        rgba(0,0,0,.30);
 }
 
 .nav-container{
+
     width:100%;
+
     max-width:1550px;
 
     min-height:100px;
@@ -92,6 +118,7 @@ input{
     padding:8px 38px;
 
     display:flex;
+
     align-items:center;
 
     gap:28px;
@@ -103,7 +130,9 @@ input{
 ===================================================== */
 
 .brand{
+
     display:flex;
+
     align-items:center;
 
     gap:18px;
@@ -114,7 +143,9 @@ input{
 }
 
 .brand img{
+
     width:110px;
+
     height:85px;
 
     object-fit:contain;
@@ -127,18 +158,18 @@ input{
 }
 
 .brand:hover img{
+
     transform:scale(1.04);
 }
 
-
-/* =====================================================
-   BRAND TEXT
-===================================================== */
-
 .brand-text{
+
     color:var(--gold);
 
-    font-family:Georgia,"Times New Roman",serif;
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
 
     font-size:32px;
 
@@ -155,16 +186,8 @@ input{
     color:var(--gold-light);
 }
 
-.brand-text{
-    color:var(--gold);
-}
-
-
-/* =====================================================
-   TAGLINE
-===================================================== */
-
 .brand-text small{
+
     display:block;
 
     margin-top:9px;
@@ -190,6 +213,7 @@ input{
 ===================================================== */
 
 .nav-menu{
+
     display:flex;
 
     align-items:center;
@@ -200,6 +224,7 @@ input{
 }
 
 .nav-menu a{
+
     font-family:Arial,sans-serif;
 
     color:#eee9df;
@@ -216,6 +241,7 @@ input{
 }
 
 .nav-menu a::after{
+
     content:"";
 
     position:absolute;
@@ -233,11 +259,13 @@ input{
 
 .nav-menu a:hover,
 .nav-menu a.active{
+
     color:var(--gold-light);
 }
 
 .nav-menu a:hover::after,
 .nav-menu a.active::after{
+
     width:100%;
 }
 
@@ -247,6 +275,7 @@ input{
 ===================================================== */
 
 .mobile-nav-actions{
+
     display:none;
 }
 
@@ -256,6 +285,7 @@ input{
 ===================================================== */
 
 .nav-actions{
+
     display:flex;
 
     align-items:center;
@@ -268,12 +298,16 @@ input{
 }
 
 .nav-icon{
+
     width:42px;
     height:42px;
 
-    border:1px solid rgba(198,161,91,.28);
+    border:
+        1px solid
+        rgba(198,161,91,.28);
 
-    background:rgba(255,255,255,.02);
+    background:
+        rgba(255,255,255,.02);
 
     color:#f4eee3;
 
@@ -288,15 +322,18 @@ input{
     display:flex;
 
     align-items:center;
+
     justify-content:center;
 }
 
 .nav-icon:hover{
+
     border-color:var(--gold);
 
     color:var(--gold-light);
 
-    background:rgba(198,161,91,.08);
+    background:
+        rgba(198,161,91,.08);
 
     transform:translateY(-2px);
 }
@@ -307,6 +344,7 @@ input{
 ===================================================== */
 
 .cart-count{
+
     position:absolute;
 
     top:-5px;
@@ -321,55 +359,17 @@ input{
 
     color:var(--black);
 
-    font:10px Arial,sans-serif;
+    font:
+        10px Arial,
+        sans-serif;
 
     font-weight:bold;
 
     display:flex;
 
     align-items:center;
+
     justify-content:center;
-}
-
-
-/* =====================================================
-   LOGIN / REGISTER NAVBAR BUTTON
-===================================================== */
-
-.account-btn{
-    padding:13px 18px;
-
-    background:var(--gold);
-
-    color:#111;
-
-    border:1px solid var(--gold);
-
-    cursor:pointer;
-
-    font:
-        700 11px Arial,
-        sans-serif;
-
-    text-transform:uppercase;
-
-    letter-spacing:1px;
-
-    white-space:nowrap;
-
-    transition:.3s ease;
-}
-
-.account-btn:hover{
-    background:var(--gold-light);
-
-    border-color:var(--gold-light);
-
-    transform:translateY(-2px);
-
-    box-shadow:
-        0 8px 20px
-        rgba(212,175,55,.25);
 }
 
 
@@ -378,14 +378,21 @@ input{
 ===================================================== */
 
 .menu-toggle{
+
     display:none;
 
     width:42px;
     height:42px;
 
+    margin-left:auto;
+
+    margin-right:0;
+
     background:transparent;
 
-    border:1px solid rgba(198,161,91,.30);
+    border:
+        1px solid
+        rgba(198,161,91,.30);
 
     color:var(--gold-light);
 
@@ -396,6 +403,7 @@ input{
     cursor:pointer;
 
     align-items:center;
+
     justify-content:center;
 
     flex-shrink:0;
@@ -407,9 +415,10 @@ input{
 ===================================================== */
 
 .occasion-hero{
-    height:78vh;
 
-    min-height:620px;
+    min-height:680px;
+
+    padding-top:100px;
 
     position:relative;
 
@@ -417,137 +426,182 @@ input{
 
     align-items:center;
 
+    width:100%;
+
     overflow:hidden;
 
     background:
-    linear-gradient(
-        90deg,
-        rgba(10,10,10,.92),
-        rgba(10,10,10,.68),
-        rgba(10,10,10,.18)
-    ),
-    url("wedding.png")
-    center/cover no-repeat;
+
+        linear-gradient(
+            90deg,
+            rgba(10,10,10,.88),
+            rgba(10,10,10,.60),
+            rgba(10,10,10,.22)
+        ),
+
+        url("gift.png")
+        center/cover no-repeat;
 }
 
 .hero-overlay{
+
     position:absolute;
 
     inset:0;
 
     background:
-    radial-gradient(
-        circle at 80% 50%,
-        rgba(212,175,55,.12),
-        transparent 35%
-    );
+        linear-gradient(
+            90deg,
+            rgba(10,10,10,.25),
+            transparent
+        );
+
+    pointer-events:none;
 }
 
 .hero-content{
+
     position:relative;
 
     z-index:2;
 
-    max-width:700px;
+    width:100%;
 
-    margin-left:8%;
+    max-width:1450px;
+
+    margin:0 auto;
+
+    padding:80px 7%;
 
     color:white;
 }
 
-.eyebrow,
-.section-label{
+.eyebrow{
+
+    display:block;
+
     color:var(--gold-light);
 
-    font:11px Arial;
+    font:
+        bold 11px Arial,
+        sans-serif;
 
-    font-weight:bold;
+    letter-spacing:4px;
 
-    letter-spacing:3px;
+    margin-bottom:22px;
 }
 
 .hero-content h1{
-    font-size:clamp(50px,6vw,82px);
+
+    max-width:750px;
+
+    font-size:
+        clamp(50px,6vw,84px);
 
     font-weight:normal;
 
-    line-height:1.03;
+    line-height:1.05;
 
-    margin:24px 0;
+    margin-bottom:25px;
 }
 
 .hero-content h1 em{
+
     color:var(--gold-light);
 
     font-style:italic;
 }
 
 .hero-content p{
-    max-width:590px;
 
-    color:#e7e1d6;
+    max-width:620px;
 
-    font:15px/1.9 Arial;
-}
+    color:#ddd8cd;
 
-.hero-buttons{
-    display:flex;
+    font:
+        15px/1.8 Arial,
+        sans-serif;
 
-    gap:15px;
-
-    flex-wrap:wrap;
-
-    margin-top:32px;
+    margin-bottom:32px;
 }
 
 
 /* =====================================================
-   BUTTONS
+   HERO BUTTONS
 ===================================================== */
 
+.hero-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+}
+
 .btn{
+
     display:inline-flex;
 
     align-items:center;
+
     justify-content:center;
 
-    gap:12px;
+    gap:15px;
 
-    padding:15px 27px;
+    min-height:50px;
 
-    font:bold 11px Arial;
+    padding:0 22px;
 
-    letter-spacing:.5px;
+    font:
+        bold 10px Arial,
+        sans-serif;
 
-    transition:.3s;
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    transition:.3s ease;
 }
 
 .btn-primary{
+
     background:var(--gold);
 
     color:#111;
+
+    border:1px solid var(--gold);
 }
 
 .btn-primary:hover{
+
     background:var(--gold-light);
 
-    transform:translateY(-3px);
+    border-color:var(--gold-light);
 
-    box-shadow:0 10px 25px rgba(212,175,55,.25);
+    transform:translateY(-2px);
 }
 
 .btn-outline{
-    border:1px solid rgba(255,255,255,.6);
 
-    color:white;
+    background:transparent;
+
+    color:#fff;
+
+    border:
+        1px solid
+        rgba(255,255,255,.55);
 }
 
 .btn-outline:hover{
-    background:white;
+
+    background:#fff;
 
     color:#111;
 
-    transform:translateY(-3px);
+    border-color:#fff;
 }
 
 
@@ -556,58 +610,82 @@ input{
 ===================================================== */
 
 .intro-section{
-    max-width:900px;
 
-    margin:auto;
+    max-width:950px;
+
+    margin:0 auto;
+
+    padding:110px 7%;
 
     text-align:center;
+}
 
-    padding:105px 7% 80px;
+.section-label{
+
+    display:block;
+
+    color:var(--gold-dark);
+
+    font:
+        bold 10px Arial,
+        sans-serif;
+
+    letter-spacing:3px;
 }
 
 .intro-section h2{
-    font-size:48px;
+
+    font-size:
+        clamp(38px,5vw,60px);
 
     font-weight:normal;
 
-    line-height:1.15;
+    line-height:1.1;
 
-    margin:18px 0 25px;
+    margin:18px 0 22px;
 }
 
 .intro-section h2 em{
+
     color:var(--gold-dark);
+
+    font-style:italic;
 }
 
 .intro-section p{
+
     max-width:700px;
 
-    margin:auto;
+    margin:0 auto;
 
-    color:var(--muted);
+    color:#777;
 
-    font:14px/1.9 Arial;
+    font:
+        14px/1.9 Arial,
+        sans-serif;
 }
 
 
 /* =====================================================
-   OCCASION COLLECTION
+   OCCASION SECTION
 ===================================================== */
 
 .occasion-section{
-    max-width:1500px;
 
-    margin:auto;
+    max-width:1450px;
 
-    padding:80px 7% 120px;
+    margin:0 auto;
+
+    padding:30px 6% 110px;
 }
 
 .section-heading{
+
     display:flex;
 
-    justify-content:space-between;
+    align-items:flex-end;
 
-    align-items:end;
+    justify-content:space-between;
 
     gap:50px;
 
@@ -615,76 +693,86 @@ input{
 }
 
 .section-heading h2{
-    font-size:48px;
+
+    font-size:
+        clamp(40px,5vw,58px);
 
     font-weight:normal;
 
-    line-height:1.1;
+    line-height:1.05;
 
     margin-top:15px;
 }
 
 .section-heading h2 em{
+
     color:var(--gold-dark);
 
     font-style:italic;
 }
 
 .section-heading > p{
-    max-width:420px;
 
-    color:var(--muted);
+    max-width:470px;
 
-    font:13px/1.8 Arial;
-}
+    color:#777;
 
-.centered{
-    display:block;
-
-    text-align:center;
+    font:
+        13px/1.8 Arial,
+        sans-serif;
 }
 
 
 /* =====================================================
-   GRID
+   OCCASION GRID
 ===================================================== */
 
 .occasion-grid{
+
     display:grid;
 
     grid-template-columns:
-    repeat(3,1fr);
+        repeat(2,1fr);
 
-    grid-template-rows:
-    300px 300px;
+    grid-auto-rows:420px;
 
-    gap:18px;
+    gap:25px;
 }
 
 .occasion-card{
+
     position:relative;
 
     overflow:hidden;
 
-    background:#222;
+    min-width:0;
 
-    min-height:300px;
+    background:#ddd;
+
+    display:block;
 }
 
 .occasion-card.large{
+
     grid-row:span 2;
 }
 
 .occasion-card img{
+
     width:100%;
+
     height:100%;
 
     object-fit:cover;
 
-    transition:1s ease;
+    transition:
+        transform .8s
+        cubic-bezier(.2,.65,.3,1),
+        filter .8s ease;
 }
 
 .occasion-card::after{
+
     content:"";
 
     position:absolute;
@@ -692,178 +780,219 @@ input{
     inset:0;
 
     background:
-    linear-gradient(
-        transparent 25%,
-        rgba(8,8,8,.88)
-    );
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.82),
+            rgba(0,0,0,.15) 55%,
+            transparent
+        );
 
-    transition:.5s;
+    z-index:1;
+
+    pointer-events:none;
 }
 
 .occasion-card:hover img{
-    transform:scale(1.08);
-}
 
-.occasion-card:hover::after{
-    background:
-    linear-gradient(
-        transparent 15%,
-        rgba(8,8,8,.94)
-    );
+    transform:scale(1.07);
+
+    filter:brightness(.90);
 }
 
 .occasion-number{
+
     position:absolute;
+
+    top:20px;
+
+    left:20px;
 
     z-index:3;
 
-    top:20px;
-    left:20px;
+    color:white;
 
-    color:var(--gold-light);
-
-    font:11px Arial;
+    font:
+        11px Arial,
+        sans-serif;
 
     letter-spacing:2px;
+
+    opacity:.8;
 }
 
 .occasion-info{
+
     position:absolute;
 
-    z-index:4;
+    left:30px;
 
-    left:28px;
-    right:20px;
-    bottom:25px;
+    right:30px;
+
+    bottom:28px;
+
+    z-index:3;
 
     color:white;
 }
 
 .occasion-info span{
+
     color:var(--gold-light);
 
-    font:10px Arial;
+    font:
+        bold 9px Arial,
+        sans-serif;
 
     letter-spacing:2px;
 }
 
 .occasion-info h3{
-    font-size:29px;
+
+    font-size:36px;
 
     font-weight:normal;
 
-    margin:7px 0;
+    margin:8px 0 5px;
 }
 
 .occasion-info p{
+
     color:#ddd;
 
-    font:11px Arial;
+    font:
+        12px Arial,
+        sans-serif;
 
-    margin-bottom:13px;
+    margin-bottom:14px;
 }
 
 .occasion-info strong{
+
     color:var(--gold-light);
 
-    font:11px Arial;
+    font:
+        bold 10px Arial,
+        sans-serif;
 
     letter-spacing:1px;
 }
 
 
 /* =====================================================
-   MORE OCCASIONS
+   GIFT SECTION
 ===================================================== */
 
 .gift-section{
-    background:#ebe0ce;
+
+    background:var(--cream);
 
     padding:110px 7%;
 }
 
-.gift-section .section-heading{
+.section-heading.centered{
+
     display:block;
 
     text-align:center;
+
+    margin-bottom:55px;
+}
+
+.section-heading.centered h2{
+
+    margin-top:15px;
 }
 
 .gift-grid{
-    max-width:1300px;
 
-    margin:55px auto 0;
+    max-width:1250px;
+
+    margin:0 auto;
 
     display:grid;
 
     grid-template-columns:
-    repeat(4,1fr);
+        repeat(4,1fr);
 
-    gap:18px;
+    gap:20px;
 }
 
 .gift-card{
-    background:#fffaf1;
 
-    padding:38px 28px;
+    background:var(--ivory);
+
+    padding:42px 28px;
+
+    border:
+        1px solid
+        rgba(0,0,0,.06);
 
     text-align:center;
 
-    border:1px solid rgba(160,125,50,.12);
-
-    transition:.4s;
+    transition:.4s ease;
 }
 
 .gift-card:hover{
-    transform:translateY(-8px);
 
-    box-shadow:0 20px 40px rgba(30,25,15,.1);
+    transform:translateY(-7px);
 
-    border-color:rgba(212,175,55,.4);
+    box-shadow:
+        0 20px 45px
+        rgba(0,0,0,.08);
 }
 
 .gift-icon{
-    width:55px;
-    height:55px;
 
-    margin:0 auto 20px;
+    width:60px;
 
-    border:1px solid var(--gold);
+    height:60px;
+
+    margin:0 auto 22px;
+
+    border:
+        1px solid
+        rgba(184,144,45,.35);
 
     border-radius:50%;
 
     display:flex;
+
     align-items:center;
+
     justify-content:center;
 
     color:var(--gold-dark);
 
-    font-size:22px;
+    font-size:24px;
 }
 
 .gift-card h3{
+
     font-size:22px;
 
     font-weight:normal;
 
-    margin-bottom:13px;
+    margin-bottom:15px;
 }
 
 .gift-card p{
-    color:var(--muted);
 
-    font:12px/1.8 Arial;
+    color:#777;
 
-    min-height:65px;
+    font:
+        12px/1.8 Arial,
+        sans-serif;
+
+    margin-bottom:22px;
 }
 
 .gift-card a{
-    display:inline-block;
 
-    margin-top:20px;
+    color:var(--gold-dark);
 
-    color:#9b7623;
-
-    font:bold 10px Arial;
+    font:
+        bold 10px Arial,
+        sans-serif;
 
     letter-spacing:1px;
 }
@@ -874,184 +1003,222 @@ input{
 ===================================================== */
 
 .custom-occasion{
+
+    min-height:500px;
+
+    background:var(--black);
+
+    color:white;
+
     position:relative;
 
     overflow:hidden;
 
-    min-height:500px;
-
     display:flex;
 
     align-items:center;
-
-    padding:90px 10%;
-
-    background:
-    linear-gradient(
-        110deg,
-        #111,
-        #171717
-    );
-
-    color:white;
 }
 
 .custom-content{
-    max-width:620px;
 
     position:relative;
 
     z-index:3;
+
+    width:65%;
+
+    padding:100px 8%;
+}
+
+.custom-content .section-label{
+
+    color:var(--gold-light);
 }
 
 .custom-content h2{
-    font-size:55px;
+
+    font-size:
+        clamp(42px,5vw,64px);
 
     font-weight:normal;
 
     line-height:1.05;
 
-    margin:20px 0;
+    margin:18px 0 22px;
 }
 
 .custom-content h2 em{
+
     color:var(--gold-light);
+
+    font-style:italic;
 }
 
 .custom-content p{
-    color:#c7c1b6;
 
-    font:14px/1.9 Arial;
+    max-width:620px;
+
+    color:#aaa;
+
+    font:
+        14px/1.9 Arial,
+        sans-serif;
 
     margin-bottom:30px;
 }
 
 .custom-decoration{
+
     position:absolute;
 
-    right:10%;
+    right:5%;
 
-    top:50%;
+    top:0;
 
-    transform:translateY(-50%);
+    width:35%;
 
-    width:420px;
-    height:420px;
+    height:100%;
 }
 
 .gold-circle{
+
     position:absolute;
 
-    border:1px solid rgba(212,175,55,.35);
+    border:
+        1px solid
+        rgba(212,175,55,.35);
 
     border-radius:50%;
 }
 
 .circle-one{
-    width:420px;
-    height:420px;
+
+    width:360px;
+    height:360px;
+
+    right:40px;
+    top:70px;
 }
 
 .circle-two{
-    width:290px;
-    height:290px;
 
-    top:65px;
-    left:65px;
+    width:220px;
+    height:220px;
+
+    right:150px;
+    top:140px;
+
+    border-color:
+        rgba(232,204,130,.20);
 }
 
 .flower-symbol{
+
     position:absolute;
 
-    left:120px;
-    top:115px;
+    right:150px;
+
+    top:205px;
 
     color:var(--gold);
 
-    font-size:150px;
+    font-size:90px;
 
-    animation:rotateFlower 15s linear infinite;
-}
-
-@keyframes rotateFlower{
-
-    from{
-        transform:rotate(0);
-    }
-
-    to{
-        transform:rotate(360deg);
-    }
-
+    opacity:.7;
 }
 
 
 /* =====================================================
-   PROMISE
+   PROMISE SECTION
 ===================================================== */
 
 .promise-section{
-    max-width:1400px;
 
-    margin:auto;
+    padding:110px 7%;
 
-    padding:115px 7%;
+    background:var(--ivory);
+}
 
-    display:grid;
+.promise-heading{
 
-    grid-template-columns:1fr 2fr;
+    max-width:450px;
 
-    gap:80px;
+    margin-bottom:65px;
 }
 
 .promise-heading h2{
-    font-size:48px;
+
+    font-size:
+        clamp(42px,5vw,62px);
 
     font-weight:normal;
 
-    line-height:1.1;
+    line-height:1.05;
 
-    margin-top:18px;
+    margin-top:16px;
 }
 
 .promise-heading h2 em{
+
     color:var(--gold-dark);
+
+    font-style:italic;
 }
 
 .promise-grid{
+
     display:grid;
 
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:
+        repeat(4,1fr);
 
-    gap:45px 60px;
+    gap:0;
 }
 
 .promise-item{
-    border-top:1px solid #d4c7b3;
 
-    padding-top:20px;
+    padding:
+        0 30px;
+
+    border-left:
+        1px solid
+        var(--border);
+}
+
+.promise-item:first-child{
+
+    padding-left:0;
+
+    border-left:0;
 }
 
 .promise-item > span{
+
     color:var(--gold-dark);
 
-    font:11px Arial;
+    font:
+        bold 10px Arial,
+        sans-serif;
 
     letter-spacing:2px;
 }
 
 .promise-item h3{
-    font-size:22px;
+
+    font-size:21px;
 
     font-weight:normal;
 
-    margin:10px 0;
+    margin:15px 0 12px;
 }
 
 .promise-item p{
-    color:var(--muted);
 
-    font:12px/1.8 Arial;
+    color:#777;
+
+    font:
+        12px/1.8 Arial,
+        sans-serif;
 }
 
 
@@ -1060,14 +1227,16 @@ input{
 ===================================================== */
 
 footer{
+
     background:#0b0b0b;
 
-    color:#d4cec2;
+    color:#ddd;
 
     padding:80px 7% 25px;
 }
 
 .footer-main{
+
     max-width:1400px;
 
     margin:auto;
@@ -1075,71 +1244,97 @@ footer{
     display:grid;
 
     grid-template-columns:
-    2fr repeat(4,1fr);
+        2fr repeat(4,1fr);
 
     gap:50px;
 }
 
 .footer-logo{
-    display:inline-flex;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.footer-logo img{
+
+    width:105px;
+
+    height:70px;
+
+    object-fit:contain;
 }
 
 .footer-brand p{
-    max-width:320px;
+
+    max-width:330px;
+
+    color:#999;
+
+    font:
+        13px/1.8 Arial,
+        sans-serif;
 
     margin:25px 0;
-
-    color:#aaa49b;
-
-    font:13px/1.8 Arial;
 }
 
 .social-links{
+
     display:flex;
 
-    gap:8px;
+    gap:9px;
 }
 
 .social-links a{
-    width:35px;
-    height:35px;
 
-    border:1px solid #3b3832;
+    width:36px;
+    height:36px;
+
+    border:
+        1px solid #444;
 
     border-radius:50%;
 
     display:flex;
 
     align-items:center;
+
     justify-content:center;
 
-    font:14px Arial;
+    color:#ddd;
+
+    font-family:Arial;
 
     transition:.3s;
 }
 
 .social-links a:hover{
+
     background:var(--gold);
 
-    border-color:var(--gold);
-
     color:#111;
+
+    border-color:var(--gold);
 }
 
 .footer-column{
+
     display:flex;
 
     flex-direction:column;
 
-    gap:12px;
+    gap:13px;
 }
 
 .footer-column h4{
-    color:var(--gold-light);
 
-    font:12px Arial;
+    color:var(--gold);
 
-    text-transform:uppercase;
+    font:
+        bold 11px Arial,
+        sans-serif;
 
     letter-spacing:2px;
 
@@ -1148,25 +1343,31 @@ footer{
 
 .footer-column a,
 .footer-column p{
-    color:#aaa49b;
 
-    font:11px/1.6 Arial;
+    color:#999;
+
+    font:
+        11px/1.6 Arial,
+        sans-serif;
 
     transition:.3s;
 }
 
 .footer-column a:hover{
+
     color:var(--gold-light);
 }
 
 .footer-bottom{
+
     max-width:1400px;
 
-    margin:70px auto 0;
+    margin:65px auto 0;
 
     padding-top:20px;
 
-    border-top:1px solid #292722;
+    border-top:
+        1px solid #292929;
 
     display:flex;
 
@@ -1174,12 +1375,15 @@ footer{
 
     gap:20px;
 
-    color:#77736c;
+    color:#666;
 
-    font:10px Arial;
+    font:
+        10px Arial,
+        sans-serif;
 }
 
 .footer-bottom div{
+
     display:flex;
 
     gap:20px;
@@ -1191,6 +1395,7 @@ footer{
 ===================================================== */
 
 .back-top{
+
     position:fixed;
 
     right:25px;
@@ -1207,1195 +1412,52 @@ footer{
 
     color:#111;
 
-    cursor:pointer;
-
     display:none;
 
-    z-index:999;
+    z-index:1000;
 
-    box-shadow:0 8px 25px rgba(0,0,0,.25);
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,.2);
 }
 
 .back-top.show{
     display:block;
-
-    animation:fadeUp .3s ease;
-}
-
-@keyframes fadeUp{
-
-    from{
-        opacity:0;
-        transform:translateY(10px);
-    }
-
-    to{
-        opacity:1;
-        transform:none;
-    }
 }
 
 
 /* =====================================================
-   RESPONSIVE - TABLET
+   IMAGE ANIMATIONS
 ===================================================== */
 
-@media(max-width:1200px){
-
-    .nav-container{
-        padding-left:25px;
-        padding-right:25px;
-
-        gap:20px;
-    }
-
-    .brand img{
-        width:90px;
-        height:75px;
-    }
-
-    .brand-text{
-        font-size:27px;
-    }
-
-    .nav-menu{
-        gap:17px;
-    }
-
-    .nav-menu a{
-        font-size:12px;
-    }
-
-    .product-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .occasion-grid{
-        grid-template-columns:repeat(3,1fr);
-    }
-
-    .occasion-card{
-        height:330px;
-    }
-
-    .footer-main{
-        grid-template-columns:repeat(3,1fr);
-    }
-}
-
-
-/* =====================================================
-   RESPONSIVE - MOBILE NAV
-===================================================== */
-
-@media(max-width:850px){
-
-    .nav-container{
-        min-height:70px;
-
-        padding:6px 18px;
-
-        gap:10px;
-
-        justify-content:space-between;
-    }
-
-
-    .account-btn{
-        display:none;
-    }
-
-
-    /* LOGO + TEXT LEFT */
-
-    .brand{
-        gap:9px;
-
-        min-width:0;
-
-        margin-right:auto;
-    }
-
-    .brand img{
-        width:58px;
-        height:54px;
-    }
-
-    .brand-text{
-        font-size:19px;
-
-        letter-spacing:.5px;
-    }
-
-    .brand-text small{
-        font-size:6.5px;
-
-        letter-spacing:2px;
-
-        margin-top:5px;
-    }
-
-
-    /* =================================================
-       MOBILE NAV MENU
-    ================================================= */
-
-    @media(max-width:850px){
-
-    .nav-menu{
-        position:absolute;
-
-        top:76px;
-        left:0;
-
-        width:100%;
-
-        background:rgba(13,13,13,.99);
-
-        display:none;
-
-        flex-direction:column;
-
-        padding:18px 22px 25px;
-
-        gap:2px;
-
-        border-top:1px solid rgba(198,161,91,.20);
-
-        box-shadow:0 15px 30px rgba(0,0,0,.25);
-
-        /* MOBILE MENU SCROLL */
-        max-height:calc(100vh - 76px);
-        overflow-y:auto;
-        overflow-x:hidden;
-    }
-
-    .nav-menu.active{
-        display:flex;
-    }
-    .nav-menu.active{
-        display:flex;
-    }
-
-    .nav-menu a{
-        width:100%;
-
-        padding:13px 5px;
-
-        font-size:14px;
-
-        border-bottom:1px solid rgba(255,255,255,.06);
-    }
-
-    .nav-menu a::after{
-        bottom:0;
-    }
-
-
-    /* =================================================
-       MOBILE SEARCH / WISHLIST / CART
-    ================================================= */
-
-    .mobile-nav-actions{
-        width:100%;
-
-        display:flex;
-
-        align-items:center;
-
-        justify-content:flex-start;
-
-        gap:12px;
-
-        padding:16px 5px;
-
-        border-bottom:1px solid rgba(255,255,255,.08);
-    }
-
-    .mobile-nav-actions .nav-icon{
-        display:flex;
-
-        width:42px;
-        height:42px;
-
-        flex-shrink:0;
-    }
-
-
-    /* =================================================
-       DESKTOP ACTIONS HIDDEN ON MOBILE
-    ================================================= */
-
-    .nav-actions{
-        margin-left:auto;
-
-        gap:8px;
-
-        flex-shrink:0;
-    }
-
-    .nav-actions > .nav-icon{
-        display:none;
-    }
-
-
-    /* =================================================
-       HAMBURGER RIGHT
-    ================================================= */
-
-    .menu-toggle{
-        display:flex;
-
-        margin-left:0;
-
-        width:40px;
-        height:40px;
-
-        flex-shrink:0;
-    }
-
-    }
-    /* =================================================
-       HERO
-    ================================================= */
-
-    .hero-content{
-        left:7%;
-
-        right:7%;
-    }
-
-
-    /* =================================================
-       TRUST
-    ================================================= */
-
-    .trust-bar{
-        grid-template-columns:repeat(2,1fr);
-
-        gap:25px;
-    }
-
-    .trust-item{
-        border:0;
-    }
-
-
-    /* =================================================
-       CATEGORIES
-    ================================================= */
-
-    .category-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .category-card.large{
-        grid-row:span 1;
-
-        height:310px;
-    }
-
-
-    /* =================================================
-       OCCASIONS
-    ================================================= */
-
-    .occasion-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-
-    /* =================================================
-       EVENTS
-    ================================================= */
-
-    .event-grid{
-        grid-template-columns:1fr;
-    }
-
-
-    /* =================================================
-       STORY
-    ================================================= */
-
-    .story-section{
-        grid-template-columns:1fr;
-
-        gap:60px;
-    }
-
-    .story-image-main{
-        height:500px;
-    }
-
-
-    /* =================================================
-       CUSTOM
-    ================================================= */
-
-    .custom-decoration{
-        opacity:.3;
-
-        right:-100px;
-    }
-
-
-    /* =================================================
-       NEWSLETTER
-    ================================================= */
-
-    .newsletter{
-        flex-direction:column;
-
-        align-items:flex-start;
-    }
-
-    .newsletter form{
-        width:100%;
-    }
-
-
-    /* =================================================
-       GIFT
-    ================================================= */
-
-    .gift-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-
-    /* =================================================
-       FOOTER
-    ================================================= */
-
-    .footer-main{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-}
-
-
-/* =====================================================
-   RESPONSIVE - SMALL MOBILE
-===================================================== */
-
-@media(max-width:600px){
-
-    .nav-container{
-        min-height:68px;
-
-        padding:5px 15px;
-    }
-
-    .brand{
-        gap:8px;
-    }
-
-    .brand img{
-        width:54px;
-        height:50px;
-    }
-
-    .brand-text{
-        font-size:17px;
-    }
-
-    .brand-text small{
-        font-size:5.8px;
-
-        letter-spacing:1.7px;
-
-        margin-top:5px;
-    }
-
-
-    .nav-menu{
-        top:68px;
-    }
-
-
-    .mobile-nav-actions{
-        padding:15px 5px;
-    }
-
-
-    .mobile-nav-actions .nav-icon{
-        width:40px;
-        height:40px;
-    }
-
-
-    .menu-toggle{
-        width:39px;
-        height:39px;
-
-        font-size:21px;
-    }
-
-
-    /* HERO */
-
-    .hero{
-        min-height:700px;
-    }
-
-    .hero h1{
-        font-size:45px;
-    }
-
-    .hero p{
-        font-size:14px;
-    }
-
-    .hero-buttons{
-        flex-direction:column;
-
-        align-items:flex-start;
-    }
-
-    .btn{
-        width:auto;
-    }
-
-
-    /* SECTIONS */
-
-    .section{
-        padding:75px 5%;
-    }
-
-    .section-heading h2{
-        font-size:38px;
-    }
-
-    .section-heading{
-        display:block;
-    }
-
-    .section-heading > p{
-        margin-top:20px;
-    }
-
-
-    /* CATEGORY */
-
-    .category-grid{
-        grid-template-columns:1fr;
-    }
-
-    .category-card,
-    .category-card.large{
-        height:350px;
-    }
-
-
-    /* OCCASIONS */
-
-    .occasion-grid{
-        grid-template-columns:1fr;
-    }
-
-    .occasion-card{
-        height:350px;
-    }
-
-
-    /* PRODUCTS */
-
-    .product-grid{
-        grid-template-columns:1fr;
-    }
-
-    .product-image{
-        height:400px;
-    }
-
-    .filter-buttons{
-        margin-top:25px;
-    }
-
-
-    /* CUSTOM */
-
-    .custom-section{
-        padding:80px 7%;
-    }
-
-    .custom-content h2{
-        font-size:45px;
-    }
-
-    .custom-decoration{
-        right:-150px;
-    }
-
-
-    /* STORY */
-
-    .story-section{
-        padding:80px 5%;
-    }
-
-    .story-image-main{
-        height:400px;
-    }
-
-    .story-badge{
-        width:120px;
-        height:120px;
-
-        right:-5px;
-    }
-
-    .story-stats{
-        gap:20px;
-    }
-
-    .story-stats strong{
-        font-size:24px;
-    }
-
-
-    /* GALLERY */
-
-    .gallery-grid{
-        grid-template-columns:repeat(2,1fr);
-
-        grid-auto-rows:180px;
-    }
-
-    .gallery-item.wide{
-        grid-column:span 2;
-    }
-
-
-    /* REVIEWS */
-
-    .review-container{
-        gap:10px;
-    }
-
-    .review-card blockquote{
-        font-size:21px;
-    }
-
-
-    /* SOCIAL */
-
-    .social-grid{
-        grid-template-columns:repeat(3,1fr);
-    }
-
-
-    /* FOOTER */
-
-    .footer-main{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .footer-brand{
-        grid-column:span 2;
-    }
-
-    .footer-bottom{
-        flex-direction:column;
-    }
-
-}
-
-
-/* =====================================================
-   VERY SMALL MOBILE
-===================================================== */
-
-@media(max-width:400px){
-
-    .nav-container{
-        padding-left:10px;
-        padding-right:10px;
-    }
-
-    .brand img{
-        width:50px;
-        height:46px;
-    }
-
-    .brand-text{
-        font-size:15px;
-    }
-
-    .brand-text small{
-        font-size:5.2px;
-
-        letter-spacing:1.3px;
-    }
-
-    .menu-toggle{
-        width:38px;
-        height:38px;
-    }
-
-    .hero h1{
-        font-size:38px;
-    }
-
-    .trust-bar{
-        grid-template-columns:1fr;
-    }
-
-    .trust-item{
-        justify-content:flex-start;
-    }
-
-    .footer-main{
-        grid-template-columns:1fr;
-    }
-
-    .footer-brand{
-        grid-column:auto;
-    }
-
-    .footer-bottom div{
-        flex-direction:column;
-
-        gap:8px;
-    }
-
-}
-
-
-/* =====================================================
-   LOGIN / REGISTER MODAL
-===================================================== */
-
-.account-modal{
-
-    position:fixed;
-
-    inset:0;
-
-    z-index:9999;
-
-    display:none;
-
-    align-items:center;
-
-    justify-content:center;
-
-    padding:20px;
-
-    background:
-        rgba(0,0,0,.78);
-
-    backdrop-filter:blur(8px);
-}
-
-.account-modal.show{
-    display:flex;
-}
-
-
-/* =====================================================
-   MODAL BOX
-===================================================== */
-
-.account-modal-box{
-
-    width:100%;
-
-    max-width:440px;
-
-    max-height:90vh;
-
-    overflow-y:auto;
-
-    position:relative;
-
-    padding:38px;
-
-    background:#171717;
-
-    border:
-        1px solid
-        rgba(212,175,55,.35);
-
-    box-shadow:
-        0 30px 80px
-        rgba(0,0,0,.6);
-
-    animation:
-        accountPopup .3s ease;
-}
-
-
-@keyframes accountPopup{
-
-    from{
-        opacity:0;
-        transform:translateY(20px) scale(.97);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0) scale(1);
-    }
-
-}
-
-
-/* =====================================================
-   CLOSE
-===================================================== */
-
-.account-close{
-
-    position:absolute;
-
-    top:12px;
-    right:15px;
-
-    width:35px;
-    height:35px;
-
-    border:0;
-
-    background:none;
-
-    color:#aaa;
-
-    font-size:28px;
-
-    cursor:pointer;
-
-    transition:.3s;
-}
-
-.account-close:hover{
-    color:var(--gold);
-}
-
-
-/* =====================================================
-   LOGO
-===================================================== */
-
-.account-modal-logo{
-
-    display:block;
-
-    width:90px;
-
-    height:80px;
-
-    object-fit:contain;
-
-    margin:0 auto 10px;
-}
-
-
-/* =====================================================
-   HEADING
-===================================================== */
-
-.account-modal-box h2{
-
-    text-align:center;
-
-    color:var(--gold);
-
-    font-size:30px;
-
-    font-weight:normal;
-
-    margin-bottom:7px;
-}
-
-.account-modal-subtitle{
-
-    text-align:center;
-
-    color:#999;
-
-    font:12px Arial,sans-serif;
-
-    margin-bottom:25px;
-}
-
-
-/* =====================================================
-   TABS
-===================================================== */
-
-.account-tabs{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    border-bottom:
-        1px solid
-        rgba(255,255,255,.12);
-
-    margin-bottom:25px;
-}
-
-.account-tab{
-
-    padding:12px;
-
-    border:0;
-
-    background:none;
-
-    color:#888;
-
-    cursor:pointer;
-
-    font:
-        600 12px Arial,
-        sans-serif;
-
-    text-transform:uppercase;
-
-    letter-spacing:1px;
-
-    position:relative;
-}
-
-.account-tab.active{
-    color:var(--gold);
-}
-
-.account-tab.active::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:0;
-    bottom:-1px;
-
-    width:100%;
-
-    height:2px;
-
-    background:var(--gold);
-}
-
-
-/* =====================================================
-   FORMS
-===================================================== */
-
-.account-form{
-
-    display:none;
-
-    flex-direction:column;
-
-    gap:14px;
-}
-
-.account-form.active{
-    display:flex;
-}
-
-.account-form input{
-
-    width:100%;
-
-    padding:14px;
-
-    border:
-        1px solid
-        rgba(255,255,255,.13);
-
-    background:#101010;
-
-    color:white;
-
-    outline:none;
-
-    font:13px Arial,sans-serif;
-}
-
-.account-form input:focus{
-    border-color:var(--gold);
-}
-
-
-/* =====================================================
-   OPTIONS
-===================================================== */
-
-.account-options{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    font:10px Arial,sans-serif;
-
-    color:#999;
-}
-
-.account-options label{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:5px;
-}
-
-.account-options input{
-    width:auto;
-}
-
-.account-options a{
-    color:var(--gold);
-}
-
-
-/* =====================================================
-   SUBMIT
-===================================================== */
-
-.account-submit{
-
-    margin-top:5px;
-
-    padding:15px;
-
-    border:0;
-
-    background:var(--gold);
-
-    color:#111;
-
-    cursor:pointer;
-
-    font:
-        bold 12px Arial,
-        sans-serif;
-
-    text-transform:uppercase;
-
-    letter-spacing:1px;
-
-    transition:.3s;
-}
-
-.account-submit:hover{
-
-    background:var(--gold-light);
-
-    transform:translateY(-2px);
-}
-
-
-/* =====================================================
-   MODAL MOBILE
-===================================================== */
-
-@media(max-width:600px){
-
-    .account-modal{
-        padding:15px;
-    }
-
-    .account-modal-box{
-        padding:30px 22px;
-    }
-
-    .account-modal-box h2{
-        font-size:25px;
-    }
-
-    .account-modal-logo{
-        width:75px;
-        height:70px;
-    }
-
-}
-
-
-/* =====================================================
-   PROFESSIONAL IMAGE ANIMATIONS
-===================================================== */
-
-.category-card img,
-.occasion-card img,
-.product-image img,
-.event-card img,
-.story-image-main img,
-.gallery-item img,
-.social-grid img {
-
-    transition:
-        transform 0.8s cubic-bezier(.2,.65,.3,1),
-        filter 0.8s ease;
-}
-
-
-/* CATEGORY */
-
-.category-card:hover img {
-
-    transform:scale(1.08);
-
-    filter:brightness(0.88);
-}
-
-
-/* OCCASION */
-
-.occasion-card:hover img {
-
-    transform:scale(1.07);
-
-    filter:brightness(0.90);
-}
-
-
-/* PRODUCT */
-
-.product-card:hover .product-image img {
-
-    transform:scale(1.07);
-
-    filter:brightness(0.94);
-}
-
-
-/* EVENT */
-
-.event-card{
-
-    background:white;
-
-    overflow:hidden;
-
-    position:relative;
-}
-
-.event-card:hover img {
-
-    transform:scale(1.06);
-
-    filter:brightness(0.92);
-}
-
-
-/* STORY */
-
-.story-image-main {
-    overflow:hidden;
-}
-
-.story-image-main img {
-
-    transition:
-        transform 1s cubic-bezier(.2,.65,.3,1),
-        filter 0.8s ease;
-}
-
-.story-image:hover img {
-    transform:scale(1.05);
-}
-
-
-/* GALLERY */
-
-.gallery-item {
-
-    overflow:hidden;
-
-    position:relative;
-}
-
-.gallery-item img {
-
-    transition:
-        transform 0.9s cubic-bezier(.2,.65,.3,1),
-        filter 0.8s ease;
-}
-
-.gallery-item:hover img {
-
-    transform:scale(1.08);
-
-    filter:brightness(0.90);
-}
-
-
-/* SOCIAL */
-
-.social-grid div {
-    overflow:hidden;
-}
-
-.social-grid img {
-
-    transition:
-        transform 0.8s cubic-bezier(.2,.65,.3,1),
-        filter 0.8s ease;
-}
-
-.social-grid div:hover img {
-
-    transform:scale(1.08);
-
-    filter:brightness(0.90);
-}
-
-
-/* =====================================================
-   IMAGE REVEAL ANIMATION
-===================================================== */
-
-.category-card,
 .occasion-card,
-.product-card,
-.event-card,
-.gallery-item,
-.social-grid div {
+.gift-card,
+.promise-item{
 
     animation:
-        imageReveal 0.9s ease both;
+        imageReveal
+        .8s ease both;
 }
 
-@keyframes imageReveal {
+@keyframes imageReveal{
 
-    from {
-
+    from{
         opacity:0;
-
-        transform:translateY(25px);
-
+        transform:translateY(20px);
     }
 
-    to {
-
+    to{
         opacity:1;
-
         transform:translateY(0);
-
     }
-
 }
 
 
 /* =====================================================
-   PREMIUM IMAGE SHINE
+   IMAGE SHINE
 ===================================================== */
 
-.category-card::before,
-.occasion-card::before,
-.event-card::before,
-.gallery-item::before {
+.occasion-card::before{
 
     content:"";
 
@@ -2411,23 +1473,20 @@ footer{
         linear-gradient(
             90deg,
             transparent,
-            rgba(255,255,255,0.20),
+            rgba(255,255,255,.20),
             transparent
         );
 
     transform:skewX(-20deg);
 
-    transition:0.8s;
+    transition:.8s;
 
-    z-index:3;
+    z-index:4;
 
     pointer-events:none;
 }
 
-.category-card:hover::before,
-.occasion-card:hover::before,
-.event-card:hover::before,
-.gallery-item:hover::before {
+.occasion-card:hover::before{
 
     left:130%;
 }
@@ -2443,7 +1502,8 @@ footer{
 
     inset:0;
 
-    background:rgba(10,10,10,.88);
+    background:
+        rgba(10,10,10,.88);
 
     backdrop-filter:blur(10px);
 
@@ -2493,9 +1553,9 @@ footer{
 
     color:#d6b66b;
 
-    font-family:Arial,sans-serif;
-
-    font-size:11px;
+    font:
+        11px Arial,
+        sans-serif;
 
     letter-spacing:4px;
 
@@ -2508,7 +1568,9 @@ footer{
 
     align-items:center;
 
-    border-bottom:1px solid #d6b66b;
+    border-bottom:
+        1px solid
+        #d6b66b;
 }
 
 .search-input input{
@@ -2532,7 +1594,8 @@ footer{
 
 .search-input input::placeholder{
 
-    color:rgba(255,255,255,.45);
+    color:
+        rgba(255,255,255,.45);
 }
 
 .search-input button{
@@ -2540,7 +1603,9 @@ footer{
     width:50px;
     height:50px;
 
-    border:1px solid rgba(214,182,107,.5);
+    border:
+        1px solid
+        rgba(214,182,107,.5);
 
     border-radius:50%;
 
@@ -2572,7 +1637,9 @@ footer{
     width:40px;
     height:40px;
 
-    border:1px solid rgba(214,182,107,.5);
+    border:
+        1px solid
+        rgba(214,182,107,.5);
 
     border-radius:50%;
 
@@ -2596,19 +1663,1162 @@ footer{
 
 
 /* =====================================================
-   SEARCH MOBILE
+   ACCOUNT MODAL
 ===================================================== */
 
-@media(max-width:600px){
+.account-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:9999;
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:20px;
+
+    background:
+        rgba(0,0,0,.78);
+
+    backdrop-filter:blur(8px);
+}
+
+.account-modal.show{
+
+    display:flex;
+}
+
+.account-modal-box{
+
+    width:100%;
+
+    max-width:440px;
+
+    max-height:90vh;
+
+    overflow-y:auto;
+
+    position:relative;
+
+    padding:38px;
+
+    background:#171717;
+
+    border:
+        1px solid
+        rgba(212,175,55,.35);
+
+    box-shadow:
+        0 30px 80px
+        rgba(0,0,0,.6);
+
+    animation:
+        accountPopup
+        .3s ease;
+}
+
+@keyframes accountPopup{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(20px)
+            scale(.97);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+.account-close{
+
+    position:absolute;
+
+    top:12px;
+    right:15px;
+
+    width:35px;
+    height:35px;
+
+    border:0;
+
+    background:none;
+
+    color:#aaa;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.account-close:hover{
+
+    color:var(--gold);
+}
+
+.account-modal-logo{
+
+    display:block;
+
+    width:90px;
+    height:80px;
+
+    object-fit:contain;
+
+    margin:0 auto 10px;
+}
+
+.account-modal-box h2{
+
+    text-align:center;
+
+    color:var(--gold);
+
+    font-size:30px;
+
+    font-weight:normal;
+
+    margin-bottom:7px;
+}
+
+.account-modal-subtitle{
+
+    text-align:center;
+
+    color:#999;
+
+    font:
+        12px Arial,
+        sans-serif;
+
+    margin-bottom:25px;
+}
+
+.account-tabs{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.12);
+
+    margin-bottom:25px;
+}
+
+.account-tab{
+
+    padding:12px;
+
+    border:0;
+
+    background:none;
+
+    color:#888;
+
+    cursor:pointer;
+
+    font:
+        600 12px Arial,
+        sans-serif;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    position:relative;
+}
+
+.account-tab.active{
+
+    color:var(--gold);
+}
+
+.account-tab.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-1px;
+
+    width:100%;
+    height:2px;
+
+    background:var(--gold);
+}
+
+.account-form{
+
+    display:none;
+
+    flex-direction:column;
+
+    gap:14px;
+}
+
+.account-form.active{
+
+    display:flex;
+}
+
+.account-form input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.13);
+
+    background:#101010;
+
+    color:white;
+
+    outline:none;
+
+    font:
+        13px Arial,
+        sans-serif;
+}
+
+.account-form input:focus{
+
+    border-color:var(--gold);
+}
+
+.account-options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:10px;
+
+    font:
+        10px Arial,
+        sans-serif;
+
+    color:#999;
+}
+
+.account-options label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:5px;
+}
+
+.account-options input{
+
+    width:auto;
+}
+
+.account-options a{
+
+    color:var(--gold);
+}
+
+.account-submit{
+
+    margin-top:5px;
+
+    padding:15px;
+
+    border:0;
+
+    background:var(--gold);
+
+    color:#111;
+
+    cursor:pointer;
+
+    font:
+        bold 12px Arial,
+        sans-serif;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    transition:.3s;
+}
+
+.account-submit:hover{
+
+    background:var(--gold-light);
+
+    transform:translateY(-2px);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media(max-width:1200px){
+
+    .nav-container{
+
+        padding-left:25px;
+        padding-right:25px;
+
+        gap:18px;
+    }
+
+    .nav-menu{
+
+        gap:16px;
+    }
+
+    .brand img{
+
+        width:90px;
+        height:75px;
+    }
+
+    .brand-text{
+
+        font-size:27px;
+    }
+
+    .gift-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .promise-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap:45px 0;
+    }
+
+    .promise-item:nth-child(3){
+
+        padding-left:0;
+
+        border-left:0;
+    }
+}
+
+
+/* =====================================================
+   TABLET / MOBILE NAVBAR
+===================================================== */
+
+@media(max-width:850px){
+
+    .navbar{
+
+        width:100%;
+
+        left:0;
+        right:0;
+    }
+
+    .nav-container{
+
+        width:100%;
+
+        max-width:none;
+
+        min-height:70px;
+
+        height:70px;
+
+        padding:
+            5px 15px;
+
+        gap:10px;
+
+        justify-content:space-between;
+
+        overflow:visible;
+    }
+
+
+    /* ---------------------------------------------
+       MOBILE BRAND
+    --------------------------------------------- */
+
+    .brand{
+
+        min-width:0;
+
+        max-width:calc(100% - 58px);
+
+        gap:8px;
+
+        margin-right:auto;
+
+        overflow:hidden;
+    }
+
+    .brand img{
+
+        width:58px;
+
+        height:55px;
+
+        flex-shrink:0;
+    }
+
+    .brand-text{
+
+        min-width:0;
+
+        max-width:calc(100vw - 100px);
+
+        font-size:22px;
+
+        letter-spacing:.5px;
+
+        overflow:hidden;
+
+        text-overflow:clip;
+    }
+
+    .brand-text small{
+
+        font-size:6.5px;
+
+        letter-spacing:2px;
+
+        margin-top:5px;
+    }
+
+
+    /* ---------------------------------------------
+       DESKTOP NAV HIDDEN
+    --------------------------------------------- */
+
+    .nav-menu{
+
+        position:absolute;
+
+        top:70px;
+
+        left:0;
+
+        width:100%;
+
+        max-width:100%;
+
+        max-height:
+            calc(100vh - 70px);
+
+        overflow-y:auto;
+
+        overflow-x:hidden;
+
+        -webkit-overflow-scrolling:touch;
+
+        overscroll-behavior:contain;
+
+        display:none;
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        background:
+            rgba(13,13,13,.99);
+
+        padding:
+            15px 20px 25px;
+
+        gap:2px;
+
+        border-top:
+            1px solid
+            rgba(212,175,55,.15);
+
+        box-shadow:
+            0 15px 30px
+            rgba(0,0,0,.35);
+    }
+
+    .nav-menu.active{
+
+        display:flex;
+    }
+
+    .nav-menu a{
+
+        width:100%;
+
+        min-height:44px;
+
+        padding:12px 5px;
+
+        display:flex;
+
+        align-items:center;
+
+        flex-shrink:0;
+
+        font-size:14px;
+
+        border-bottom:
+            1px solid
+            rgba(255,255,255,.06);
+    }
+
+    .nav-menu a::after{
+
+        bottom:0;
+    }
+
+
+    /* ---------------------------------------------
+       DESKTOP ICONS HIDDEN
+       HAMBURGER REMAINS VISIBLE
+    --------------------------------------------- */
+
+    .nav-actions{
+
+        margin-left:auto;
+
+        gap:8px;
+
+        flex-shrink:0;
+
+        display:flex;
+
+        align-items:center;
+    }
+
+    .nav-actions > .nav-icon{
+
+        display:none;
+    }
+
+    .menu-toggle{
+
+        display:flex;
+
+        width:42px;
+        height:42px;
+
+        margin-left:auto;
+
+        flex-shrink:0;
+    }
+
+
+    /* ---------------------------------------------
+       MOBILE SEARCH / WISHLIST / CART
+    --------------------------------------------- */
+
+    .mobile-nav-actions{
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:flex-start;
+
+        gap:12px;
+
+        width:100%;
+
+        padding:
+            14px 5px;
+
+        margin-top:3px;
+
+        border-top:
+            1px solid
+            rgba(255,255,255,.08);
+
+        border-bottom:
+            1px solid
+            rgba(255,255,255,.08);
+
+        flex-shrink:0;
+    }
+
+    .mobile-nav-actions .nav-icon{
+
+        display:flex;
+
+        width:42px;
+        height:42px;
+
+        flex-shrink:0;
+    }
+
+    .mobile-nav-actions .nav-icon:hover{
+
+        transform:translateY(-2px);
+    }
+
+    .mobile-account{
+
+        flex-shrink:0;
+
+        margin-top:3px;
+
+        border-bottom:0 !important;
+    }
+
+
+    /* ---------------------------------------------
+       HERO
+    --------------------------------------------- */
+
+    .occasion-hero{
+
+        min-height:620px;
+
+        padding-top:70px;
+
+        width:100%;
+
+        overflow:hidden;
+
+        background-position:center center;
+    }
+
+    .hero-content{
+
+        width:100%;
+
+        max-width:100%;
+
+        padding:
+            70px 7%;
+    }
+
+    .hero-content h1{
+
+        font-size:
+            clamp(42px,9vw,64px);
+
+        max-width:100%;
+
+        word-break:normal;
+    }
+
+    .hero-content p{
+
+        max-width:100%;
+
+        font-size:13px;
+
+        line-height:1.75;
+    }
+
+
+    /* ---------------------------------------------
+       INTRO
+    --------------------------------------------- */
+
+    .intro-section{
+
+        padding:
+            80px 7%;
+    }
+
+
+    /* ---------------------------------------------
+       OCCASIONS
+    --------------------------------------------- */
+
+    .occasion-section{
+
+        padding:
+            20px 6% 80px;
+    }
+
+    .section-heading{
+
+        display:block;
+
+        margin-bottom:35px;
+    }
+
+    .section-heading > p{
+
+        margin-top:20px;
+
+        max-width:600px;
+    }
+
+    .occasion-grid{
+
+        grid-template-columns:1fr;
+
+        grid-auto-rows:400px;
+
+        gap:20px;
+    }
+
+    .occasion-card.large{
+
+        grid-row:span 1;
+    }
+
+
+    /* ---------------------------------------------
+       GIFT
+    --------------------------------------------- */
+
+    .gift-section{
+
+        padding:
+            80px 6%;
+    }
+
+
+    /* ---------------------------------------------
+       CUSTOM
+    --------------------------------------------- */
+
+    .custom-occasion{
+
+        min-height:auto;
+
+        display:block;
+    }
+
+    .custom-content{
+
+        width:100%;
+
+        padding:
+            80px 7%;
+    }
+
+    .custom-decoration{
+
+        display:none;
+    }
+
+
+    /* ---------------------------------------------
+       PROMISE
+    --------------------------------------------- */
+
+    .promise-section{
+
+        padding:
+            80px 7%;
+    }
+
+    .promise-grid{
+
+        grid-template-columns:1fr 1fr;
+
+        gap:40px 0;
+    }
+
+    .promise-item{
+
+        padding:
+            0 25px;
+    }
+
+
+    /* ---------------------------------------------
+       FOOTER
+    --------------------------------------------- */
+
+    footer{
+
+        padding:
+            65px 7% 25px;
+    }
+
+    .footer-main{
+
+        grid-template-columns:
+            1fr 1fr;
+
+        gap:40px 25px;
+    }
+
+    .footer-brand{
+
+        grid-column:
+            span 2;
+    }
+
+    .footer-bottom{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        margin-top:45px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:650px){
+
+    .nav-container{
+
+        min-height:68px;
+
+        height:68px;
+
+        padding:
+            4px 12px;
+    }
+
+    .nav-menu{
+
+        top:68px;
+
+        max-height:
+            calc(100vh - 68px);
+    }
+
+    .brand{
+
+        gap:7px;
+
+        max-width:calc(100% - 52px);
+    }
+
+    .brand img{
+
+        width:54px;
+
+        height:52px;
+    }
+
+    .brand-text{
+
+        font-size:20px;
+
+        letter-spacing:.3px;
+    }
+
+    .brand-text small{
+
+        font-size:6px;
+
+        letter-spacing:1.8px;
+
+        margin-top:5px;
+    }
+
+    .menu-toggle{
+
+        width:40px;
+        height:40px;
+
+        font-size:21px;
+    }
+
+
+    /* HERO */
+
+    .occasion-hero{
+
+        min-height:570px;
+
+        padding-top:68px;
+
+        background-position:
+            60% center;
+    }
+
+    .hero-content{
+
+        padding:
+            65px 7%;
+    }
+
+    .eyebrow{
+
+        font-size:9px;
+
+        letter-spacing:3px;
+
+        margin-bottom:18px;
+    }
+
+    .hero-content h1{
+
+        font-size:
+            clamp(38px,10vw,52px);
+
+        line-height:1.08;
+
+        margin-bottom:20px;
+    }
+
+    .hero-content p{
+
+        font-size:12px;
+
+        line-height:1.7;
+
+        margin-bottom:25px;
+    }
+
+    .hero-buttons{
+
+        width:100%;
+
+        align-items:stretch;
+
+        flex-direction:column;
+
+        gap:10px;
+    }
+
+    .btn{
+
+        width:100%;
+
+        min-height:48px;
+
+        padding:0 18px;
+    }
+
+
+    /* INTRO */
+
+    .intro-section{
+
+        padding:
+            70px 7%;
+    }
+
+    .intro-section h2{
+
+        font-size:38px;
+
+        line-height:1.1;
+    }
+
+    .intro-section p{
+
+        font-size:12px;
+
+        line-height:1.8;
+    }
+
+
+    /* OCCASION */
+
+    .occasion-section{
+
+        padding:
+            10px 5% 70px;
+    }
+
+    .section-heading h2{
+
+        font-size:39px;
+    }
+
+    .section-heading > p{
+
+        font-size:12px;
+
+        line-height:1.8;
+    }
+
+    .occasion-grid{
+
+        grid-auto-rows:
+            360px;
+
+        gap:16px;
+    }
+
+    .occasion-info{
+
+        left:22px;
+
+        right:22px;
+
+        bottom:22px;
+    }
+
+    .occasion-info h3{
+
+        font-size:31px;
+    }
+
+    .occasion-info p{
+
+        font-size:11px;
+    }
+
+
+    /* GIFT */
+
+    .gift-section{
+
+        padding:
+            70px 5%;
+    }
+
+    .section-heading.centered{
+
+        margin-bottom:35px;
+    }
+
+    .section-heading.centered h2{
+
+        font-size:38px;
+    }
+
+    .gift-grid{
+
+        grid-template-columns:1fr;
+
+        gap:15px;
+    }
+
+    .gift-card{
+
+        padding:
+            35px 25px;
+    }
+
+
+    /* CUSTOM */
+
+    .custom-content{
+
+        padding:
+            70px 7%;
+    }
+
+    .custom-content h2{
+
+        font-size:42px;
+    }
+
+    .custom-content p{
+
+        font-size:12px;
+
+        line-height:1.8;
+    }
+
+
+    /* PROMISE */
+
+    .promise-section{
+
+        padding:
+            70px 7%;
+    }
+
+    .promise-heading{
+
+        margin-bottom:45px;
+    }
+
+    .promise-heading h2{
+
+        font-size:42px;
+    }
+
+    .promise-grid{
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+    }
+
+    .promise-item{
+
+        padding:
+            0 0 25px;
+
+        border-left:0;
+
+        border-bottom:
+            1px solid
+            var(--border);
+    }
+
+    .promise-item:last-child{
+
+        border-bottom:0;
+
+        padding-bottom:0;
+    }
+
+
+    /* FOOTER */
+
+    footer{
+
+        padding:
+            60px 7% 20px;
+    }
+
+    .footer-main{
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+    }
+
+    .footer-brand{
+
+        grid-column:auto;
+    }
+
+    .footer-bottom{
+
+        font-size:9px;
+
+        gap:15px;
+    }
+
+    .footer-bottom div{
+
+        flex-direction:column;
+
+        gap:8px;
+    }
+
+
+    /* SEARCH */
 
     .search-overlay{
 
-        padding-top:120px;
-    }
-
-    .search-input input{
-
-        font-size:22px;
+        padding-top:110px;
     }
 
     .search-box{
@@ -2616,151 +2826,242 @@ footer{
         width:88%;
     }
 
+    .search-input input{
+
+        font-size:22px;
+
+        padding:12px 0;
+    }
+
+    .search-input button{
+
+        width:44px;
+        height:44px;
+
+        font-size:18px;
+    }
+
+    .search-close{
+
+        top:-55px;
+
+        width:38px;
+        height:38px;
+    }
+
+
+    /* ACCOUNT */
+
+    .account-modal{
+
+        padding:15px;
+    }
+
+    .account-modal-box{
+
+        max-height:
+            calc(100vh - 30px);
+
+        padding:
+            30px 22px;
+    }
+
+    .account-modal-box h2{
+
+        font-size:25px;
+    }
+
+    .account-modal-logo{
+
+        width:75px;
+
+        height:70px;
+    }
+
+    .account-options{
+
+        flex-wrap:wrap;
+    }
 }
-/* =========================
-   MOBILE NAVBAR FIX
-========================= */
 
-@media (max-width: 850px) {
 
-    .nav-container {
-        width: 100%;
-        min-height: 70px;
-        height: 70px;
-        padding: 6px 15px;
-        box-sizing: border-box;
-        gap: 10px;
+/* =====================================================
+   VERY SMALL MOBILE
+===================================================== */
+
+@media(max-width:400px){
+
+    .nav-container{
+
+        min-height:65px;
+
+        height:65px;
+
+        padding:
+            4px 9px;
     }
 
-    .brand {
-        min-width: 0;
-        margin-right: auto;
-        gap: 8px;
+    .nav-menu{
+
+        top:65px;
+
+        max-height:
+            calc(100vh - 65px);
+
+        padding-left:15px;
+
+        padding-right:15px;
     }
 
-    .brand img {
-        width: 58px;
-        height: 52px;
-        object-fit: contain;
+    .brand{
+
+        max-width:
+            calc(100% - 50px);
+
+        gap:5px;
     }
 
-    .brand-text {
-        font-size: 20px;
-        letter-spacing: .5px;
-        white-space: nowrap;
+    .brand img{
+
+        width:48px;
+
+        height:46px;
     }
 
-    .brand-text small {
-        font-size: 6px;
-        letter-spacing: 2px;
-        margin-top: 4px;
+    .brand-text{
+
+        font-size:17px;
+
+        letter-spacing:0;
     }
 
-    /* Hamburger */
-    .menu-toggle {
-        display: flex;
-        width: 40px;
-        height: 40px;
-        flex-shrink: 0;
-        margin-left: auto;
-        align-items: center;
-        justify-content: center;
+    .brand-text small{
+
+        font-size:5px;
+
+        letter-spacing:1.3px;
+
+        margin-top:4px;
     }
 
-    /* Desktop icons hide */
-    .nav-actions > .nav-icon {
-        display: none;
+    .menu-toggle{
+
+        width:38px;
+        height:38px;
+
+        font-size:20px;
     }
 
-    /* Mobile menu */
-    .nav-menu {
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        max-width: 100%;
-        max-height: calc(100vh - 70px);
+    .mobile-nav-actions{
 
-        box-sizing: border-box;
+        gap:9px;
 
-        overflow-y: auto;
-        overflow-x: hidden;
-
-        display: none;
-        flex-direction: column;
-
-        padding: 15px 20px 25px;
-        gap: 0;
-
-        background: rgba(13, 13, 13, .99);
-
-        border-top: 1px solid rgba(198, 161, 91, .20);
-
-        box-shadow: 0 15px 30px rgba(0,0,0,.25);
-
-        -webkit-overflow-scrolling: touch;
+        padding:
+            12px 5px;
     }
 
-    .nav-menu.active {
-        display: flex;
+    .mobile-nav-actions .nav-icon{
+
+        width:39px;
+        height:39px;
     }
 
-    .nav-menu a {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 13px 5px;
-        font-size: 14px;
+    .occasion-hero{
+
+        min-height:540px;
+
+        background-position:
+            62% center;
     }
 
+    .hero-content{
+
+        padding:
+            55px 7%;
+    }
+
+    .hero-content h1{
+
+        font-size:38px;
+    }
+
+    .hero-content p{
+
+        font-size:11.5px;
+    }
+
+    .intro-section h2{
+
+        font-size:34px;
+    }
+
+    .section-heading h2{
+
+        font-size:34px;
+    }
+
+    .occasion-grid{
+
+        grid-auto-rows:330px;
+    }
+
+    .occasion-info h3{
+
+        font-size:28px;
+    }
+
+    .custom-content h2{
+
+        font-size:36px;
+    }
+
+    .promise-heading h2{
+
+        font-size:36px;
+    }
+
+    .footer-logo img{
+
+        width:80px;
+
+        height:60px;
+    }
 }
-/* =========================
-   OCCASIONS HERO MOBILE FIX
-========================= */
 
-@media (max-width: 850px) {
 
-    .hero,
-    .occasion-hero {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        box-sizing: border-box;
-        overflow: hidden;
+/* =====================================================
+   EXTRA SAFETY
+   PREVENT HORIZONTAL MOBILE OVERFLOW
+===================================================== */
+
+@media(max-width:850px){
+
+    html,
+    body{
+
+        width:100%;
+
+        max-width:100%;
+
+        overflow-x:hidden;
     }
 
-    .hero-container,
-    .occasion-hero-container,
-    .hero-inner {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
+    main,
+    section,
+    footer,
+    header{
+
+        max-width:100%;
+
+        overflow-x:hidden;
     }
 
+    .occasion-card,
+    .gift-card,
+    .promise-item,
     .hero-content,
-    .occasion-hero-content {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        box-sizing: border-box;
-    }
+    .custom-content{
 
-    .hero-image,
-    .occasion-hero-image {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        box-sizing: border-box;
-    }
-
-    .hero-image img,
-    .occasion-hero-image img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
+        min-width:0;
     }
 }

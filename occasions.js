@@ -1,5 +1,6 @@
 /* =====================================================
-   INSTAFLOWER OCCASIONS JAVASCRIPT
+   INSTAFLOWER
+   OCCASIONS PAGE JAVASCRIPT
 ===================================================== */
 
 
@@ -7,24 +8,25 @@
    NAVBAR
 ===================================================== */
 
-const navbar =
-    document.getElementById("navbar");
+const navbar = document.getElementById("navbar");
 
+if(navbar){
 
-window.addEventListener("scroll", () => {
+    window.addEventListener("scroll", function(){
 
-    if(window.scrollY > 40){
+        if(window.scrollY > 40){
 
-        navbar.classList.add("scrolled");
+            navbar.classList.add("scrolled");
 
-    }else{
+        }else{
 
-        navbar.classList.remove("scrolled");
+            navbar.classList.remove("scrolled");
 
-    }
+        }
 
-});
+    });
 
+}
 
 
 /* =====================================================
@@ -40,7 +42,7 @@ const navMenu =
 
 if(menuToggle && navMenu){
 
-    menuToggle.addEventListener("click", () => {
+    menuToggle.addEventListener("click", function(){
 
         navMenu.classList.toggle("active");
 
@@ -50,19 +52,22 @@ if(menuToggle && navMenu){
 
 
 /* =====================================================
-   CLOSE MOBILE MENU AFTER CLICKING NORMAL LINK
+   CLOSE MOBILE MENU AFTER LINK CLICK
 ===================================================== */
 
-document.querySelectorAll(".nav-menu a").forEach(link => {
+if(navMenu){
 
-    link.addEventListener("click", () => {
+    navMenu.querySelectorAll("a").forEach(function(link){
 
-        navMenu.classList.remove("active");
+        link.addEventListener("click", function(){
+
+            navMenu.classList.remove("active");
+
+        });
 
     });
 
-});
-
+}
 
 
 /* =====================================================
@@ -86,7 +91,7 @@ const searchInput =
 
 
 /* =====================================================
-   OPEN SEARCH FUNCTION
+   OPEN SEARCH
 ===================================================== */
 
 function openSearch(){
@@ -97,8 +102,7 @@ function openSearch(){
 
     searchOverlay.classList.add("active");
 
-
-    setTimeout(() => {
+    setTimeout(function(){
 
         if(searchInput){
 
@@ -119,7 +123,11 @@ if(searchBtn){
 
     searchBtn.addEventListener(
         "click",
-        openSearch
+        function(){
+
+            openSearch();
+
+        }
     );
 
 }
@@ -133,18 +141,13 @@ if(mobileSearchBtn){
 
     mobileSearchBtn.addEventListener(
         "click",
-        () => {
-
-            /* Close mobile menu */
+        function(){
 
             if(navMenu){
 
                 navMenu.classList.remove("active");
 
             }
-
-
-            /* Open same search overlay */
 
             openSearch();
 
@@ -162,33 +165,11 @@ if(searchClose){
 
     searchClose.addEventListener(
         "click",
-        () => {
+        function(){
 
-            searchOverlay.classList.remove(
-                "active"
-            );
+            if(searchOverlay){
 
-        }
-    );
-
-}
-
-
-/* =====================================================
-   CLOSE SEARCH OUTSIDE BOX
-===================================================== */
-
-if(searchOverlay){
-
-    searchOverlay.addEventListener(
-        "click",
-        (e) => {
-
-            if(e.target === searchOverlay){
-
-                searchOverlay.classList.remove(
-                    "active"
-                );
+                searchOverlay.classList.remove("active");
 
             }
 
@@ -199,20 +180,40 @@ if(searchOverlay){
 
 
 /* =====================================================
-   ESC CLOSE SEARCH
+   CLOSE SEARCH BY CLICKING OUTSIDE
+===================================================== */
+
+if(searchOverlay){
+
+    searchOverlay.addEventListener(
+        "click",
+        function(e){
+
+            if(e.target === searchOverlay){
+
+                searchOverlay.classList.remove("active");
+
+            }
+
+        }
+    );
+
+}
+
+
+/* =====================================================
+   ESCAPE CLOSE SEARCH
 ===================================================== */
 
 document.addEventListener(
     "keydown",
-    (e) => {
+    function(e){
 
         if(e.key === "Escape"){
 
             if(searchOverlay){
 
-                searchOverlay.classList.remove(
-                    "active"
-                );
+                searchOverlay.classList.remove("active");
 
             }
 
@@ -220,7 +221,6 @@ document.addEventListener(
 
     }
 );
-
 
 
 /* =====================================================
@@ -233,7 +233,7 @@ const wishlistButtons =
     );
 
 
-wishlistButtons.forEach(button => {
+wishlistButtons.forEach(function(button){
 
     button.addEventListener(
         "click",
@@ -259,7 +259,6 @@ wishlistButtons.forEach(button => {
 });
 
 
-
 /* =====================================================
    CART
 ===================================================== */
@@ -274,26 +273,10 @@ const mobileCartBtn =
         "mobileCartBtn"
     );
 
-
 const cartButtons =
     document.querySelectorAll(
         ".add-cart"
     );
-
-
-/*
-   IMPORTANT:
-
-   There are now two cart-count elements:
-
-   1. Desktop cart count
-   2. Mobile cart count
-
-   So querySelector() is not enough.
-
-   We use querySelectorAll() so both
-   counters stay synchronized.
-*/
 
 const cartCounts =
     document.querySelectorAll(
@@ -304,14 +287,13 @@ const cartCounts =
 let cartItems = 0;
 
 
-
 /* =====================================================
-   UPDATE ALL CART COUNTS
+   UPDATE CART COUNT
 ===================================================== */
 
 function updateCartCount(){
 
-    cartCounts.forEach(count => {
+    cartCounts.forEach(function(count){
 
         count.textContent =
             cartItems;
@@ -321,12 +303,36 @@ function updateCartCount(){
 }
 
 
-
 /* =====================================================
-   PRODUCT ADD TO CART
+   CART MESSAGE
 ===================================================== */
 
-cartButtons.forEach(button => {
+function openCart(){
+
+    if(cartItems === 0){
+
+        alert(
+            "Your cart is currently empty."
+        );
+
+    }else{
+
+        alert(
+            "You have " +
+            cartItems +
+            " item(s) in your cart."
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   ADD TO CART
+===================================================== */
+
+cartButtons.forEach(function(button){
 
     button.addEventListener(
         "click",
@@ -345,9 +351,9 @@ cartButtons.forEach(button => {
                 "Added ✓";
 
 
-            setTimeout(() => {
+            setTimeout(function(){
 
-                this.textContent =
+                button.textContent =
                     originalText;
 
             },1200);
@@ -358,7 +364,6 @@ cartButtons.forEach(button => {
 });
 
 
-
 /* =====================================================
    DESKTOP CART
 ===================================================== */
@@ -367,31 +372,9 @@ if(desktopCartBtn){
 
     desktopCartBtn.addEventListener(
         "click",
-        () => {
+        function(){
 
-            /*
-                Your current page does not have
-                a separate cart page/modal.
-
-                The button is kept functional
-                without changing the page design.
-            */
-
-            if(cartItems === 0){
-
-                alert(
-                    "Your cart is currently empty."
-                );
-
-            }else{
-
-                alert(
-                    "You have " +
-                    cartItems +
-                    " item(s) in your cart."
-                );
-
-            }
+            openCart();
 
         }
     );
@@ -407,29 +390,29 @@ if(mobileCartBtn){
 
     mobileCartBtn.addEventListener(
         "click",
-        () => {
+        function(){
 
-            if(cartItems === 0){
+            if(navMenu){
 
-                alert(
-                    "Your cart is currently empty."
-                );
-
-            }else{
-
-                alert(
-                    "You have " +
-                    cartItems +
-                    " item(s) in your cart."
+                navMenu.classList.remove(
+                    "active"
                 );
 
             }
+
+            openCart();
 
         }
     );
 
 }
 
+
+/* =====================================================
+   INITIAL CART COUNT
+===================================================== */
+
+updateCartCount();
 
 
 /* =====================================================
@@ -446,7 +429,6 @@ const mobileAccountBtn =
         "mobileAccountBtn"
     );
 
-
 const accountModal =
     document.getElementById(
         "accountModal"
@@ -457,7 +439,6 @@ const accountClose =
         "accountClose"
     );
 
-
 const loginTab =
     document.getElementById(
         "loginTab"
@@ -467,7 +448,6 @@ const registerTab =
     document.getElementById(
         "registerTab"
     );
-
 
 const loginForm =
     document.getElementById(
@@ -480,7 +460,6 @@ const registerForm =
     );
 
 
-
 /* =====================================================
    OPEN ACCOUNT MODAL
 ===================================================== */
@@ -491,15 +470,12 @@ function openAccountModal(){
         return;
     }
 
-    accountModal.classList.add(
-        "show"
-    );
+    accountModal.classList.add("show");
 
     document.body.style.overflow =
         "hidden";
 
 }
-
 
 
 /* =====================================================
@@ -512,15 +488,12 @@ function closeAccountModal(){
         return;
     }
 
-    accountModal.classList.remove(
-        "show"
-    );
+    accountModal.classList.remove("show");
 
     document.body.style.overflow =
         "";
 
 }
-
 
 
 /* =====================================================
@@ -531,11 +504,14 @@ if(accountBtn){
 
     accountBtn.addEventListener(
         "click",
-        openAccountModal
+        function(){
+
+            openAccountModal();
+
+        }
     );
 
 }
-
 
 
 /* =====================================================
@@ -551,8 +527,6 @@ if(mobileAccountBtn){
             e.preventDefault();
 
 
-            /* Close menu */
-
             if(navMenu){
 
                 navMenu.classList.remove(
@@ -562,15 +536,12 @@ if(mobileAccountBtn){
             }
 
 
-            /* Open modal */
-
             openAccountModal();
 
         }
     );
 
 }
-
 
 
 /* =====================================================
@@ -581,11 +552,14 @@ if(accountClose){
 
     accountClose.addEventListener(
         "click",
-        closeAccountModal
+        function(){
+
+            closeAccountModal();
+
+        }
     );
 
 }
-
 
 
 /* =====================================================
@@ -610,73 +584,48 @@ if(accountModal){
 }
 
 
-
 /* =====================================================
    LOGIN TAB
 ===================================================== */
 
-if(loginTab){
+if(loginTab && registerTab && loginForm && registerForm){
 
     loginTab.addEventListener(
         "click",
         function(){
 
-            loginTab.classList.add(
-                "active"
-            );
+            loginTab.classList.add("active");
 
-            registerTab.classList.remove(
-                "active"
-            );
+            registerTab.classList.remove("active");
 
+            loginForm.classList.add("active");
 
-            loginForm.classList.add(
-                "active"
-            );
-
-            registerForm.classList.remove(
-                "active"
-            );
+            registerForm.classList.remove("active");
 
         }
     );
 
-}
 
-
-
-/* =====================================================
-   REGISTER TAB
-===================================================== */
-
-if(registerTab){
+    /* =================================================
+       REGISTER TAB
+    ================================================= */
 
     registerTab.addEventListener(
         "click",
         function(){
 
-            registerTab.classList.add(
-                "active"
-            );
+            registerTab.classList.add("active");
 
-            loginTab.classList.remove(
-                "active"
-            );
+            loginTab.classList.remove("active");
 
+            registerForm.classList.add("active");
 
-            registerForm.classList.add(
-                "active"
-            );
-
-            loginForm.classList.remove(
-                "active"
-            );
+            loginForm.classList.remove("active");
 
         }
     );
 
 }
-
 
 
 /* =====================================================
@@ -693,19 +642,15 @@ if(backTop){
 
     window.addEventListener(
         "scroll",
-        () => {
+        function(){
 
             if(window.scrollY > 500){
 
-                backTop.classList.add(
-                    "show"
-                );
+                backTop.classList.add("show");
 
             }else{
 
-                backTop.classList.remove(
-                    "show"
-                );
+                backTop.classList.remove("show");
 
             }
 
@@ -715,11 +660,14 @@ if(backTop){
 
     backTop.addEventListener(
         "click",
-        () => {
+        function(){
 
             window.scrollTo({
+
                 top:0,
+
                 behavior:"smooth"
+
             });
 
         }
