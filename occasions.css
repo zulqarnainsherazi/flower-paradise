@@ -75,7 +75,8 @@ img{
 
 .navbar{
 
-    position:fixed;
+    position:relative;
+      overflow: visible;
 
     top:0;
     left:0;
