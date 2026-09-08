@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FAQs | Instaflora</title>
+
+<meta name="description"
+content="Find answers to frequently asked questions about Instaflora flowers, gifts, orders, delivery and event décor.">
+
+<link rel="stylesheet" href="faqs.css">
+
+</head>
+
+<body>
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar" id="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="brand">
+
+            <img src="Logoinstaflora-removebg-preview.png"
+                 alt="Instaflora Logo">
+
+            <div class="brand-text">
+                <span>INSTA</span>FLORA
+                <small>FLOWERS PARADISE</small>
+            </div>
+
+        </a>
+
+
+        <nav class="nav-menu" id="navMenu">
+
+
+            
+            <a href="index.html">Home</a>
+
+            <a href="shop.html">Shop</a>
+
+            <a href="occasions.html">Occasions</a>
+
+            <a href="bestsellers.html">Best Sellers</a>
+
+            <a href="events.html">Event Décor</a>
+
+            <a href="gallery.html">Gallery</a>
+
+            <a href="about.html">About</a>
+
+            <a href="#contact">Contact</a>
+
+            <a href="#" class="mobile-account" id="mobileAccountBtn">
+                Login / Register
+            </a>
+
+               <!-- Mobile Search / Wishlist / Cart -->
+    <div class="mobile-nav-actions">
+
+        <button class="nav-icon"
+                id="mobileSearchBtn"
+                title="Search">
+            ⌕
+        </button>
+
+        <button class="nav-icon"
+                id="mobileWishlistBtn"
+                title="Wishlist">
+            ♡
+        </button>
+
+        <button class="nav-icon cart-button"
+                id="mobileCartBtn"
+                title="Shopping Cart">
+            🛒
+            <span class="cart-count">0</span>
+        </button>
+
+    </div>
+
+
+        </nav>
+<div class="nav-actions">
+
+    <button class="nav-icon"
+            id="searchBtn"
+            title="Search">
+        ⌕
+    </button>
+
+    <button class="nav-icon"
+            id="wishlistBtn"
+            title="Wishlist">
+        ♡
+    </button>
+
+    <button class="nav-icon cart-button"
+            id="cartBtn"
+            title="Shopping Cart">
+        🛒
+        <span class="cart-count">0</span>
+    </button>
+
+</div>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     SEARCH OVERLAY
+===================================================== -->
+
+<div class="search-overlay" id="searchOverlay">
+
+    <div class="search-box">
+
+        <button class="search-close" id="searchClose">
+            ×
+        </button>
+
+        <span>SEARCH INSTAFORA</span>
+
+        <div class="search-input">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search flowers, gifts, bouquets..."
+            >
+
+            <button id="searchSubmit">
+                →
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     LOGIN / REGISTER POPUP
+===================================================== -->
+
+<div class="account-modal" id="accountModal">
+
+    <div class="account-modal-box">
+
+        <button class="account-close" id="accountClose">
+            ×
+        </button>
+
+        <img src="Logoinstaflora-removebg-preview.png"
+             alt="Instaflora"
+             class="account-modal-logo">
+
+        <h2>Welcome to Instaflora</h2>
+
+        <p class="account-modal-subtitle">
+            Login or create your account
+        </p>
+
+        <div class="account-tabs">
+
+            <button class="account-tab active"
+                    id="loginTab">
+                Login
+            </button>
+
+            <button class="account-tab"
+                    id="registerTab">
+                Register
+            </button>
+
+        </div>
+
+
+        <!-- LOGIN -->
+
+        <form class="account-form active"
+              id="loginForm">
+
+            <input
+                type="email"
+                placeholder="Email Address"
+                required
+            >
+
+            <input
+                type="password"
+                placeholder="Password"
+                required
+            >
+
+            <div class="account-options">
+
+                <label>
+                    <input type="checkbox">
+                    Remember me
+                </label>
+
+                <a href="#">
+                    Forgot Password?
+                </a>
+
+            </div>
+
+            <button type="submit"
+                    class="account-submit">
+                Login
+            </button>
+
+        </form>
+
+
+        <!-- REGISTER -->
+
+        <form class="account-form"
+              id="registerForm">
+
+            <input
+                type="text"
+                placeholder="Full Name"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Email Address"
+                required
+            >
+
+            <input
+                type="tel"
+                placeholder="Phone Number"
+                required
+            >
+
+            <input
+                type="password"
+                placeholder="Create Password"
+                required
+            >
+
+            <input
+                type="password"
+                placeholder="Confirm Password"
+                required
+            >
+
+            <button type="submit"
+                    class="account-submit">
+                Create Account
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     FAQ HERO
+===================================================== -->
+
+<main>
+
+<section class="faq-hero">
+
+    <div class="faq-hero-content">
+
+        <span class="section-label">
+            INSTaflora SUPPORT
+        </span>
+
+        <h1>
+            Frequently Asked<br>
+            <em>Questions.</em>
+        </h1>
+
+        <p>
+            Everything you need to know about our flowers,
+            gifts, orders, delivery and event décor.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ INTRO
+===================================================== -->
+
+<section class="faq-intro">
+
+    <div class="section-heading centered">
+
+        <span class="section-label">
+            HOW CAN WE HELP?
+        </span>
+
+        <h2>
+            Answers to your<br>
+            <em>questions.</em>
+        </h2>
+
+        <p>
+            We've gathered answers to the most common questions
+            our customers ask. If you still need help,
+            our team is always happy to assist.
+        </p>
+
+    </div>
+
+
+    <!-- FAQ SEARCH -->
+
+    <div class="faq-search">
+
+        <span>⌕</span>
+
+        <input
+            type="text"
+            id="faqSearch"
+            placeholder="Search your question..."
+        >
+
+    </div>
+
+
+    <!-- FAQ CATEGORIES -->
+
+    <div class="faq-categories">
+
+        <button class="faq-filter active"
+                data-category="all">
+            All Questions
+        </button>
+
+        <button class="faq-filter"
+                data-category="orders">
+            Orders
+        </button>
+
+        <button class="faq-filter"
+                data-category="delivery">
+            Delivery
+        </button>
+
+        <button class="faq-filter"
+                data-category="products">
+            Flowers & Gifts
+        </button>
+
+        <button class="faq-filter"
+                data-category="events">
+            Event Décor
+        </button>
+
+    </div>
+
+
+    <!-- =================================================
+         FAQ LIST
+    ================================================= -->
+
+    <div class="faq-list" id="faqList">
+
+
+        <!-- FAQ 1 -->
+
+        <div class="faq-item"
+             data-category="orders"
+             data-question="How can I place an order?">
+
+            <button class="faq-question">
+
+                <span>
+                    How can I place an order?
+                </span>
+
+                <strong>+</strong>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    You can browse our collections through the Shop
+                    page, select your favorite product and follow
+                    the ordering instructions. For customized
+                    arrangements, you can contact our team directly.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ 2 -->
+
+        <div class="faq-item"
+             data-category="delivery"
+             data-question="Do you offer delivery?">
+
+            <button class="faq-question">
+
+                <span>
+                    Do you offer delivery?
+                </span>
+
+                <strong>+</strong>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Yes. Instaflora offers delivery for flowers,
+                    gifts and selected celebration arrangements.
+                    Delivery availability may depend on your
+                    location and the type of order.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ 3 -->
+
+        <div class="faq-item"
+             data-category="delivery"
+             data-question="Can I request same day delivery?">
+
+            <button class="faq-question">
+
+                <span>
+                    Can I request same-day delivery?
+                </span>
+
+                <strong>+</strong>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Same-day delivery may be available for selected
+                    products and locations. We recommend contacting
+                    our team as early as possible so we can confirm
+                    availability.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ 4 -->
+
+        <div class="faq-item"
+             data-category="products"
+             data-question="Can I customize a bouquet or gift?">
+
+            <button class="faq-question">
+
+                <span>
+                    Can I customize a bouquet or gift?
+                </span>
+
+                <strong>+</strong>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Absolutely. We can help create customized
+                    bouquets, gift boxes, hampers and celebration
+                    arrangements based on your preferences.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ 5 -->
+
+        <div class="faq-item"
+             data-category="products"
+             data-question="How long do fresh flowers last?">
+
+            <button class="faq-question">
+
+                <span>
+                    How long do fresh flowers last?
+                </span>
+
+                <strong>+</strong>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    The lifespan of fresh flowers depends on the
+                    flower type and care. Keeping them hydrated,
+                    away from direct sunlight and in a cool
+                    environment can help maintain their freshness.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ 6 -->
+
+        <div class="faq-item"
+             data-category="orders"
+             data-question="Can I cancel or change my order?">
+
+            <button class="faq-question">
+
+                <span>
+                    Can I cancel or change my order?
+                </span>
+
+                <strong>+</strong>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Order changes or cancellations should be
+                    requested as soon as possible. Because some
+                    products are prepared specifically for your
+                    order, changes may not always be possible.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ 7 -->
+
+        <div class="faq-item"
+             data-category="products"
+             data-question="Do you offer flowers with gifts?">
+
+            <button class="faq-question">
+
+                <span>
+                    Can I combine flowers with gifts?
+                </span>
+
+                <strong>+</strong>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Yes. You can create a thoughtful combination
+                    of flowers, chocolates, cakes, gift boxes
+                    and other selected items.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ 8 -->
+
+        <div class="faq-item"
+             data-category="events"
+             data-question="Do you provide wedding decoration?">
+
+            <button class="faq-question">
+
+                <span>
+                    Do you provide wedding decoration?
+                </span>
+
+                <strong>+</strong>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Yes. Our event décor services include floral
+                    styling and elegant arrangements for weddings,
+                    engagements, birthdays and other celebrations.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ 9 -->
+
+        <div class="faq-item"
+             data-category="events"
+             data-question="Can you decorate corporate events?">
+
+            <button class="faq-question">
+
+                <span>
+                    Can you decorate corporate events?
+                </span>
+
+                <strong>+</strong>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Yes. We provide sophisticated floral styling
+                    and décor concepts for professional events,
+                    launches and corporate celebrations.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FAQ 10 -->
+
+        <div class="faq-item"
+             data-category="orders"
+             data-question="How can I contact Instaflora?">
+
+            <button class="faq-question">
+
+                <span>
+                    How can I contact Instaflora?
+                </span>
+
+                <strong>+</strong>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    You can contact our team through the Contact
+                    section of our website. We will be happy to
+                    assist you with products, custom orders and
+                    event décor inquiries.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- NO RESULTS -->
+
+    <div class="faq-no-results"
+         id="faqNoResults">
+
+        <div>⌕</div>
+
+        <h3>No questions found</h3>
+
+        <p>
+            Try another search term or select a different category.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     NEED HELP
+===================================================== -->
+
+<section class="faq-help">
+
+    <div class="faq-help-content">
+
+        <span class="section-label">
+            STILL NEED HELP?
+        </span>
+
+        <h2>
+            We're here to<br>
+            <em>help you.</em>
+        </h2>
+
+        <p>
+            Can't find the answer you're looking for?
+            Our team would love to hear from you and help
+            make your Instaflora experience special.
+        </p>
+
+        <a href="#contact"
+           class="btn btn-primary">
+            Contact Our Team
+            <span>→</span>
+        </a>
+
+    </div>
+
+    <div class="faq-help-decoration">
+
+        <div class="help-circle one"></div>
+        <div class="help-circle two"></div>
+
+        <div class="help-flower">
+            ✿
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     NEWSLETTER
+===================================================== -->
+
+<section class="newsletter">
+
+    <div>
+
+        <span class="section-label">
+            STAY IN THE KNOW
+        </span>
+
+        <h2>
+            A little beauty,<br>
+            straight to your inbox.
+        </h2>
+
+    </div>
+
+    <form id="newsletterForm">
+
+        <input
+            type="email"
+            id="newsletterEmail"
+            placeholder="Your email address"
+            required
+        >
+
+        <button type="submit">
+            Subscribe →
+        </button>
+
+    </form>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer id="contact">
+
+    <div class="footer-main">
+
+        <div class="footer-brand">
+
+            <a href="index.html"
+               class="brand footer-logo">
+
+                <img src="Logoinstaflora-removebg-preview.png"
+                     alt="Instaflora Logo"
+                     class="brand-logo">
+
+                <div class="brand-text">
+                    <span>INSTA</span>FLORA
+                    <small>FLOWERS PARADISE</small>
+                </div>
+
+            </a>
+
+            <p>
+                Thoughtfully designed flowers, gifts and
+                celebrations for life's most beautiful moments.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#">f</a>
+                <a href="#">◎</a>
+                <a href="#">p</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Shop</h4>
+
+            <a href="shop.html">Flowers</a>
+            <a href="shop.html">Bouquets</a>
+            <a href="shop.html">Gifts</a>
+            <a href="shop.html">Hampers</a>
+            <a href="shop.html">Cakes</a>
+            <a href="shop.html">Chocolates</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Occasions</h4>
+
+            <a href="occasions.html">Birthday</a>
+            <a href="occasions.html">Anniversary</a>
+            <a href="occasions.html">Wedding</a>
+            <a href="occasions.html">Newborn</a>
+            <a href="occasions.html">Graduation</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Company</h4>
+
+            <a href="about.html">About Us</a>
+            <a href="events.html">Event Décor</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="#contact">Contact</a>
+
+            <a href="faqs.html">
+                FAQs
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Contact</h4>
+
+            <p>
+                Wah Cantt|New City Phase 2
+            </p>
+
+            <p>
+                +92 XXX XXXXXXX
+            </p>
+
+            <p>
+                @instaflora2022.com
+            </p>
+
+            <p>
+                Mon – Sat<br>
+                10:00 AM – 8:00 PM
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 Instaflora. All Rights Reserved.
+        </span>
+
+        <div>
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <a href="#">
+                Terms & Conditions
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- BACK TO TOP -->
+
+<button class="back-top"
+        id="backTop">
+    ↑
+</button>
+
+
+<script src="faqs.js"></script>
+
+</body>
+</html>
