@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Privacy Policy | Instaflora</title>
+
+    <meta
+        name="description"
+        content="Read the Instaflora Privacy Policy to understand how we collect, use, protect and manage your information."
+    >
+
+    <link rel="stylesheet" href="privacy.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar" id="navbar">
+
+    <div class="nav-container">
+
+
+        <!-- BRAND -->
+
+        <a href="index.html" class="brand">
+
+            <img
+                src="Logoinstaflora-removebg-preview.png"
+                alt="Instaflora Logo"
+            >
+
+            <div class="brand-text">
+
+                Instaflora
+
+                <small>
+                   FLOWERS PARADISE
+                </small>
+
+            </div>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="nav-menu" id="navMenu">
+
+
+            <!-- MOBILE SEARCH / WISHLIST / CART -->
+
+            <div class="mobile-nav-actions">
+
+                <button
+                    class="nav-icon"
+                    id="mobileSearchBtn"
+                    title="Search"
+                    type="button"
+                >
+                    ⌕
+                </button>
+
+
+                <button
+                    class="nav-icon"
+                    id="mobileWishlistBtn"
+                    title="Wishlist"
+                    type="button"
+                >
+                    ♡
+                </button>
+
+
+                <button
+                    class="nav-icon cart-button"
+                    id="mobileCartBtn"
+                    title="Shopping Cart"
+                    type="button"
+                >
+
+                    🛒
+
+                    <span class="cart-count">
+                        0
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <a href="index.html">
+                Home
+            </a>
+
+
+            <a href="shop.html">
+                Shop
+            </a>
+
+
+            <a href="occasions.html">
+                Occasions
+            </a>
+
+
+            <a href="bestsellers.html">
+                Best Sellers
+            </a>
+
+
+            <a href="events.html">
+                Event Décor
+            </a>
+
+
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+
+            <a href="about.html">
+                About
+            </a>
+
+
+            <a href="#contact">
+                Contact
+            </a>
+
+
+
+        </nav>
+
+
+        <!-- DESKTOP ACTIONS -->
+
+        <div class="nav-actions">
+
+            <button
+                class="nav-icon"
+                id="searchBtn"
+                title="Search"
+                type="button"
+            >
+                ⌕
+            </button>
+
+
+            <button
+                class="nav-icon"
+                id="wishlistBtn"
+                title="Wishlist"
+                type="button"
+            >
+                ♡
+            </button>
+
+
+            <button
+                class="nav-icon cart-button"
+                id="cartBtn"
+                title="Shopping Cart"
+                type="button"
+            >
+
+                🛒
+
+                <span class="cart-count">
+                    0
+                </span>
+
+            </button>
+
+        </div>
+
+
+        <!-- HAMBURGER -->
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open Menu"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     SEARCH OVERLAY
+===================================================== -->
+
+<div
+    class="search-overlay"
+    id="searchOverlay"
+>
+
+    <div class="search-box">
+
+        <span>
+            SEARCH INSTAFLORA
+        </span>
+
+
+        <button
+            class="search-close"
+            id="searchClose"
+            type="button"
+            aria-label="Close Search"
+        >
+            ×
+        </button>
+
+
+        <div class="search-input">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search flowers, gifts..."
+                autocomplete="off"
+            >
+
+
+            <button
+                id="searchSubmit"
+                type="button"
+                aria-label="Search"
+            >
+                ⌕
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= LOGIN / REGISTER POPUP ================= -->
+
+<div class="account-modal" id="accountModal">
+
+    <div class="account-modal-box">
+
+        <!-- CLOSE BUTTON -->
+        <button
+            type="button"
+            class="account-close"
+            id="accountClose">
+            ×
+        </button>
+
+
+        <!-- LOGO -->
+        <img
+            src="Logoinstaflora-removebg-preview.png"
+            alt="Instaflora"
+            class="account-modal-logo">
+
+
+        <!-- HEADING -->
+        <h2>Welcome to Instaflora</h2>
+
+        <p class="account-modal-subtitle">
+            Login or create your account
+        </p>
+
+
+        <!-- LOGIN / REGISTER TABS -->
+
+        <div class="account-tabs">
+
+            <button
+                type="button"
+                class="account-tab active"
+                id="loginTab">
+                Login
+            </button>
+
+            <button
+                type="button"
+                class="account-tab"
+                id="registerTab">
+                Register
+            </button>
+
+        </div>
+
+
+        <!-- ================= LOGIN FORM ================= -->
+
+        <form
+            class="account-form active"
+            id="loginForm">
+
+            <div class="form-group">
+
+                <label for="loginEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="loginPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required>
+
+            </div>
+
+
+            <div class="forgot-password">
+
+                <a href="#" id="forgotPassword">
+                    Forgot Password?
+                </a>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="account-submit">
+                Login
+            </button>
+
+        </form>
+
+
+        <!-- ================= REGISTER FORM ================= -->
+
+        <form
+            class="account-form"
+            id="registerForm">
+
+            <div class="form-group">
+
+                <label for="registerName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="registerName"
+                    placeholder="Enter your full name"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="registerEmail">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="registerEmail"
+                    placeholder="Enter your email"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="registerPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Create a password"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="registerConfirmPassword">
+                    Confirm Password
+                </label>
+
+                <input
+                    type="password"
+                    id="registerConfirmPassword"
+                    placeholder="Confirm your password"
+                    required>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="account-submit">
+                Create Account
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- =====================================================
+     PRIVACY POLICY HERO
+===================================================== -->
+
+<section class="privacy-hero">
+
+    <div class="privacy-hero-overlay"></div>
+
+    <div class="privacy-hero-content">
+
+        <span class="eyebrow">
+            YOUR PRIVACY MATTERS
+        </span>
+
+        <h1>
+            Privacy
+            <em>Policy</em>
+        </h1>
+
+        <p>
+            Your trust is important to us. Learn how Instaflora
+            collects, uses, protects and manages your information.
+        </p>
+
+        <div class="updated">
+            Last Updated: September 2026
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PRIVACY CONTENT
+===================================================== -->
+
+<main class="privacy-page">
+
+
+    <!-- INTRO -->
+
+    <section class="privacy-intro">
+
+        <span class="section-label">
+            INSTAFLOWER PRIVACY
+        </span>
+
+        <h2>
+            We respect your
+            <em>privacy.</em>
+        </h2>
+
+        <p>
+            At Instaflora, we are committed to protecting your
+            privacy and handling your information responsibly.
+            This Privacy Policy explains what information we may
+            collect when you use our website, how we use that
+            information, and the choices you have regarding your
+            personal information.
+        </p>
+
+        <p>
+            By accessing or using the Instaflora website, you
+            acknowledge that you have read and understood this
+            Privacy Policy.
+        </p>
+
+    </section>
+
+
+
+    <!-- POLICY GRID -->
+
+    <section class="policy-section">
+
+        <div class="policy-navigation">
+
+            <span>
+                ON THIS PAGE
+            </span>
+
+            <a href="#information">
+                01&nbsp;&nbsp; Information We Collect
+            </a>
+
+            <a href="#use">
+                02&nbsp;&nbsp; How We Use Information
+            </a>
+
+            <a href="#sharing">
+                03&nbsp;&nbsp; Information Sharing
+            </a>
+
+            <a href="#cookies">
+                04&nbsp;&nbsp; Cookies
+            </a>
+
+            <a href="#security">
+                05&nbsp;&nbsp; Data Security
+            </a>
+
+            <a href="#rights">
+                06&nbsp;&nbsp; Your Rights
+            </a>
+
+            <a href="#children">
+                07&nbsp;&nbsp; Children's Privacy
+            </a>
+
+            <a href="#changes">
+                08&nbsp;&nbsp; Policy Changes
+            </a>
+
+            <a href="#contact">
+                09&nbsp;&nbsp; Contact Us
+            </a>
+
+        </div>
+
+
+
+        <div class="policy-content">
+
+
+            <!-- 01 -->
+
+            <article
+                class="policy-card"
+                id="information"
+            >
+
+                <div class="policy-number">
+                    01
+                </div>
+
+                <div>
+
+                    <h3>
+                        Information We Collect
+                    </h3>
+
+                    <p>
+                        When you use Instaflora, we may collect
+                        information that you voluntarily provide,
+                        such as your name, email address, phone
+                        number, delivery details and other
+                        information needed to process your requests
+                        or orders.
+                    </p>
+
+                    <p>
+                        We may also collect basic technical
+                        information such as browser type, device
+                        information, pages visited and general
+                        website usage information. This helps us
+                        understand how visitors use our website
+                        and improve the experience.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 02 -->
+
+            <article
+                class="policy-card"
+                id="use"
+            >
+
+                <div class="policy-number">
+                    02
+                </div>
+
+                <div>
+
+                    <h3>
+                        How We Use Your Information
+                    </h3>
+
+                    <p>
+                        Information may be used to provide and
+                        improve our products and services, process
+                        orders, respond to enquiries, communicate
+                        with customers and provide requested
+                        support.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Process and manage orders or requests.
+                        </li>
+
+                        <li>
+                            Respond to customer enquiries.
+                        </li>
+
+                        <li>
+                            Improve our website and services.
+                        </li>
+
+                        <li>
+                            Provide relevant updates and
+                            communications.
+                        </li>
+
+                        <li>
+                            Help maintain website security and
+                            functionality.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 03 -->
+
+            <article
+                class="policy-card"
+                id="sharing"
+            >
+
+                <div class="policy-number">
+                    03
+                </div>
+
+                <div>
+
+                    <h3>
+                        Information Sharing
+                    </h3>
+
+                    <p>
+                        Instaflora does not sell your personal
+                        information. We may share necessary
+                        information with trusted service providers
+                        when required to operate our website,
+                        process orders, deliver products or provide
+                        services requested by you.
+                    </p>
+
+                    <p>
+                        Information may also be disclosed when
+                        required by applicable law or when necessary
+                        to protect the rights, safety or security
+                        of Instaflora, our customers or others.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 04 -->
+
+            <article
+                class="policy-card"
+                id="cookies"
+            >
+
+                <div class="policy-number">
+                    04
+                </div>
+
+                <div>
+
+                    <h3>
+                        Cookies & Similar Technologies
+                    </h3>
+
+                    <p>
+                        Our website may use cookies and similar
+                        technologies to remember preferences,
+                        understand website activity and improve
+                        functionality.
+                    </p>
+
+                    <p>
+                        Cookies are small files stored on your
+                        device by your browser. You may adjust your
+                        browser settings to manage or disable
+                        cookies. Some website features may not work
+                        correctly if cookies are disabled.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 05 -->
+
+            <article
+                class="policy-card"
+                id="security"
+            >
+
+                <div class="policy-number">
+                    05
+                </div>
+
+                <div>
+
+                    <h3>
+                        Data Security
+                    </h3>
+
+                    <p>
+                        We take reasonable measures to protect
+                        information against unauthorized access,
+                        alteration, disclosure or destruction.
+                    </p>
+
+                    <p>
+                        However, no method of transmitting or
+                        storing information online can be guaranteed
+                        to be completely secure. Therefore, while we
+                        work to protect your information, we cannot
+                        guarantee absolute security.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 06 -->
+
+            <article
+                class="policy-card"
+                id="rights"
+            >
+
+                <div class="policy-number">
+                    06
+                </div>
+
+                <div>
+
+                    <h3>
+                        Your Privacy Rights
+                    </h3>
+
+                    <p>
+                        Depending on applicable laws, you may have
+                        rights regarding your personal information,
+                        including the ability to request access,
+                        correction or deletion of certain information.
+                    </p>
+
+                    <p>
+                        If you have a privacy-related request,
+                        please contact us using the contact details
+                        provided below.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 07 -->
+
+            <article
+                class="policy-card"
+                id="children"
+            >
+
+                <div class="policy-number">
+                    07
+                </div>
+
+                <div>
+
+                    <h3>
+                        Children's Privacy
+                    </h3>
+
+                    <p>
+                        Our website is not intentionally designed to
+                        collect personal information from children.
+                        We encourage parents or guardians to supervise
+                        children's online activities.
+                    </p>
+
+                    <p>
+                        If you believe that a child has provided
+                        personal information through our website,
+                        please contact us so that we can review the
+                        situation and take appropriate action.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 08 -->
+
+            <article
+                class="policy-card"
+                id="changes"
+            >
+
+                <div class="policy-number">
+                    08
+                </div>
+
+                <div>
+
+                    <h3>
+                        Changes to This Privacy Policy
+                    </h3>
+
+                    <p>
+                        We may update this Privacy Policy from time
+                        to time to reflect changes to our services,
+                        website functionality or applicable
+                        requirements.
+                    </p>
+
+                    <p>
+                        Any updated version will be posted on this
+                        page with a revised “Last Updated” date.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 09 -->
+
+            <article
+                class="policy-card contact-policy"
+                id="contact"
+            >
+
+                <div class="policy-number">
+                    09
+                </div>
+
+                <div>
+
+                    <span class="mini-label">
+                        HAVE A QUESTION?
+                    </span>
+
+                    <h3>
+                        Contact Instaflora
+                    </h3>
+
+                    <p>
+                        If you have questions, concerns or requests
+                        regarding this Privacy Policy or the way your
+                        information is handled, we welcome you to
+                        contact us.
+                    </p>
+
+                    <a
+                        href="contact.html"
+                        class="policy-button"
+                    >
+                        Contact Us
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PRIVACY PROMISE -->
+
+    <section class="privacy-promise">
+
+        <div class="promise-mark">
+            ♢
+        </div>
+
+        <div>
+
+            <span>
+                INSTAFLOWER PROMISE
+            </span>
+
+            <h2>
+                Your information deserves
+                <em>care.</em>
+            </h2>
+
+            <p>
+                We aim to keep our privacy practices clear,
+                responsible and respectful while providing you
+                with a beautiful and convenient Instaflora
+                experience.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer  id="contact">
+
+    <div class="footer-main">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+            <a
+                href="index.html"
+                class="footer-logo"
+            >
+
+                <img
+                    src="Logoinstaflora-removebg-preview.png"
+                    alt="Instaflora Logo"
+                >
+<div class="brand-text">
+
+                    <span>INSTA</span>FLORA
+
+                    <small>
+                        FLOWERS PARADISE
+                    </small>
+
+                </div>
+            </a>
+
+
+            <p>
+                Instaflora brings together beautiful flowers,
+                thoughtful gifts and elegant celebrations,
+                created to make every meaningful moment special.
+            </p>
+
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Facebook">
+                    f
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    ◎
+                </a>
+
+                <a href="#" aria-label="Pinterest">
+                    p
+                </a>
+
+                <a href="#" aria-label="WhatsApp">
+                    w
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SHOP -->
+
+        <div class="footer-column">
+
+            <h4>
+                Shop
+            </h4>
+
+            <a href="shop.html">
+                All Flowers
+            </a>
+
+            <a href="bestsellers.html">
+                Best Sellers
+            </a>
+
+            <a href="occasions.html">
+                Occasions
+            </a>
+
+            <a href="events.html">
+                Event Décor
+            </a>
+
+        </div>
+
+
+
+        <!-- COMPANY -->
+
+        <div class="footer-column">
+
+            <h4>
+                Occasions
+            </h4>
+
+            <a href="occasions.html">
+                Birthday
+            </a>
+
+            <a href="occasions.html">
+                Anniversary
+            </a>
+
+            <a href="occasions.html">
+                Wedding
+            </a>
+
+            <a href="occasions.html">
+                Newborn
+            </a>
+
+            <a href="occasions.html">
+                Graduation
+            </a>
+
+        </div>
+
+
+
+        <!-- CUSTOMER CARE -->
+
+        <div class="footer-column">
+
+           <h4>
+                Company
+            </h4>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="events.html">
+                Event Décor
+            </a>
+
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+            <a href="faqs.html">
+                FAQs
+            </a>
+        
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column">
+
+           <h4>
+                Contact
+            </h4>
+
+            <p>
+                Islamabad, Pakistan
+            </p>
+
+            <p>
+                +92 XXX XXXXXXX
+            </p>
+
+            <p>
+                hello@instaflora.com
+            </p>
+
+            <p>
+                Mon – Sat<br>
+                10:00 AM – 8:00 PM
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Instaflora. All Rights Reserved.
+        </p>
+
+        <div>
+
+            <a href="privacy.html">
+                Privacy Policy
+            </a>
+
+            <a href="terms.html">
+                Terms & Conditions
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     BACK TO TOP
+===================================================== -->
+
+<button
+    class="back-top"
+    id="backTop"
+    type="button"
+    aria-label="Back to Top"
+>
+    ↑
+</button>
+
+
+
+<script src="privacy.js"></script>
+
+</body>
+
+</html>
