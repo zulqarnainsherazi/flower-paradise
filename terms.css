@@ -467,7 +467,10 @@ input {
         linear-gradient(
             rgba(16,16,16,.78),
             rgba(16,16,16,.88)
-        );
+            
+        ),
+        url("1.jpeg")
+        center/cover no-repeat;
 
     overflow: hidden;
 }
